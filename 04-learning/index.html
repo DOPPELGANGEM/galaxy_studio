@@ -1,0 +1,1387 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>갤럭시 배워보기</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- s : 본문 영역 -->
+		<script type="text/javascript">
+			digitalData.page.pathIndicator.depth_2 = "microsite";
+			digitalData.page.pathIndicator.depth_3 = "learning";
+		</script>
+
+		<style>
+			.galaxy_learning {overflow:hidden;}
+			.galaxy_learning * {box-sizing:border-box; font-size:inherit;}
+			.galaxy_learning .m_show {display:none !important;}
+			.galaxy_learning .m_hide {display:block !important;}
+			.galaxy_learning .img_box {width:100%; height:100%;}
+			.galaxy_learning .img_box > img {width:100%;}
+			.galaxy_learning .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+			.galaxy_learning .kr {font-family:'SamsungOneKorean', Dotum, '돋움', sans-serif;font-weight:normal;}
+			.galaxy_learning > section {position:relative; width:100%; max-width:1920px; margin:0 auto;}
+			.galaxy_learning strong, 
+			.galaxy_learning span {vertical-align:baseline;}
+			.galaxy_learning .blind {position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0, 0, 0, 0) !important; white-space:nowrap !important; border:0 !important;}
+
+			/****************
+				sec_kv
+			****************/
+			.galaxy_learning .sec_kv .txt_box {position:absolute; top:105px; left:240px;}
+			.galaxy_learning .sec_kv .txt_box h2 {font-size:58px; letter-spacing:0;}
+			.galaxy_learning .sec_kv .txt_box .sub_txt {padding-top:20px; font-size:22px; line-height:1.3;}
+
+			.galaxy_learning .sec_kv .menu_box {position:absolute; bottom:22px; left:240px; display:flex;}
+			.galaxy_learning .sec_kv .menu_box li + li {margin-left:10px;}
+			.galaxy_learning .sec_kv .menu_box .menu_search {background:#7e52ef url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_search.png') no-repeat 24px 10px; background-size:26px 38px;}
+			.galaxy_learning .sec_kv .menu_box .menu_product {background:#936fee url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_product.png') no-repeat 26px 10px; background-size:37px 37px;}
+			.galaxy_learning .sec_kv .menu_box li > a {position:relative; display:block; width:180px; height:58px;}
+			.galaxy_learning .sec_kv .menu_box li > a::before {content:''; position:absolute; top:0; right:-9px; border-right:9px solid transparent;}
+			.galaxy_learning .sec_kv .menu_box li.menu_search > a::before {border-bottom:13px solid #5634ae;}
+			.galaxy_learning .sec_kv .menu_box li.menu_product > a::before {border-bottom:13px solid #6344b1;}
+			.galaxy_learning .sec_kv .menu_box .menu_tit {color:#fff; font-size:18px; font-weight:700; line-height:58px;}
+			.galaxy_learning .sec_kv .menu_box .menu_search .menu_tit {padding-left:62px;}
+			.galaxy_learning .sec_kv .menu_box .menu_product .menu_tit {padding-left:78px;}
+
+			/****************
+				sec_video
+			****************/
+			.galaxy_learning .sec_video {padding:120px 0 0; background:linear-gradient(#f9ffe0, 0.2%, #f8f8f8);}
+			.galaxy_learning .sec_video .btn_anchor_video {z-index:10; position:fixed; top:750px; left:calc(50% + 655px); width:58px; height:58px; border-radius:100%; box-shadow:0 0 30px rgba(0,0,0,0.1); animation:motion 1.4s  infinite ease-in-out;}
+
+			@keyframes motion {
+				0% {transform:translateY(0);}
+				50% {transform:translateY(-16px);}
+				0% {transform:translateY(0);}
+			}
+			
+			.galaxy_learning .sec_video .txt_box > p {padding-bottom:25px; font-size:32px; text-align:center; line-height:1.3;}
+			.galaxy_learning .sec_video .txt_box .img_box {width:700px; margin:0 auto; padding-bottom:40px;}
+			.galaxy_learning .sec_video .video_wrap {width:956px; margin:0 auto; padding-top:40px;}
+			
+			/* tab_depth02 */
+			.galaxy_learning .sec_video .tab_list.tab_depth02 {display:flex; justify-content:space-between; padding-bottom:40px;}
+			.galaxy_learning .sec_video .tab_list.tab_depth02 a {display:inline-flex; justify-content:center; align-items:center; width:300px; height:74px; border:1px solid #bbb; border-radius:37px; background-color:#fff; color:#bbb; font-size:22px; text-align:center;}
+			.galaxy_learning .sec_video .tab_list.tab_depth02 li.on a,
+			.galaxy_learning .sec_video .tab_list.tab_depth02 a:hover {border-color:#000; background-color:#000; color:#fff;}
+
+			/* tab_depth01 */
+			.galaxy_learning .sec_video .tab_list.tab_depth01 {padding:40px 0 80px; border-top:1px solid #ddd;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-wrapper {justify-content:space-between; transition-property:none;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-slide {width:auto;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 a {position:relative; display:inline-block; width:300px;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .img_box {border:1px solid #bbb; border-bottom:0;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .img_box::after {content:''; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#000; opacity:0.7;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-slide.on .img_box::after,
+			.galaxy_learning .sec_video .tab_list.tab_depth01 a:hover .img_box::after {opacity:0;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 p {z-index:2; position:relative; height:48px; background-color:#000; color:#fff; font-size:22px; font-weight:700; line-height:48px; text-align:center;}
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-prev,
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-next,
+			.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-pagination {display:none;}
+			
+			.galaxy_learning .sec_video .video_list {display:flex; flex-wrap:wrap; padding-bottom:5px;}
+			.galaxy_learning .sec_video .video_list > li {margin-left:12px; padding-bottom:20px; }
+			.galaxy_learning .sec_video .video_list > li:nth-child(4n+1) {margin-left:0;}
+			.galaxy_learning .sec_video .video_list > li .img_box {position:relative; display:block; width:230px; height:129px; overflow:hidden; cursor:default; pointer-events:none;}
+			.galaxy_learning .sec_video .video_list > li .img_box::before {content:''; z-index:2; position:absolute; width:100%; height:100%; border:1px solid #ddd; box-sizing:border-box;}
+			.galaxy_learning .sec_video .video_list > li .img_box.btn_play {cursor:pointer; pointer-events:auto;}
+			.galaxy_learning .sec_video .video_list > li .img_box.btn_play::after {content:''; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4) url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_play.png') no-repeat center; background-size:46px; box-sizing:border-box; transition:transform 0.3s;}
+			.galaxy_learning .sec_video .video_list > li .img_box.btn_play img {transition:transform 0.3s;}
+			.galaxy_learning .sec_video .video_list > li .img_box.btn_play:hover img,
+			.galaxy_learning .sec_video .video_list > li .img_box.btn_play:hover::after {transform-origin:center; transform:scale(1.1);}
+			.galaxy_learning .sec_video .video_list > li .video_tit {padding:10px 0; font-size:18px; line-height:1.3; text-align:center; width: 230px; overflow: hidden;}
+
+			/****************
+				video_popup
+			****************/
+			.popup_overlay {z-index:9000; position:fixed; top:0; left:0; width:100%; height:100%; background-color:#000; opacity:0.94;}
+			.galaxy_learning .video_popup {display:none; z-index:9001; position:absolute; top:0; left:50%; transform:translateX(-50%); width:1440px; padding-top:60px; color:#fff;}
+			.galaxy_learning .video_popup .btn_close {position:absolute; top:0; left:1140px; width:40px; height:40px;}
+			.galaxy_learning .video_popup .main_video {display:flex; align-items:center; padding:0 10px 50px 71px;}
+			.galaxy_learning .video_popup .video_box {width:1110px; height:625px; border:1px solid #9d9d9d;}
+			/* .galaxy_learning .video_popup .txt_box {width:calc(100% - 1110px); padding-left:50px; display:-webkit-box;  } */
+			.galaxy_learning .video_popup .txt_box {width:calc(100% - 1110px); padding-left:33px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient: vertical; overflow:hidden; }
+
+			.galaxy_learning .video_popup .txt_box .video_tit {/* font-size:36px; */ font-size:30px; line-height:1.2;}
+			.galaxy_learning .video_popup .txt_box .video_desc {padding-top:25px; font-size:24px; line-height:1.4;}
+			.galaxy_learning .video_popup .slider_popup {position:relative; padding:0 66px;}
+			.galaxy_learning .video_popup .slider_popup .swiper {overflow:hidden; padding-top:10px;}
+			.galaxy_learning .video_popup .slider_popup .swiper-slide {width:auto; padding-left:5px; padding-right:6px; }
+			.galaxy_learning .video_popup .slider_popup .img_box {position:relative; display:inline-block; width:207px; cursor:default; pointer-events:none; user-select: none; }
+			.galaxy_learning .video_popup .slider_popup .img_box::before {content:''; z-index:2; position:absolute; width:100%; height:100%; border:1px solid #a0a0a0; box-sizing:border-box;}
+			.galaxy_learning .video_popup .slider_popup .img_box.btn_play {cursor:pointer; pointer-events:auto;}
+			.galaxy_learning .video_popup .slider_popup .img_box.btn_play::after {content:''; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4) url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_play.png') no-repeat center; background-size:42px; box-sizing:border-box;}
+			.galaxy_learning .video_popup .slider_popup .video_tit {padding-top:10px; font-size:18px; line-height:1.3; text-align:center; user-select: none; width: 207px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+			.galaxy_learning .video_popup .slider_popup .video_tit br {display:none;}
+			.galaxy_learning .video_popup .slider_popup .swiper-button-prev,
+			.galaxy_learning .video_popup .slider_popup .swiper-button-next {top:49px; display:block; width:9px; height:20px; margin-top:0; background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_arrow_popup.png') no-repeat 0 0 / 100%; color:transparent;}
+			.galaxy_learning .video_popup .slider_popup .swiper-button-prev {left:10px;}
+			.galaxy_learning .video_popup .slider_popup .swiper-button-next {right:10px; transform:rotate(180deg);}
+
+			/* .letter-text_00 { display:inline-block; white-space: nowrap; }
+			.letter-text_01 { display:inline-block; }
+			.letter-text_02 { display:inline-block; }
+			.letter-text_03 { display:inline-block; white-space: nowrap; }
+			.letter-text_04 { display:inline-block; white-space: nowrap; }
+			.letter-text_04_1 { display:inline-block; white-space: nowrap; }
+			.letter-text_05 { display:inline-block; white-space: nowrap; }
+			.letter-text_05_1 { display:inline-block; white-space: nowrap; }  */
+
+
+			@media screen and (min-width: 769px) and (max-width: 1920px) {
+				/****************
+					sec_kv
+				****************/
+				.galaxy_learning .sec_kv .txt_box {top:5.4688vw; left:12.5000vw;}
+				.galaxy_learning .sec_kv .txt_box h2 {font-size:3.0208vw;}
+				.galaxy_learning .sec_kv .txt_box .sub_txt {padding-top:1.0417vw; font-size:1.1458vw;}
+
+				.galaxy_learning .sec_kv .menu_box {bottom:1.1458vw; left:12.5000vw;}
+				.galaxy_learning .sec_kv .menu_box li + li {margin-left:0.5208vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_search {background-position:1.2500vw 0.5208vw; background-size:1.3542vw 1.9792vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_product {background-position:1.3542vw 0.5208vw; background-size:1.9271vw 1.9271vw;}
+				.galaxy_learning .sec_kv .menu_box li > a {width:9.3750vw; height:3.0208vw;}
+				.galaxy_learning .sec_kv .menu_box li > a::before {top:0; right:-0.4688vw; border-right:0.4688vw solid transparent;}
+				.galaxy_learning .sec_kv .menu_box li.menu_search > a::before {border-bottom:0.6771vw solid #5634ae;}
+				.galaxy_learning .sec_kv .menu_box li.menu_product > a::before {border-bottom:0.6771vw solid #6344b1;}
+				.galaxy_learning .sec_kv .menu_box .menu_tit {font-size:0.9375vw; line-height:3.0208vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_search .menu_tit {padding-left:3.2292vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_product .menu_tit {padding-left:4.0625vw;}
+			}
+
+			@media screen and (min-width: 769px) and (max-width: 1440px) {
+				/****************
+					sec_video
+				****************/
+				.galaxy_learning .sec_video {padding:8.3333vw 0 0;}
+				.galaxy_learning .sec_video .btn_anchor_video {top:52.083vw; left:calc(50% + 45.486vw); width:4.0278vw; height:4.0278vw; box-shadow:0 0 2.0833vw rgba(0,0,0,0.1);}
+				.galaxy_learning .sec_video .txt_box > p {padding-bottom:1.7361vw; font-size:2.2222vw;}
+				.galaxy_learning .sec_video .txt_box .img_box {width:48.6111vw; padding-bottom:2.7778vw;}
+				.galaxy_learning .sec_video .video_wrap {width:66.3889vw; padding-top:2.7778vw;}
+				
+				/* tab_depth02 */
+				.galaxy_learning .sec_video .tab_list.tab_depth02 {padding-bottom:2.7778vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth02 a {width:20.8333vw; height:5.1389vw; border-radius:2.5694vw; font-size:1.5278vw;}
+
+				/* tab_depth01 */
+				.galaxy_learning .sec_video .tab_list.tab_depth01 {padding:2.7778vw 0 5.5556vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 a {width:20.8333vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 p {height:3.3333vw; font-size:1.5278vw; line-height:3.3333vw;}
+
+				.galaxy_learning .sec_video .video_list {padding-bottom:0.3472vw;}
+				.galaxy_learning .sec_video .video_list > li { margin-left:0.8333vw; padding-bottom:1.3889vw;  }
+				.galaxy_learning .sec_video .video_list > li:nth-child(4n+1) {margin-left:0;}
+				.galaxy_learning .sec_video .video_list > li .img_box {width:15.9722vw; height:8.9583vw;}
+				.galaxy_learning .sec_video .video_list > li .img_box.btn_play::after {background-size:3.1944vw;}
+				.galaxy_learning .sec_video .video_list > li .video_tit {padding:0.6944vw 0; font-size:1.2500vw; width:15.9722vw;}
+				
+				/****************
+					video_popup
+				****************/
+				.galaxy_learning .video_popup {width:100%; padding-top:4.167vw;}
+				.galaxy_learning .video_popup .btn_close {left:79.1667vw; width:2.7778vw; height:2.7778vw;}
+				.galaxy_learning .video_popup .main_video {padding:0 0.6944vw 3.472vw 4.9306vw;}
+				.galaxy_learning .video_popup .video_box {width:77.0833vw; height:43.4028vw;}
+				/* .galaxy_learning .video_popup .txt_box {width:calc(100% - 77.0833vw); padding-left:3.472vw; } */
+				.galaxy_learning .video_popup .txt_box {width:calc(100% - 77.0833vw); padding-left:2.2917vw; }
+				.galaxy_learning .video_popup .txt_box .video_tit {/* font-size:2.5000vw; */ font-size:2.0833vw; }
+				.galaxy_learning .video_popup .txt_box .video_desc {padding-top:1.7361vw; font-size:1.6667vw;}
+				.galaxy_learning .video_popup .slider_popup {padding:0 4.5833vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper {padding-top:0.6944vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-slide {padding-left:0.3472vw; padding-right:0.4167vw; }
+				.galaxy_learning .video_popup .slider_popup .img_box {width:14.3750vw;}
+				.galaxy_learning .video_popup .slider_popup .img_box.btn_play::after {background-size:2.9167vw;}
+				.galaxy_learning .video_popup .slider_popup .video_tit {padding-top:0.6944vw; font-size:1.2500vw; width:14.3750vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-button-prev,
+				.galaxy_learning .video_popup .slider_popup .swiper-button-next {top:3.4028vw; width:0.6250vw; height:1.3889vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-button-prev {left:0.6944vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-button-next {right:0.6944vw;}
+			}
+
+			/* mobile */
+			@media screen and (max-width: 768px) {
+				body.scroll-lock {position:fixed; width:100%; height:100%; overflow:hidden;}
+				.galaxy_learning .m_show {display:block !important;}
+				.galaxy_learning .m_hide {display:none !important;}
+				.galaxy_learning > section {max-width:100%;}
+
+				/****************
+					sec_kv
+				****************/
+				.galaxy_learning .sec_kv .txt_box {top:8.3333vw; left:0; width:100%; text-align:center;}
+				.galaxy_learning .sec_kv .txt_box h2 {font-size:9.4444vw;}
+
+				.galaxy_learning .sec_kv .menu_box {bottom:2.2222vw; left:2.2222vw;}
+				.galaxy_learning .sec_kv .menu_box li + li {margin-left:1.3889vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_search {background-position:3.3333vw 2.0833vw; background-size:3.6111vw 5.2778vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_product {background-position:4.3056vw 2.0833vw; background-size:5.1389vw 5.1389vw;}
+				.galaxy_learning .sec_kv .menu_box li > a {width:27.7778vw; height:9.4444vw;}
+				.galaxy_learning .sec_kv .menu_box li > a::before {top:auto; bottom:0; right:-1.111vw; border-right:1.2500vw solid transparent;}
+				.galaxy_learning .sec_kv .menu_box li.menu_search > a::before {border-bottom:0; border-top:1.8056vw solid #5634ae;}
+				.galaxy_learning .sec_kv .menu_box li.menu_product > a::before {border-bottom:0; border-top:1.8056vw solid #6344b1;}
+				.galaxy_learning .sec_kv .menu_box .menu_tit {font-size:3.0556vw; line-height:9.4444vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_search .menu_tit {padding-left:8.6111vw;}
+				.galaxy_learning .sec_kv .menu_box .menu_product .menu_tit {padding-left:12.0833vw;}
+
+				/****************
+					sec_video
+				****************/
+				.galaxy_learning .sec_video {padding:11.1111vw 0 0; background:#f8f8f8;}
+				.galaxy_learning .sec_video .btn_anchor_video {opacity:0; visibility:hidden; top:136.111vw; left:auto; right:4.4444vw; width:10.8333vw; height:10.8333vw; box-shadow:0 0 4.1667vw rgba(0,0,0,0.1); transition:opacity 0.3s;}
+				.galaxy_learning .sec_video .btn_anchor_video.on {opacity:1; visibility:visible;}
+				.galaxy_learning .sec_video .txt_box > p {padding-bottom:4.861vw; font-size:5.2778vw;}
+				.galaxy_learning .sec_video .txt_box .img_box {width:84.7222vw; padding-bottom:6.944vw;}
+				.galaxy_learning .sec_video .video_wrap {width:100%; padding-top:4.167vw;}
+				.galaxy_learning .sec_video .video_wrap .content_box {padding:0 4.4444vw;}
+				
+				/* tab_depth02 */
+				.galaxy_learning .sec_video .tab_list.tab_depth02 {flex-wrap:wrap; padding-bottom:6.9444vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth02 li {width:48.7%;}
+				.galaxy_learning .sec_video .tab_list.tab_depth02 li:nth-child(2) ~ li {padding-top:2.7778vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth02 a {width:100%; height:13.0556vw; border-radius:6.5278vw; font-size:3.6111vw;}
+
+				/* tab_depth01 */
+				.galaxy_learning .sec_video .tab_list.tab_depth01 {position:relative; padding:6.9444vw 0 18.8889vw 4.4444vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-wrapper {transition-property:transform;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-slide {padding-right:4.4444vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 a {width:60.0000vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 p {height:9.7222vw; font-size:3.6111vw; line-height:9.7222vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-prev,
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-next {top:22.9167vw; display:block; width:3.7500vw; height:7.2222vw; margin-top:0; background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_arrow.png') no-repeat 0 0 / 100%; color:transparent;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-prev {left:6.9444vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-button-next {right:6.9444vw; transform:rotate(180deg);}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-pagination {display:block; bottom:11.1111vw;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-pagination-bullet {opacity:1; width:2.2222vw; height:2.2222vw; margin:0 4.1667vw; background-color:#adadad;}
+				.galaxy_learning .sec_video .tab_list.tab_depth01 .swiper-pagination-bullet-active {background-color:#000;}
+				
+				.galaxy_learning .sec_video .video_list {padding-bottom:0.6944vw;}
+				.galaxy_learning .sec_video .video_list > li {width:48.78%; margin-left:2.44%; padding-bottom:5.5556vw;}
+				.galaxy_learning .sec_video .video_list > li:nth-child(4n+1) {margin-left:2.44%;}
+				.galaxy_learning .sec_video .video_list > li:nth-child(2n+1) {margin-left:0;}
+				.galaxy_learning .sec_video .video_list > li .img_box {width:100%; height:auto;}
+				.galaxy_learning .sec_video .video_list > li .img_box.btn_play::after {background-size:10.2778vw;}
+				.galaxy_learning .sec_video .video_list > li .video_tit {padding:1.3889vw 0; font-size:3.3333vw; width:100%;}
+
+				/****************
+					video_popup
+				****************/
+				.galaxy_learning .video_popup {position:fixed; width:100%; padding:9.4444vw 0 9.7222vw;}
+				.galaxy_learning .video_popup .btn_close {left:auto; right:4.1667vw; width:6.6667vw; height:6.5278vw;}
+				.galaxy_learning .video_popup .main_video {flex-direction:column; align-items:flex-start; padding:0 4.1667vw 14.5833vw 4.1667vw;}
+				.galaxy_learning .video_popup .video_box {width:91.6667vw; height:51.6667vw; margin-bottom:7.6389vw; border-color:#a0a0a0;}
+				.galaxy_learning .video_popup .txt_box {width:100%; padding-left:2.7778vw;}
+				.galaxy_learning .video_popup .txt_box .video_tit {font-size:6.3889vw;}
+				.galaxy_learning .video_popup .txt_box .video_desc {padding-top:3.4722vw; font-size:3.8889vw; line-height:1.7;}
+				.galaxy_learning .video_popup .slider_popup {padding:0 4.1667vw 9.7222vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper {padding-top:1.3889vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-slide {padding-left:0; padding-right:2.7778vw; width:auto; }
+				.galaxy_learning .video_popup .slider_popup .img_box {width:28.7500vw;}
+				.galaxy_learning .video_popup .slider_popup .img_box.btn_play::after {background-size:5.8333vw;}
+				.galaxy_learning .video_popup .slider_popup .video_tit {padding-top:1.3889vw; font-size:2.7778vw; line-height:1.5; width:28.7500vw; }
+				.galaxy_learning .video_popup .slider_popup .swiper-button-prev,
+				.galaxy_learning .video_popup .slider_popup .swiper-button-next {top:auto; bottom:0.6944vw; width:5.1389vw; height:3.3333vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_arrow_popup_mo.png')}
+				.galaxy_learning .video_popup .slider_popup .swiper-button-prev {left:35.4167vw;}
+				.galaxy_learning .video_popup .slider_popup .swiper-button-next {right:35.4167vw;}
+			}
+
+			/*********************
+				sec_studio_nav
+			*********************/
+			.sec_studio_nav {position:relative; width:100%; max-width:1920px; margin:0 auto; border-top:2px solid #000; border-bottom:1px solid #cecece; background-color:#fff;}
+			.sec_studio_nav * {font-size:inherit;}
+			.sec_studio_nav .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+			.sec_studio_nav .m_show {display:none !important;}
+			.sec_studio_nav .m_hide {display:block !important;}
+			.sec_studio_nav .nav_list {display:flex; width:100%; height:100%; max-width:1440px; margin:0 auto; padding:0 2px;}
+			.sec_studio_nav .nav_list li { width:718px; height:80px; border-left:1px solid #d9d9d9;}
+			.sec_studio_nav .nav_list li:last-child {border-right:1px solid #d9d9d9;}
+			.sec_studio_nav .nav_list li a {position:relative; display:inline-flex; justify-content:center; align-items:center; width:100%; height:100%; background-color:#fff;}
+			.sec_studio_nav .nav_list li .nav_title {font-size:20px; font-weight:700;}
+			.sec_studio_nav .nav_list li.on .nav_title,
+			.sec_studio_nav .nav_list li a:hover .nav_title {z-index:2; position:relative; top:-3px; left:-2px; color:#fff;}
+			.sec_studio_nav .nav_list li.on a::after,
+			.sec_studio_nav .nav_list li a:hover::after {content:''; z-index:1; position:absolute; top:-5px; left:-3px; width:718px; height:80px; background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/studio_nav_bg_v4.png') no-repeat 0 0 / 100%;}
+
+			@media screen and (min-width: 769px) and (max-width: 1440px) {
+				.sec_studio_nav .nav_list li { width:49.8611vw; height:5.5556vw; }
+				.sec_studio_nav .nav_list li .nav_title {font-size:1.3889vw;}
+				.sec_studio_nav .nav_list li.on .nav_title,
+				.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.2083vw; left:-0.1389vw;}
+				.sec_studio_nav .nav_list li.on a::after,
+				.sec_studio_nav .nav_list li a:hover::after { top:-0.3472vw; left:-0.2083vw; width:49.8611vw; height:5.5556vw; }
+			}
+
+			@media screen and (max-width: 768px) {
+				.sec_studio_nav .m_show {display:block !important;}
+				.sec_studio_nav .m_hide {display:none !important;}
+				.sec_studio_nav {overflow:hidden;}
+				.sec_studio_nav .nav_list {flex-wrap:wrap; padding:0;}
+				.sec_studio_nav .nav_list li { width:50%; height:13.8889vw; border-left:0.2778vw solid #cdcdcd; text-align:center;}
+				.sec_studio_nav .nav_list li .nav_title { font-size:3.3333vw; line-height:1.2; }
+				.sec_studio_nav .nav_list li.on .nav_title,
+				.sec_studio_nav .nav_list li a:hover .nav_title { top:-0.4167vw; left:-0.2778vw; }
+				.sec_studio_nav .nav_list li.on a::after,
+				.sec_studio_nav .nav_list li a:hover::after {top:-0.8333vw; left:-0.6944vw; width:50.4278vw; height:14.7222vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/studio_nav_bg_mo_v4.png');}
+
+			}
+		</style>
+					
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main class="galaxy_learning">
+			<section class="sec_kv">
+				<div class="img_box">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/learning_kv.jpg" alt="" class="m_hide">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/learning_kv_mo.jpg" alt="" class="m_show">
+				</div>
+				
+				<div class="txt_box">
+					<h2>갤럭시 배워보기</h2>
+					<div class="sub_txt m_hide">
+						남다른 각으로 돌아온  
+						<span class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</span>를 <br>지금 바로 배워보세요
+					</div>
+				</div>
+				<!-- //txt_box -->
+
+				<ul class="menu_box">
+					<li class="menu_product">
+						<a href="https://www.samsung.com/sec/smartphones/galaxy-z-flip4/" title="제품정보 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:goto_product">
+							<p class="menu_tit">제품정보</p>
+						</a>
+					</li>
+				</ul>
+				<!-- //menu_box -->
+			</section>
+			<!-- //sec_kv -->
+
+			<section class="sec_studio_nav">
+				<ul class="nav_list">
+					<!-- 해당 페이지 li에 클래스 on 추가 -->
+					<li class="on">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/learning" title="배워보기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:goto_learning">
+							<span class="nav_title">배워보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/experience" title="온라인 체험존 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:goto_experience">
+							<span class="nav_title">온라인 체험존</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //sec_studio_nav -->
+
+			<section class="sec_video">
+				<a href="javascript:;" class="btn_anchor_video on" title="영상 영역으로 이동">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_anchor_v3.png" alt="">
+				</a>
+
+				<div class="txt_box">
+					<p>새로워진 <strong class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</strong>는 물론<br><strong class="en">Galaxy Wearables</strong>까지</p>
+					<div class="img_box">
+						<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/txt_sec_video_tit.png" alt="갤럭시의 놀라운 기능들을 네컷으로 쉽고 재미있게 배워보세요!" class="m_hide">
+						<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/txt_sec_video_tit_mo.png" alt="갤럭시의 놀라운 기능들을 네컷으로 쉽고 재미있게 배워보세요!" class="m_show">
+					</div>
+				</div>
+
+				<div class="video_wrap">
+					<div class="content_box">
+						<ul class="tab_list tab_depth02">
+							<!-- <li class="on">
+								<a href="javascript:;" data-depth1="v4" class="en" title="">Galaxy Z Flip4</a>
+							</li>
+							<li>
+								<a href="javascript:;" data-depth1="v4" class="en" title="">Galaxy Z Fold4</a>
+							</li>
+							<li>
+								<a href="javascript:;" data-depth1="v4" class="en" title="">Galaxy Wearables</a>
+							</li> -->
+						</ul>
+						<!-- //tab_depth02 -->
+
+						<ul class="video_list">
+							<!-- 
+								* thumb 이미지 
+									pc 이미지로 사용 : pc, mo, pc-popup, mo-popup (비율 동일) -> 영상 썸네일 크게 옴, 320*180으로 사이즈 조정 필요함
+
+								* omni 태깅값
+									Galaxy Z Flip4 - sec:microsite:galaxy-z4:galaxystudio:learning:thumb1_zflip4_movie1 ~ n
+									Galaxy Z Fold4 - sec:microsite:galaxy-z4:galaxystudio:learning:thumb1_zfol4_movie1 ~ n
+									Galaxy Wearables - sec:microsite:galaxy-z4:galaxystudio:learning:thumb1_wearable_movie1 ~ n
+
+									Galaxy Z Flip3 - sec:microsite:galaxy-z4:galaxystudio:learning:thumb2_zflip3_movie1 ~ n
+									Galaxy Z Fold3 - sec:microsite:galaxy-z4:galaxystudio:learning:thumb2_zfold3_movie1 ~ n
+									Galaxy Wearables - sec:microsite:galaxy-z4:galaxystudio:learning:thumb2_wearable_movie1 ~ n
+
+									Galaxy S22 - sec:microsite:galaxy-z4:galaxystudio:learning:thumb3_galaxys22_movie1 ~ n
+							-->
+
+							<!-- repeat -->
+							<!-- <li>
+								<a href="javascript:;" class="btn_play img_box" title="레이어팝업으로 열기" data-omni-type="microsite" data-omni="" data-url="">
+									<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/thumb01_01_01_v2.jpg" alt="">
+								</a>
+								<p class="video_title"></p>
+							</li> -->
+							<!-- // repeat -->
+						</ul>
+						<!-- //video_list -->
+					</div>
+					<!-- //content_box -->
+
+					<div class="swiper tab_list tab_depth01">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide on">
+								<a href="javascript:;" data-depth1="v4" title="Galaxy Z Fold4 | Z Flip4 영상리스트 보기" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:thumb1">
+									<div class="img_box">
+										<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/tab_depth01_01_v2.jpg" alt="">
+									</div>
+									<p class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="javascript:;" data-depth1="v3" title="Galaxy Z Fold3 | Z Flip3 영상리스트 보기" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:thumb2">
+									<div class="img_box">
+										<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/tab_depth01_02.jpg" alt="">
+									</div>
+									<p class="en">Galaxy Z Fold3 <em class="kr">|</em> Z Flip3</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="javascript:;" data-depth1="s22" title="Galaxy S22 영상리스트 보기" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:thumb3">
+									<div class="img_box">
+										<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/tab_depth01_03.jpg" alt="">
+									</div>
+									<p class="en">Galaxy S22</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- //tab_depth01 -->
+				</div>
+			</section>
+			<!-- sec_video -->
+
+			<div class="video_popup">
+				<a href="javascript:;" class="btn_close" title="레이어팝업 닫기">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_close.png" alt="닫기" class="m_hide">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/ico_close_mo.png" alt="닫기" class="m_show">
+				</a>
+				<div class="main_video">
+					<div class="video_box">
+						<iframe src="" width="100%" height="100%" allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe>
+					</div>
+					<div class="txt_box">
+						<h2 class="video_tit"></h2>
+						<!-- <p class="video_desc"></p> -->
+					</div>
+				</div>
+				<!-- //main_video -->
+
+				<div class="slider_popup">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<!-- 
+								* thumb 이미지 
+									pc 이미지로 사용 : pc, mo, pc-popup, mo-popup (비율 동일) -> 영상 썸네일 크게 옴, 320*180으로 사이즈 조정 필요함
+							-->
+							
+							<!-- repeat -->
+							<!-- <div class="swiper-slide">
+								<a href="javascript:;" class="btn_play img_box" title="영상재생" data-url="">
+									<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning/thumb01_01_01_v2.jpg" alt="">
+								</a>
+								<p class="video_tit"></p>
+							</div> -->
+							<!-- //repeat -->
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<!-- //slider_popup -->
+			</div>
+			<!-- //video_popup -->
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script>
+		;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+
+			// script
+			var $window = $(window);
+			var $body = $('body');
+			var popScrollTop = 0;
+
+			function lockScroll() {
+				popScrollTop = $window.scrollTop();
+				$body.addClass('scroll-lock');
+				$body.css('top', -1 * popScrollTop + 'px');
+			}
+
+			function unlockScroll() {
+				$body.removeClass('scroll-lock');
+				$body.removeAttr('style');
+				$('html, body').scrollTop(popScrollTop);
+			}
+
+			// var Img_Path = './images';
+			var Img_Path = '//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/learning';
+				Depth02_wrap = $(".tab_depth02"),
+				Video_wrap = $(".video_list"),
+				Swiper_wrap = $(".slider_popup .swiper-wrapper");
+
+
+			var galaxy_list = {
+				// desc : 영상 설명이 중간에 삭제되었음, 이후 필요 시 사용 위해 html, js 주석 처리
+				// omni 태깅값은 마지막에 순서대로 1 ~ n 기입
+				// 커밍순 pc img 만 png로 되어있음
+				// comingsoon 일 때는 true로 작성!
+
+				// 영상 Coming soon 일 경우
+				// {
+				// 	title : "Coming soon",
+				// 	// desc : "",
+				// 	omni : "",
+				// 	url : "",
+				// 	img_pc : "thumb_comingsoon_v2.png",
+				// 	img_mo : "thumb_comingsoon_mo_v2.jpg",
+				// 	comingsoon : true
+				// }
+
+				// 영상 업로드 완료일 경우
+				// {
+				// 	title : "타이틀명",
+				// 	// desc : "",
+				// 	omni : "태깅값(순서대로 마지막 숫자만 변경)",
+				// 	url : "",
+				// 	img_pc : "이미지명.jpg", (비율 동일하여 pc만 사용) -> 영상 썸네일 크게 옴, 320*180으로 사이즈 조정 필요함
+				// 	// img_mo : "",
+				// 	comingsoon : false
+				// }
+
+
+				// Galaxy Z Fold4 | Z Flip4 | Galaxy Wearables
+				v4 : [
+					[
+						{
+							product : "Galaxy Z Fold4"
+						},
+						{
+							title : "내 손안의 PC, 태스크바로 쉽게",
+							// desc : "",
+							omni : "thumb1_zfol4_movie1",
+							url : "kwKhLJey6L8",
+							img_pc : "thumb01_02_01_v2.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "한 손으로 사용해도 편안하게",
+							// desc : "",
+							omni : "thumb1_zfol4_movie2",
+							url : "vpDCc4Pn1p0",
+							img_pc : "thumb01_02_02_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "디테일이 살아있는 고화질 카메라",
+							// desc : "",
+							omni : "thumb1_zfol4_movie3",
+							url : "KlmD4xOJvZ4",
+							img_pc : "thumb01_02_03_v3.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "최적화된 대화면으로 <br>스마트하게",
+							// desc : "",
+							omni : "thumb1_zfol4_movie4",
+							url : "qdteKTa4PBw",
+							img_pc : "thumb01_02_04_v3.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+					],
+					[
+						{
+							product : "Galaxy Z Flip4"
+						},
+						{
+							title : "나만의 각으로 플렉스캠 사용하기",
+							// desc : "",
+							omni : "thumb1_zflip4_movie1",
+							url : "FysFFq5XpD0",
+							img_pc : "thumb02_02_01_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "취향대로 다양하게 <br>폰 꾸미기는 이렇게",
+							// desc : "",
+							omni : "thumb1_zflip4_movie2",
+							url : "rEpAmHwjNKU",
+							img_pc : "thumb02_02_02_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "강력해진 배터리 &<br>어둠을 이기는 나이토그래피",
+							// desc : "",
+							omni : "thumb1_zflip4_movie3",
+							url : "mfa8wstZOKo",
+							img_pc : "thumb02_02_03_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "열지 않고 퀵 샷으로 빠르게 찍기",
+							// desc : "",
+							omni : "thumb1_zflip4_movie4",
+							url : "EEDTj6ruE-k",
+							img_pc : "thumb02_02_04_v3.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "더 유용한 플립 경험으로 <br>더 쉽게",
+							// desc : "",
+							omni : "thumb1_zflip4_movie5",
+							url : "Gox_jFqxcjI",
+							img_pc : "thumb02_02_05_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "만능 커버 디스플레이의 <br>다양한 활용법 ",
+							// desc : "",
+							omni : "thumb1_zflip4_movie6",
+							url : "kOWcQ0RZ3Ls",
+							img_pc : "thumb02_02_06_v2.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+					],
+					[
+						{
+							product : "Galaxy Wearables"
+						},
+						{
+							title : "이제는 무선 이어폰에서도 <br>24bit Hi-Fi 사운드</span>",
+							// desc : "",
+							omni : "thumb1_wearable_movie1",
+							url : "z1nsT0zS3Uk",
+							img_pc : "thumb03_03_01.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+						{
+							title : "스타일링은 물론 <br>헬스케어까지 완벽</span>",
+							// desc : "",
+							omni : "thumb1_wearable_movie2",
+							url : "RbyWUMThPd4",
+							img_pc : "thumb03_03_02.jpg",
+							/* img_mo : "thumb_comingsoon_mo_v2.jpg", */
+							comingsoon : false
+						},
+					]
+				],
+				// Galaxy Z Fold3 | Z Flip3 | Galaxy Wearables
+				v3 : [
+					[
+						{
+							product : "Galaxy Z Flip3"
+						},
+						{
+							title : "아이코닉 디자인",
+							// desc : "",
+							omni : "thumb2_zflip3_movie1",
+							url : "Mj0ac5l1oBs",
+							img_pc : "thumb02_01_01.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "방수&내구성",
+							// desc : "",
+							omni : "thumb2_zflip3_movie2",
+							url : "QLrPMSSVtVA",
+							img_pc : "thumb02_01_02.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "커버 디스플레이 꾸미기",
+							// desc : "",
+							omni : "thumb2_zflip3_movie3",
+							url : "HHS-wxJ7gZU",
+							img_pc : "thumb02_01_03.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "커버 디스플레이 쉽게 쓰기",
+							// desc : "",
+							omni : "thumb2_zflip3_movie4",
+							url : "4ql1YBWr1y0",
+							img_pc : "thumb02_01_04.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "바로바로 퀵 샷",
+							// desc : "",
+							omni : "thumb2_zflip3_movie5",
+							url : "WI3sC4ZvWtA",
+							img_pc : "thumb02_01_05.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "카메라① 남다른 각도",
+							// desc : "",
+							omni : "thumb2_zflip3_movie6",
+							url : "KJZ7pqh-a3E",
+							img_pc : "thumb02_01_06.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "카메라② 베스트샷 마스터",
+							// desc : "",
+							omni : "thumb2_zflip3_movie7",
+							url : "eHMmfDJbZ_o",
+							img_pc : "thumb02_01_07.jpg",
+							// img_mo : "",
+							comingsoon : false
+						}
+					],
+					[
+						{
+							product : "Galaxy Z Fold3"
+						},
+						{
+							title : "프리미엄 디자인",
+							// desc : "",
+							omni : "thumb2_zfold3_movie1",
+							url : "0dvYAwCSwXw",
+							img_pc : "thumb02_02_01.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "방수&내구성",
+							// desc : "",
+							omni : "thumb2_zfold3_movie2",
+							url : "2W6XcC-Op8M",
+							img_pc : "thumb02_02_02.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "S펜만 있으면 노트Z",
+							// desc : "",
+							omni : "thumb2_zfold3_movie3",
+							url : "4DpVWVZCn8I",
+							img_pc : "thumb02_02_03.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "대화면엔 멀티 뷰",
+							// desc : "",
+							omni : "thumb2_zfold3_movie4",
+							url : "Bu_QUVgwOMQ",
+							img_pc : "thumb02_02_04.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "대화면 최적화",
+							// desc : "",
+							omni : "thumb2_zfold3_movie5",
+							url : "IrrKGKdtx9A",
+							img_pc : "thumb02_02_05.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "멀티윈도우 레벨업",
+							// desc : "",
+							omni : "thumb2_zfold3_movie6",
+							url : "u8prWWePW8Q",
+							img_pc : "thumb02_02_06.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "자유자재 멀티태스킹",
+							// desc : "",
+							omni : "thumb2_zfold3_movie7",
+							url : "vK-BVnK1eIA",
+							img_pc : "thumb02_02_07.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "카메라① 찍고 보는 노하우",
+							// desc : "",
+							omni : "thumb2_zfold3_movie8",
+							url : "ioyUZD0RtXM",
+							img_pc : "thumb02_02_08.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "카메라② A컷 전문가",
+							// desc : "",
+							omni : "thumb2_zfold3_movie9",
+							url : "ioyUZD0RtXM",
+							img_pc : "thumb02_02_09.jpg",
+							// img_mo : "",
+							comingsoon : false
+						}
+					],
+					[
+						{
+							product : "Galaxy Wearables"
+						},
+						{
+							title : "귀에 쏙쏙 버즈2",
+							// desc : "",
+							omni : "thumb2_wearable_movie1",
+							url : "KcmtRvh2_0w",
+							img_pc : "thumb02_03_01_v2.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "건강도 감각도 워치4로 캐치!",
+							// desc : "",
+							omni : "thumb2_wearable_movie2",
+							url : "rUE8c4Z8sdw",
+							img_pc : "thumb02_03_02_v2.jpg",
+							// img_mo : "",
+							comingsoon : false
+						}
+					]
+				],
+				// Galaxy S22
+				s22 : [
+					[
+						{
+							product : "Galaxy S22"
+						},
+						{
+							title : "AI로 사진을 더 완벽하게",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie1",
+							url : "vCZ9WQ2s7Y4",
+							img_pc : "thumb03_01_01.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "나를 위한 갤럭시",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie2",
+							url : "S9zbytb5Rdw",
+							img_pc : "thumb03_01_02.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "자유자재 만능 S펜",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie3",
+							url : "J8MX4dM7KNQ",
+							img_pc : "thumb03_01_03.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "기기를 옮겨도 작업은 끊김없이",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie4",
+							url : "69b8FayXpbs",
+							img_pc : "thumb03_01_04.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "겉똑속똑 갤럭시 S22",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie5",
+							url : "HZ1tihaiwRw",
+							img_pc : "thumb03_01_05.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "갤럭시의 능력을 더 크게",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie6",
+							url : "hTAkSNUG0HY",
+							img_pc : "thumb03_01_06.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "일을 쉽게 공유는 더 쉽게",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie7",
+							url : "BBVOaR5SRKY",
+							img_pc : "thumb03_01_07.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "줌으로 더 돋보이는 인물 사진",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie8",
+							url : "52zpdHy4bx0",
+							img_pc : "thumb03_01_08.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "디테일에 강한 초고화질 카메라",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie9",
+							url : "kXl7fSloEmo",
+							img_pc : "thumb03_01_09.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "프로 모드로 프로 사진가처럼",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie10",
+							url : "Mmh9mkTiJvc",
+							img_pc : "thumb03_01_10.jpg",
+							// img_mo : "",
+							comingsoon : false
+						},
+						{
+							title : "어둠을 이기는 나이토그래피",
+							// desc : "",
+							omni : "thumb3_galaxys22_movie11",
+							url : "HTf2Lboe9lo",
+							img_pc : "thumb03_01_11.jpg",
+							// img_mo : "",
+							comingsoon : false
+						}
+					]
+				]
+			}
+
+			// swiper : tab_depth01 (mobile)
+			var tabDepth01Swiper = new Swiper('.swiper.tab_list.tab_depth01', {
+				allowTouchMove: true,
+				slidesPerView: 'auto',
+				threshold: 30,
+				navigation: {
+					prevEl: '.swiper.tab_depth01 .swiper-button-prev',
+					nextEl: '.swiper.tab_depth01 .swiper-button-next'
+				},
+				pagination: {
+					el: '.swiper.tab_depth01 .swiper-pagination',
+					type: 'bullets',
+					clickable : true
+				},
+				breakpoints: {
+					768: {
+						allowTouchMove: false
+					}
+				},
+				on: {
+					breakpoint: function() {
+						this.slideTo(0);
+					}
+				}
+			});
+
+			// tab_list 활성화
+			$('.galaxy_learning .tab_list').on('click', 'a', function(e){
+				e.preventDefault();
+				var $this = $(this);
+				var $parent = $this.parent();
+
+				$parent.addClass('on').siblings().removeClass('on');
+			});
+
+			// depth1 클릭
+			$('.galaxy_learning .tab_depth01').on('click', 'a', function(e){
+				e.preventDefault();
+				var $this = $(this),
+					$depth1 = $this.data("depth1");
+
+				drawDepth2($depth1);
+				drawVideoList(0,$depth1);
+				drawVideoPopupList($depth1);
+
+				// s22 일 때만 tab 가운데 정렬
+				if($depth1 === 's22') {
+					$('.tab_list.tab_depth02').css('justify-content', 'center');
+				} else {
+					$('.tab_list.tab_depth02').css('justify-content', 'space-between');
+				}
+			});
+
+			// depth2 클릭
+			$('.galaxy_learning .tab_depth02').on('click', 'a', function(e){
+				e.preventDefault();
+				var $this = $(this),
+					$idx = $this.parent().index(),
+					$depth1 = $this.data("depth1");
+
+				drawVideoList($idx,$depth1);
+			});	
+
+			function drawDepth2(depth1) {
+				var _list = galaxy_list[depth1],
+					_html = "";
+
+				$(_list).each(function(i,e) {
+					var _tit = e[0]["product"],
+						_on = i === 0 ? "on" : "";
+
+						_html += '<li class="' + _on + '">';
+						_html += '	<a href="javascript:;" data-depth1="' + depth1 + '" class="en" title="' + _tit + ' 영상리스트 보기">' + _tit + '</a>';
+						_html += '</li>';
+
+				});
+				Depth02_wrap.html(_html);
+			}
+
+			function drawVideoList(idx,depth1) {
+				var _list = galaxy_list[depth1][idx],
+					_html = "";
+
+				$(_list).each(function(i,e) {
+					var _title,
+						_desc,
+						_omni,
+						_url,
+						_img_pc,
+						_img_mo,
+						_comingsoon;
+
+					if(i > 0) {
+						_title = e["title"];
+						_desc = e["desc"];
+						_omni = e["omni"];
+						_url = e["url"];
+						_img_pc = Img_Path + '/' + e["img_pc"];
+						_img_mo = Img_Path + '/' + e["img_mo"];
+						_comingsoon = e["comingsoon"];
+
+						if(!_comingsoon) {
+							_html += '<li>';
+							_html += '	<a href="javascript:;" class="btn_play img_box" title="레이어팝업으로 열기" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:' + _omni + '" data-url="' + _url + '">';
+							_html += '		<img src="' + _img_pc + '" alt="">';
+							// _html += '		<img src="' + _img_mo + '" alt="" class="m_show">';
+							_html += '	</a>';
+							_html += '	<p class="video_tit">' + _title + '</p>';
+							_html += '</li>';
+						} else {
+							_html += '<li>';
+							_html += '	<a href="javascript:;" class="img_box">';
+							_html += '		<img src="' + _img_pc + '" alt="" class="m_hide">';
+							_html += '		<img src="' + _img_mo + '" alt="" class="m_show">';
+							_html += '	</a>';
+							_html += '	<p class="video_tit">' + _title + '</p>';
+							_html += '</li>';
+						}
+					}
+				});	
+
+				Video_wrap.html(_html);		
+			}
+
+			function drawVideoPopupList(depth1) {
+				var _list = galaxy_list[depth1],
+					_html = "";
+
+				$(_list).each(function(i,e) {
+					$(e).each(function(i2,e2) {
+						var _title,
+							_desc,
+							_omni,
+							_url,
+							_img_pc,
+							_img_mo,
+							_comingsoon;
+
+
+						if(i2 > 0) {
+							_title = e2["title"];
+							_desc = e2["desc"];
+							_omni = e2["omni"];
+							_url = e2["url"];
+							_img_pc = Img_Path + '/' + e2["img_pc"];
+							_img_mo = Img_Path + '/' + e2["img_mo"];
+							_comingsoon = e2["comingsoon"];
+
+							if(!_comingsoon) {
+								_html += '<div class="swiper-slide">';
+								_html += '	<a href="javascript:;" class="btn_play img_box" title="영상재생" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:' + _omni + '" data-url="' + _url + '">';
+								_html += '		<img src="' + _img_pc + '" alt="">';
+								_html += '	</a>';
+								_html += '	<p class="video_tit">'  +  _title + '</p>';
+								_html += '</div>';
+							} else {
+								_html += '<div class="swiper-slide">';
+								_html += '	<a href="javascript:;" class="img_box">';
+								_html += '		<img src="' + _img_pc + '" alt="" class="m_hide">';
+								_html += '		<img src="' + _img_mo + '" alt="" class="m_show">';
+								_html += '	</a>';
+								_html += '	<p class="video_tit">' + _title + '</p>';
+								_html += '</div>';
+							}
+						}
+					});
+				});	
+
+				Swiper_wrap.html(_html);		
+			}	
+
+			// popup : swiper
+			function popupSwiper() {
+				var sliderPopup = new Swiper('.slider_popup .swiper', {
+					allowTouchMove: true,
+					slidesPerView: 'auto',
+					threshold: 30,
+					navigation: {
+						prevEl: '.slider_popup .swiper .swiper-button-prev',
+						nextEl: '.slider_popup .swiper .swiper-button-next'
+					},
+					breakpoints: {
+						768: {
+							allowTouchMove: false
+						}
+					},
+					on: {
+						breakpoint: function() {
+							this.slideTo(0);
+						}
+					}
+				});
+			}
+			
+			var $windowW;
+		
+			// PC에서 창 작아질 때 잘리는 현상으로 체크
+			$window.on('resize', function() {
+				$windowW = $window.innerWidth();
+			});
+
+			// popup : 팝업 열기
+			$('.galaxy_learning .video_list').on('click', '.btn_play', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				var videoUrl = $this.data('url');
+				// var videoTitle = $this.siblings().text();
+				var videoTitle = $this.siblings().html();
+				// var videoDesc = $this.data('desc');
+				var $videoPopup = $('.galaxy_learning .video_popup');
+				var scrollTop = $window.scrollTop();
+				var $windowH = $window.height();
+				var $popupH = $('.galaxy_learning .video_popup').innerHeight();
+				var learningOffset = $('.galaxy_learning').offset().top;
+				var topValue = scrollTop + (($windowH - $popupH) / 2) - learningOffset;
+
+				if (videoUrl) {
+					if($window.innerWidth() <= 768) {
+						lockScroll();
+						$videoPopup.css({'top': '50%', 'transform': 'translate(-50%, -50%)'});
+					} else {
+						if ($windowH > $popupH) {
+							$videoPopup.css('top', topValue);
+						} else {
+							$videoPopup.css('top', scrollTop + 20);
+						}
+					}
+					
+					$body.append('<div class="popup_overlay"></div>');
+					$videoPopup.show();
+					$videoPopup.find('iframe').attr('src', 'https://www.youtube.com/embed/' + videoUrl);
+					// $videoPopup.find('.txt_box .video_tit').text(videoTitle);
+					$videoPopup.find('.txt_box .video_tit').html(videoTitle);
+					// $videoPopup.find('.txt_box .video_desc').text(videoDesc);
+
+				}
+
+				popupSwiper();
+
+				// 팝업 슬라이드에서 영상 재생
+				$videoPopup.on('click', '.slider_popup .btn_play', function(e) {
+					e.preventDefault();
+					var $this = $(this);
+					var videoUrl = $this.data('url');
+					var videoTitle = $this.siblings().text();
+					var videoTitle_02 = $this.siblings().text();
+					// var videoDesc = $this.data('desc');
+
+					console.log(videoTitle_02);
+
+					if (videoUrl) {
+						$videoPopup.find('iframe').attr('src', 'https://www.youtube.com/embed/' + videoUrl);
+						$videoPopup.find('.txt_box .video_tit').text(videoTitle);
+						// $videoPopup.find('.txt_box .video_desc').text(videoDesc);
+					}
+				});
+	
+				// 레이어팝업 외부영역 클릭 시 팝업 닫기
+				$(document).mouseup(function (e){
+					var $this = $(".video_popup");
+
+					if($this.has(e.target).length === 0){
+						$('.video_popup .btn_close').trigger("click");
+					}
+				});
+			});
+
+			// popup : 팝업 닫기
+			$('.galaxy_learning .video_popup').on('click', '.btn_close', function(e) {
+				e.preventDefault();
+				$('.galaxy_learning .video_popup').hide();
+				$('.galaxy_learning .video_popup iframe').attr('src', '');
+				$('.popup_overlay').remove();
+
+				if($window.innerWidth() <= 768) {
+					unlockScroll();
+					$('.galaxy_learning .video_popup').css({'top': '', 'transform': 'translateX(-50%)'});
+				}
+			});
+
+			// 플로팅 버튼 : 영상 영역일 때는 버튼 숨기기 (mobile)
+			if($window.innerWidth() <= 768) {
+				$window.on('scroll', function(){
+					var $btnAnchor = $('.galaxy_learning .sec_video .btn_anchor_video');
+					var headerHeight = $('.galaxy_learning .sec_kv').height();
+					var videoArea = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+					var videoAnchor = $('.galaxy_learning .btn_anchor_video').offset().top;
+
+					if(videoAnchor > videoArea){
+						$btnAnchor.removeClass('on');
+					} else {
+						$btnAnchor.addClass('on');
+					}
+				});
+			}
+
+			// 플로팅 버튼 : 영상 영역으로 이동
+			$('.galaxy_learning .sec_video').on('click', '.btn_anchor_video', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				var $footerArea = $('footer').offset().top;// 로컬에는 footer가 없어서 동작 안함
+				var $windowH = $window.height();
+				var chkMoAnchor = $footerArea - $windowH;
+
+				if($window.innerWidth() <= 768) {// mo : 탭1 하단영역까지 보이게 이동
+					$('html, body').stop().animate({scrollTop: chkMoAnchor}, 700);
+				} else {// pc : 탭2 영역으로 이동
+					$('html, body').stop().animate({scrollTop: $('.galaxy_learning .sec_video .video_wrap').offset().top}, 700);
+				}
+			});
+
+			// init
+			$(".tab_depth01 a[data-depth1='v4']").trigger("click");
+
+			// 페이지 접속 시 앵커 이동
+			var url = window.location.href;
+			var chk = url.split('?')[1];
+			var target;
+
+			if (chk.indexOf('zfold4') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v4']").trigger("click");
+				$(".tab_depth02 li:eq(0) a").trigger("click");
+			} else if (chk.indexOf('zflip4') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v4']").trigger("click");
+				$(".tab_depth02 li:eq(1) a").trigger("click");
+			} else if (chk.indexOf('wearables1') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v4']").trigger("click");
+				$(".tab_depth02 li:eq(2) a").trigger("click");
+			} else if (chk.indexOf('zflip3') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v3']").trigger("click");
+				$(".tab_depth02 li:eq(0) a").trigger("click");
+			} else if (chk.indexOf('zfold3') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v3']").trigger("click");
+				$(".tab_depth02 li:eq(1) a").trigger("click");
+			} else if (chk.indexOf('wearables2') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='v3']").trigger("click");
+				$(".tab_depth02 li:eq(2) a").trigger("click");
+			} else if (chk.indexOf('galaxys22') > -1) {
+				target = $('.galaxy_learning .sec_video .video_wrap').offset().top;
+				$(".tab_depth01 a[data-depth1='s22']").trigger("click");
+				$(".tab_depth02 li:eq(0) a").trigger("click");
+			}
+
+			if (target) {
+				setTimeout(function() {
+					$('html,body').stop().animate({scrollTop:target}, 500);
+				}, 1000);
+			}
+
+		})(window.jQuery);
+		</script>
+		<!-- e : 본문 영역 -->
+
+
+	</div>
+</body>
+</html>

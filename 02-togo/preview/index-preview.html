@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>갤럭시 얼리버드 To Go 서비스</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+
+	<div id="wrap">
+
+		<!-- s : 본문 영역 -->
+		<style>
+			.galaxy_earlybird .m_show{display: none !important;}
+			.galaxy_earlybird .m_hide{display: block !important;}
+			.galaxy_earlybird .img_box{width: 100%; height: 100%;}
+			.galaxy_earlybird .img_box > img{width: 100%; height: 100%;}
+			.galaxy_earlybird .en {font-family:"Samsung Sharp Sans",SamsungSharpSans;font-weight:bold;}
+
+			.galaxy_earlybird .kv {position:relative;width:100%;max-width:1920px;margin:0 auto;}
+			.galaxy_earlybird .kv .txt_box {position:absolute;left:14.4%;top:97px;}
+			.galaxy_earlybird .kv .txt_box .kv_tit {font-size:0;width:470px;height:127px;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/kv_tit.png') no-repeat;background-size:contain;}
+			.galaxy_earlybird .kv .txt_box .kv_desc {font-size:26px;padding:15px 0 0 10px;line-height:1.3;}
+
+			.galaxy_earlybird .to_go {width:1440px;margin:0 auto;}
+			
+			.galaxy_earlybird .to_go_header {width:1280px;height:594px;margin:0 auto;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_bg.jpg') no-repeat;background-size:contain;}
+			.galaxy_earlybird .to_go_header .txt_box {padding-top:345px;font-weight:bold;line-height:1.4;}
+			.galaxy_earlybird .to_go_header .txt_desc {width:100%;text-align:center;}
+			.galaxy_earlybird .to_go_header .txt_desc_1 {font-size:28px;margin-bottom:18px;}
+			.galaxy_earlybird .to_go_header .txt_desc_2 {font-size:36px;letter-spacing:-1px;}
+			.galaxy_earlybird .to_go_header .txt_desc_2 .txt_color {position:relative;top:-2.75px;margin-right:4px;display:inline-block;font-size:0;vertical-align:middle;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_txt_1.png') 100% no-repeat;background-size:contain;width:239px;height:33px;}
+			
+			.galaxy_earlybird .to_go_gbn {width:1280px;margin:0 auto;margin-bottom:45px;display:flex;justify-content:space-between;}
+			.galaxy_earlybird .to_go_gbn .to_go_gbn_box {width:620px;}
+			.galaxy_earlybird .to_go_gbn .to_go_gbn_tit {width:100%;height:530px;font-size:0;background-repeat:no-repeat;background-size:contain;margin-bottom:20px;}
+			.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_1 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_1_v2.jpg');}
+			.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_2 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_2_v2.jpg');}
+			.galaxy_earlybird .to_go_gbn .to_go_gbn_desc {font-size:22px;text-align:center;font-weight:bold;}
+			
+			.galaxy_earlybird .to_go_step {width:1280px;margin:0 auto;background:#e7f2ff;display:flex;justify-content:space-around;padding:70px 20px 240px;}
+			.galaxy_earlybird .to_go_step .to_go_list {position:relative;width:386px;background:#fff;padding:0 0 40px 0;box-shadow: 0px 6px 22px -11px rgb(0, 0, 0, 0.3);z-index:30;}
+			.galaxy_earlybird .to_go_step .to_go_list_tit  {position:relative;margin:0 auto;width:190px;height:50px;top:-20px;margin-bottom:15px;}
+			.galaxy_earlybird .to_go_step .to_go_list_tit > span  {position:relative;display:block;width:100%;height:100%;padding-top:13px;font-size:24px;text-align:center;color:#fff;z-index:10;}
+			.galaxy_earlybird .to_go_step .to_go_list_tit:before {content: "";position: absolute;top: 0;left: 50%;width:210px;transform: translateX(-50%);border-width:0 9px 20px;;border-style: solid;border-color: transparent transparent #394ba1 #e7f2ff;box-sizing: border-box;}
+			.galaxy_earlybird .to_go_step .to_go_list_tit:after {content:"";position:absolute;display:block;top:0;left:-30px;width:100px;height:20px;background:#e7f2ff;z-index:5;}
+			.galaxy_earlybird .to_go_step .to_go_list dl {display:flex;padding:0 0 0 24px;line-height:1.6;font-weight:bold;}
+			.galaxy_earlybird .to_go_step .to_go_list dl dt {font-size:18px;width:124px;}
+			.galaxy_earlybird .to_go_step .to_go_list dl dd {font-size:18px;}
+			.galaxy_earlybird .to_go_step .to_go_list_end  {display:none;position:absolute;font-size:30px;font-weight:bold;color:#fff;left:50%;top:50%;transform:translate3d(-50%,-50%,0);z-index:15;}
+
+
+			.galaxy_earlybird .to_go_step .to_go_list .btn-area {margin:0;}
+			.galaxy_earlybird .to_go_step .to_go_list .btn_result {display:none;position:absolute;width:326px;height:76px;left:50%;transform:translate3d(-50%,0,0);font-size:20px;color:#fff;border-radius:38px; font-weight: bold;background: rgb(63,192,187);background: linear-gradient(90deg, rgba(63,192,187,1) 0%, rgba(31,138,206,1) 100%);text-align:center;line-height:1.3;padding:10px 0 0 0;}
+			.galaxy_earlybird .to_go_step .to_go_list .btn_result_1 {bottom:-90px;}
+			.galaxy_earlybird .to_go_step .to_go_list .btn_result_2 {bottom:-180px;}
+			.galaxy_earlybird .to_go_step .to_go_list .btn_result span {font-size:20px;font-weight:normal;}			
+			.galaxy_earlybird .to_go_step .to_go_list.to_go_rst .btn_result {display:block;}
+
+			.galaxy_earlybird .to_go_step .to_go_list_1 .to_go_list_tit > span  {background:#4ab498;}
+			.galaxy_earlybird .to_go_step .to_go_list_2 .to_go_list_tit > span  {background:#26a6cb;}
+			.galaxy_earlybird .to_go_step .to_go_list_3 .to_go_list_tit > span  {background:#1f8ace;}
+			.galaxy_earlybird .to_go_step .to_go_list_1 .to_go_list_tit:before {border-color:transparent transparent #2e6d5c #e7f2ff;}
+			.galaxy_earlybird .to_go_step .to_go_list_2 .to_go_list_tit:before {border-color:transparent transparent #255e6e #e7f2ff;}
+			.galaxy_earlybird .to_go_step .to_go_list_3 .to_go_list_tit:before {border-color:transparent transparent #265675 #e7f2ff;}
+			.galaxy_earlybird .to_go_step .to_go_list.s_end .to_go_list_tit > span  {background:#4e4e4e;}
+			.galaxy_earlybird .to_go_step .to_go_list.s_end .to_go_list_tit:before {border-color:transparent transparent #000000 #e7f2ff;}
+			.galaxy_earlybird .to_go_step .to_go_list.s_end:before {content:"";display:block;position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:10;}
+			.galaxy_earlybird .to_go_step .to_go_list.s_end .to_go_list_end  {display:block;}
+
+			.galaxy_earlybird .to_go_notice {width:1280px;margin:0 auto;background:#e7f2ff;padding:0px 20px 30px;margin-bottom:60px;}
+			.galaxy_earlybird .to_go_notice ul li {width:100%;font-size:16px;text-align:center;line-height:1.8;color:#666;}
+			.galaxy_earlybird .to_go_notice .en {font-size:16px;vertical-align: baseline;}
+			
+			.galaxy_earlybird .btn-area {width:100%;text-align:center;margin:30px 0 50px;}
+			.galaxy_earlybird .btn-area .btn_pop {width:240px;height:85px;font-size:24px;color:#fff;background:#000;border-radius:43px; font-weight: bold;}
+			.galaxy_earlybird .btn-area .btn_pop .h_txt {font-size:22px;display:block;font-weight:normal;margin-bottom:7px;}
+			
+
+			.sec_notice{max-width: 1920px; width: 100%; height: auto; margin: 0 auto; background-color: #000000;}
+			.sec_notice .sec_area{width:1440px;margin:0 auto;padding: 80px 0;}
+			.sec_notice .sec_area .notice_area{margin-left:100px;padding-left:12px;display:flex;}
+			.sec_notice .sec_area .notice_area .notice_title{font-size:16px;color: #fff;line-height:1.6;margin-right:60px;}
+			.sec_notice .sec_area .notice_area .notice_list li{position: relative; padding-left: 10px; margin-bottom: 12px; font-size: 16px; line-height:1;color:#a3a3a3;letter-spacing:0;}
+			.sec_notice .sec_area .notice_area .notice_list li::before{position:absolute;content:'';width:4px;height:4px;left:0;top:5px;background-color: rgba(255, 255, 255, 0.6);border-radius: 30px;}
+		
+			@media screen and (max-width: 1920px) {
+				.galaxy_earlybird .kv .txt_box {top:5.0521vw;}
+				.galaxy_earlybird .kv .txt_box .kv_tit {width:24.4792vw;height:6.6146vw;}
+				.galaxy_earlybird .kv .txt_box .kv_desc {font-size:1.3542vw;padding:0.7813vw 0 0 0.5208vw;}
+
+			}			
+		
+			@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+				.galaxy_earlybird .to_go {width:100.0000vw;margin:0 auto;}
+				
+				.galaxy_earlybird .to_go_header {width:88.8889vw;height:41.2500vw;margin:0 auto;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_bg.jpg') no-repeat;background-size:contain;}
+				.galaxy_earlybird .to_go_header .txt_box {padding-top:23.9583vw;font-weight:bold;line-height:1.4;}
+				.galaxy_earlybird .to_go_header .txt_desc {width:100%;text-align:center;}
+				.galaxy_earlybird .to_go_header .txt_desc_1 {font-size:1.9444vw;margin-bottom:1.2500vw;}
+				.galaxy_earlybird .to_go_header .txt_desc_2 {font-size:2.5000vw;letter-spacing:-0.0694vw;}
+				.galaxy_earlybird .to_go_header .txt_desc_2 .txt_color {top:-0.1875vw;margin-right:0.2778vw;font-size:0;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_txt_1.png') no-repeat;background-size:contain;width:16.5972vw;height:2.2917vw;}
+
+				.galaxy_earlybird .to_go_gbn {width:88.8889vw;margin:0 auto;margin-bottom:3.1250vw;display:flex;justify-content:space-between;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_box {width:43.0556vw;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit {width:100%;height:36.8056vw;font-size:0;background-repeat:no-repeat;background-size:contain;margin-bottom:1.3889vw;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_1 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_1_v2.jpg');}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_2 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_2_v2.jpg');}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_desc {font-size:1.5278vw;text-align:center;font-weight:bold;}
+				
+				.galaxy_earlybird .to_go_step {width:88.8889vw;margin:0 auto;background:#e7f2ff;padding:4.8611vw 1.3889vw 16.6667vw;}
+				.galaxy_earlybird .to_go_step .to_go_list {position:relative;width:26.8056vw;background:#fff;padding:0 0 2.7778vw 0;box-shadow: 0.0000vw 0.4167vw 1.5278vw -0.7639vw rgb(0, 0, 0, 0.3);}
+				.galaxy_earlybird .to_go_step .to_go_list_tit  {position:relative;margin:0 auto;width:13.1944vw;height:3.4722vw;top:-1.3889vw;margin-bottom:1.0417vw;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit > span  {position:relative;display:block;width:100%;height:100%;padding-top:0.9028vw;font-size:1.6667vw;text-align:center;color:#fff;z-index:10;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit:before {content: "";position: absolute;top: 0;left: 50%;width:14.5833vw;transform: translateX(-50%);border-width:0 0.6250vw 1.3889vw;;border-style: solid;border-color: transparent transparent #394ba1 #e7f2ff;box-sizing: border-box;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit:after {content:"";position:absolute;display:block;top:0;left:-2.0833vw;width:6.9444vw;height:1.3889vw;background:#e7f2ff;z-index:5;}
+				.galaxy_earlybird .to_go_step .to_go_list dl {display:flex;padding:0 0 0 1.6667vw;line-height:1.6;font-weight:bold;}
+				.galaxy_earlybird .to_go_step .to_go_list dl dt {font-size:1.2500vw;width:8.6111vw;}
+				.galaxy_earlybird .to_go_step .to_go_list dl dd {font-size:1.2500vw;}
+				.galaxy_earlybird .to_go_step .to_go_list_end {font-size:2.0833vw;}
+
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result {display:none;position:absolute;width:22.6389vw;height:5.2778vw;left:50%;transform:translate3d(-50%,0,0);font-size:1.3889vw;color:#fff;border-radius:2.6389vw; font-weight: bold;background: rgb(63,192,187);background: linear-gradient(90deg, rgba(63,192,187,1) 0%, rgba(31,138,206,1) 100%);text-align:center;line-height:1.3;padding:0.6944vw 0 0 0;}
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result_1 {bottom:-6.2500vw;}
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result_2 {bottom:-12.5000vw;}
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result span {font-size:1.3889vw;font-weight:normal;}			
+				.galaxy_earlybird .to_go_step .to_go_list.to_go_rst .btn_result {display:block;}
+
+
+				.galaxy_earlybird .to_go_step .to_go_list_1 .to_go_list_tit > span  {background:#4ab498;}
+				.galaxy_earlybird .to_go_step .to_go_list_2 .to_go_list_tit > span  {background:#26a6cb;}
+				.galaxy_earlybird .to_go_step .to_go_list_3 .to_go_list_tit > span  {background:#1f8ace;}
+				.galaxy_earlybird .to_go_step .to_go_list_1 .to_go_list_tit:before {border-color:transparent transparent #2e6d5c #e7f2ff;}
+				.galaxy_earlybird .to_go_step .to_go_list_2 .to_go_list_tit:before {border-color:transparent transparent #255e6e #e7f2ff;}
+				.galaxy_earlybird .to_go_step .to_go_list_3 .to_go_list_tit:before {border-color:transparent transparent #265675 #e7f2ff;}
+				
+				.galaxy_earlybird .btn-area {width:100%;margin:2.0833vw 0 3.4722vw;}
+				.galaxy_earlybird .btn-area .btn_pop {width:16.6667vw;height:5.9028vw;font-size:1.6667vw;background:#000;border-radius:2.9861vw;}
+				.galaxy_earlybird .btn-area .btn_pop .h_txt {font-size:1.5278vw;margin-bottom:0.4861vw;}
+
+				.galaxy_earlybird .to_go_notice {width:88.8889vw;margin:0 auto;background:#e7f2ff;padding:0.0000vw 1.3889vw 2.0833vw;margin-bottom:4.1667vw;}
+				.galaxy_earlybird .to_go_notice ul li {width:100%;font-size:1.1111vw;text-align:center;line-height:1.8;color:#666;}
+				.galaxy_earlybird .to_go_notice .en {font-size:1.1111vw;vertical-align: baseline;}
+
+				.sec_notice{ width: 100%; height: auto; margin: 0 auto; background-color: #000000;}
+				.sec_notice .sec_area{width:100.0000vw;margin:0 auto;padding: 5.5556vw 0;}
+				.sec_notice .sec_area .notice_area{margin-left:6.9444vw;padding-left:0.8333vw;display:flex;}
+				.sec_notice .sec_area .notice_area .notice_title{font-size:1.1111vw;color: #fff;line-height:1.6;margin-right:4.1667vw;}
+				.sec_notice .sec_area .notice_area .notice_title .en{font-size:1.1111vw;}
+				.sec_notice .sec_area .notice_area .notice_list li{position: relative; padding-left: 0.6944vw; margin-bottom: 0.8333vw; font-size: 1.1111vw; line-height:1;color:#a3a3a3;letter-spacing:0;}
+				.sec_notice .sec_area .notice_area .notice_list li::before{position:absolute;content:'';width:0.2778vw;height:0.2778vw;left:0;top:0.3472vw;background-color: rgba(255, 255, 255, 0.6);border-radius: 2.0833vw;}			
+			}
+
+			/* mobile */
+			@media screen and (max-width: 768px) {
+				.galaxy_earlybird .m_show{display: block !important;}
+				.galaxy_earlybird .m_hide{display: none !important;}
+
+				.galaxy_earlybird .kv {position:relative;width:100%;max-width:auto;}
+				.galaxy_earlybird .kv .txt_box {position:absolute;left:5.2083vw;top:13.5417vw;}
+				.galaxy_earlybird .kv .txt_box .kv_tit {font-size:0;width:78.0556vw;height:21.1111vw;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/kv_tit_mo.png') no-repeat;background-size:contain;}
+				.galaxy_earlybird .kv .txt_box .kv_desc {font-size:4.1667vw;padding:4.599vw 0 0 1.3021vw;line-height:1.3;}
+
+				.galaxy_earlybird .to_go {width:100%;margin:0 auto;}
+			
+				.galaxy_earlybird .to_go_header {width:100%;height:100.9722vw;margin:0 auto;background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_bg_mo.jpg') no-repeat;background-size:contain;}
+				.galaxy_earlybird .to_go_header .txt_box {padding-top:45.8056vw;font-weight:bold;line-height:1.2;}
+				.galaxy_earlybird .to_go_header .txt_desc {width:100%;text-align:center;}
+				.galaxy_earlybird .to_go_header .txt_desc_1 {font-size:5.2778vw;margin-bottom:4.2611vw;}
+				.galaxy_earlybird .to_go_header .txt_desc_2 {font-size:6.6667vw;letter-spacing:-0.2389vw;}
+				.galaxy_earlybird .to_go_header .txt_desc_2 .txt_color {background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_txt_1_mo.png') no-repeat;background-size:contain;width:44.3056vw;height:5.9722vw;top:-0.5vw;margin-right:0.5vw;}
+				
+				.galaxy_earlybird .to_go_gbn {width:100%;margin:0 auto;margin-bottom:5.9722vw;display:block;padding:0 4.1667vw;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_box {width:100%;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit {width:100%;height:78.3333vw;font-size:0;background-repeat:no-repeat;background-size:contain;margin-bottom:4.1667vw;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_1 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_1_mo_v2.jpg');}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_2 {background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/togo_gbn_bg_2_mo_v2.jpg');}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_desc {font-size:4.4444vw;text-align:center;font-weight:bold;margin-bottom:4.1667vw;}
+				.galaxy_earlybird .to_go_gbn .to_go_gbn_tit_2 + .to_go_gbn_desc {margin-bottom:4.1667vw; letter-spacing: -0.3vw;}
+				
+				.galaxy_earlybird .to_go_step {width:100%;padding:7.7444vw 4.1667vw 0.0444vw;margin:0 auto;background:#e7f2ff;display:block;}
+				.galaxy_earlybird .to_go_step .to_go_list {position:relative;width:100%;background:#fff;padding:0 0 7.2222vw 0;margin-bottom:7.4722vw;box-shadow: 0.0000vw 0.8333vw 3.0556vw -1.5278vw rgb(0, 0, 0, 0.3);}
+				.galaxy_earlybird .to_go_step .to_go_list_tit  {position:relative;margin:0 0 0 5.5556vw;width:25.0000vw;height:8.6111vw;top:-3.0556vw;margin-bottom:2.0833vw;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit > span  {position:relative;display:block;width:100%;height:100%;padding-top:2.0833vw;font-size:4.4444vw;text-align:center;color:#fff;z-index:10;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit:before {content: "";position: absolute;top: 0;left: 50%;width:27.4722vw;transform: translateX(-50%);border-width:0 1.2500vw 2.8778vw;border-style: solid;border-color: transparent transparent #394ba1 #e7f2ff;box-sizing: border-box;}
+				.galaxy_earlybird .to_go_step .to_go_list_tit:after {content:"";position:absolute;display:block;top:-1vw;left:-4.1667vw;width:13.8889vw;height:4.0333vw;background:#e7f2ff;z-index:5;}
+				.galaxy_earlybird .to_go_step .to_go_list dl {display:flex;padding:0 0 0 9.7222vw;line-height:1.6;font-weight:bold;}
+				.galaxy_earlybird .to_go_step .to_go_list dl dt {width:27.7778vw;font-size:3.8889vw;}
+				.galaxy_earlybird .to_go_step .to_go_list dl dd {font-size:3.8889vw;}
+				.galaxy_earlybird .to_go_step .to_go_list_end {font-size:6.9444vw;}
+
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result {position:absolute;width:75.0000vw;height:16.6667vw;left:50%;transform:translate3d(-50%,0,0);font-size:4.7222vw;color:#fff;border-radius:8.4vw; font-weight: bold;background: rgb(63,192,187);background: linear-gradient(90deg, rgba(63,192,187,1) 0%, rgba(31,138,206,1) 100%);text-align:center;line-height:1.3;padding:1.7944vw 0 0 0;}
+				.galaxy_earlybird .to_go_step .to_go_list.to_go_rst {margin-bottom:49.4722vw;}
+
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result_1 {bottom:-19.8333vw;}
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result_2 {bottom:-39.6333vw;}
+				.galaxy_earlybird .to_go_step .to_go_list .btn_result span {font-size:4.7222vw;font-weight:normal;}			
+				.galaxy_earlybird .to_go_step .to_go_list.to_go_rst .btn_result {display:block;}
+
+
+				.galaxy_earlybird .to_go_notice {width:100%;margin:0 auto;background:#e7f2ff;padding:0px 4.1667vw 8.3333vw 6.9444vw;margin-bottom:8.3333vw;}
+				.galaxy_earlybird .to_go_notice ul li {width:100%;font-size:3.3333vw;text-align:left;line-height:1.5;color:#666;text-indent:-2.4778vw;}
+				.galaxy_earlybird .to_go_notice .en {font-size:3.3333vw;vertical-align: baseline;}				
+				
+				.galaxy_earlybird .btn-area {width:100%;text-align:center;margin:4.1667vw 0 13.8889vw;}
+				.galaxy_earlybird .btn-area .btn_pop {width:50.0000vw;height:16.6667vw;font-size:5.0000vw;color:#fff;background:#000;border-radius:8.3vw;}
+				.galaxy_earlybird .btn-area .btn_pop .h_txt {font-size:3.8889vw;margin-bottom:1.7861vw;}
+				
+				.sec_notice{max-width:100%;width:100%;height:auto;margin:0 auto;background-color: #000000;}
+				.sec_notice .sec_area{width:100%;margin:0 auto;padding:11.1111vw 6.9444vw;}
+				.sec_notice .sec_area .notice_area{margin-left:0px;padding-left:0px;display:block;}
+				.sec_notice .sec_area .notice_area .notice_title{font-size:3.3333vw;color: #fff;line-height:1.6;margin-right:0px;margin-bottom:5.0000vw;}
+				.sec_notice .sec_area .notice_area .notice_list li{position: relative; padding-left:2.0889vw; margin-bottom:0.7667vw; font-size: 3.0556vw; line-height:1.4;color:#a3a3a3;letter-spacing:0;}
+				.sec_notice .sec_area .notice_area .notice_title .en,
+				.sec_notice .sec_area .notice_area .notice_list li .en {font-size:3.3333vw !important;}
+				.sec_notice .sec_area .notice_area .notice_list li::before{position:absolute;content:'';width:0.8333vw;height:0.8333vw;left:0;top:1.6667vw;background-color: rgba(255, 255, 255, 0.6);border-radius: 4.1667vw;}
+
+			}
+		
+		</style>		
+		<tiles:putattribute name="tooltip"><div id="tooltipArea_Event3791"></div></tiles:putattribute>
+		<tiles:putattribute name="popup"><div id="popupArea_Event3791"></div></tiles:putattribute>
+		<input type="hidden" id="openPop" data-st-path="/sec/">
+		<meta name="format-detection" content="telephone=no">
+
+					
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main class="galaxy_earlybird">
+			<section class="kv">
+				<div class="txt_box">
+					<h2 class="kv_tit">갤럭시 얼리버드 To Go 서비스</h2>
+					<p class="kv_desc">3일 동안 마음껏 체험각! <br />새로운 갤럭시를 나 혼자 또는 여럿이 <br />경험하고 싶은 사연을 응모해주세요</p>
+				</div>				
+				<div class="img_box">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/kv_v2.jpg" alt="" class="m_hide">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/togo/kv_mo_v2.jpg" alt="" class="m_show">
+				</div>
+			</section>
+
+			<section class="to_go">
+				<div class="to_go_header">
+					<h3 class="blind">Galaxy To Go earlybird</h3>
+					<div class="txt_box">
+						<p class="txt_desc txt_desc_1">갤럭시와 웨어러블 제품을 <br class="m_show"/>누구보다 먼저 써보고 싶다면 <br />지금 바로 응모해주세요!</p>
+						<p class="txt_desc txt_desc_2">새로운 갤럭시로 펼치고 싶은 <br class="m_show"/>나만의 사연이나 <br class="m_hide" />가족, 친구 등과 같이 <br class="m_show"/><span class="txt_color">경험하고 싶은 사연</span>을 적어 주세요</p>
+					</div>
+				</div>
+				<div class="to_go_gbn">
+					<div class="to_go_gbn_box">
+						<h4 class="to_go_gbn_tit to_go_gbn_tit_1">나 혼자 써보기</h4>
+						<p class="to_go_gbn_desc">나 혼자 자유롭게 신제품 경험하기</p>
+						<div class="btn-area">
+							<button class="btn_pop" onclick="fnCallPop2(31670)" data-popup-target="popupExhibitionEnter" title="응모하기"><span class="h_txt">3회차</span>나 혼자 써보기 응모</button>
+						</div>
+					</div>
+					<div class="to_go_gbn_box">
+						<h4 class="to_go_gbn_tit to_go_gbn_tit_2">같이 써보기</h4>
+						<p class="to_go_gbn_desc">친구, 연인, 가족, 동료와 함께 신제품 경험하기(1인1대)</p>
+						<div class="btn-area">
+							<button class="btn_pop" onclick="fnCallPop2(31671)" data-popup-target="popupExhibitionEnter" title="응모하기"><span class="h_txt">3회차</span>같이 써보기 응모</button>
+						</div>
+					</div>
+				</div>
+				<div class="to_go_step">
+					<div class="to_go_list to_go_list_1 to_go_rst">
+					<!-- 종료 -->
+					<!-- <div class="to_go_list to_go_list_1 s_end"></div> -->
+						<p class="to_go_list_tit"><span>1회차</span></p>
+						<p class="to_go_list_end">종료</p>
+						<dl>
+							<dt>· 응모 기간</dt>
+							<dd>2022.07.28(목) ~ 08.03(수)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨자 발표</dt>
+							<dd>2022.08.08(월)</dd>
+						</dl>
+						<dl>
+							<dt>· 제품픽업기간</dt>
+							<dd>2022.08.12(금) ~ 08.14(일)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨 인원</dt>
+							<dd>1,800명</dd>
+						</dl>
+						<div class="btn-area">
+							<a class="btn_result btn_result_1" href="//www.samsung.com/sec/eventCheck/eventWinnerCheck/?eventNo=31621" target="_blank"><span>1회차</span><br />나 혼자 써보기 당첨자 확인하기 ></a>
+							<a class="btn_result btn_result_2" href="//www.samsung.com/sec/eventCheck/eventWinnerCheck/?eventNo=31634" target="_blank"><span>1회차</span><br />같이 써보기 당첨자 확인하기 ></a>
+						</div>
+					</div>
+					<div class="to_go_list to_go_list_2">
+						<p class="to_go_list_tit"><span>2회차</span></p>
+						<dl>
+							<dt>· 응모 기간</dt>
+							<dd>2022.08.04(목) ~ 08.10(수)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨자 발표</dt>
+							<dd>2022.08.16(화)</dd>
+						</dl>
+						<dl>
+							<dt>· 제품픽업기간</dt>
+							<dd>2022.08.18(목) ~ 08.20(토)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨 인원</dt>
+							<dd>1,800명</dd>
+						</dl>
+						<div class="btn-area">
+							<a class="btn_result btn_result_1" href="#" target="_blank"><span>2회차</span><br />나 혼자 써보기 당첨자 확인하기 ></a>
+							<a class="btn_result btn_result_2" href="#" target="_blank"><span>2회차</span><br />같이 써보기 당첨자 확인하기 ></a>
+						</div>
+					</div>
+					<div class="to_go_list to_go_list_3">
+						<p class="to_go_list_tit"><span>3회차</span></p>
+						<dl>
+							<dt>· 응모 기간</dt>
+							<dd>2022.08.11(목) ~ 08.17(수)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨자 발표</dt>
+							<dd>2022.08.22(월)</dd>
+						</dl>
+						<dl>
+							<dt>· 제품픽업기간</dt>
+							<dd>2022.08.25(목) ~ 08.27(토)</dd>
+						</dl>
+						<dl>
+							<dt>· 당첨 인원</dt>
+							<dd>1,800명</dd>
+						</dl>
+						<div class="btn-area">
+							<a class="btn_result btn_result_1" href="#" target="_blank"><span>3회차</span><br />나 혼자 써보기 당첨자 확인하기 ></a>
+							<a class="btn_result btn_result_2" href="#" target="_blank"><span>3회차</span><br />같이 써보기 당첨자 확인하기 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="to_go_notice">
+					<ul>
+						<li>* 갤럭시 얼리버드 <span class="en">To Go</span> 서비스의 당첨 인원은 추첨을 통해 선정됩니다.</li>
+						<li>* 당첨 고객별 체험 제품은 당첨자 발표 후, 개별 안내해드리는 예약 웹페이지를 통해 선착순으로 예약할 수 있습니다.</li>
+						<li>* 당첨자 발표 후 제품 픽업 장소와 날짜를 선택하신 후, 기간 내 해당 장소에 방문하여 제품을 직접 수령하여야 합니다.</li>
+						<li>* 갤럭시 얼리버드 <span class="en">To Go</span> 서비스의 제품 픽업 장소는 전국 일부 지역에 한하여 운영됩니다.</li>
+						<li>* 갤럭시 <span class="en">To Go</span> 서비스 카카오톡 채널 알림톡을 차단하신 경우, 당첨자 알림은 MMS로 발송됩니다. </li>
+					</ul>
+				</div>
+			</section>
+			<section class="sec_notice">
+				<div class="sec_area">
+					<div class="notice_area">
+						<p class="notice_title">갤럭시 얼리버드 <br class="m_hide" /><span class="en">To Go</span> 서비스 이용 <br class="m_hide" />유의사항</p>
+						<ul class="notice_list">
+							<li>만 14세 미만의 미성년자는 갤럭시 얼리버드 To Go 서비스를 이용할 수 없습니다.</li>
+							<li>본 이벤트는 당사의 사정에 따라 예고 없이 중단 또는 변경될 수 있습니다.</li>
+							<li>당첨 고객 별 체험 제품은 임의로 배정되며, 배정된 제품은 변경 불가합니다.</li>
+							<li>제품 픽업 장소 방문 전 운영 시간을 반드시 확인해주세요.</li>
+							<li>제품 수령 시 본인 확인을 위한 신분증을 지참하셔야 합니다. 신분증은 ‘주민등록증, 운전면허증, 여권, 외국인등록증, 전자 신분증’만 적용 가능합니다.</li>
+							<li>갤럭시 얼리버드 <span class="en">To Go</span> 서비스 체험 제품 반납은 대여하신 장소에서만 가능합니다.</li>
+							<li>갤럭시 얼리버드 <span class="en">To Go</span> 서비스 체험 중 제품 파손 및 분실에 대한 책임은 고객님께 있으며, 제품 분실 시 운영사무국(02-2088-3989)으로 연락 주시기 바랍니다.</li>
+							<li>갤럭시 얼리버드 <span class="en">To Go</span> 서비스 체험 제품 반납 기한 경과 시 기능 체험에 제한이 있을 수 있습니다.</li>
+							<li>대여하신 기기로 상대방의 사전 동의 없는 촬영 혹은 촬영물 유포 시 민형사상 법적 책임은 본인에게 있습니다.</li>
+							<li>갤럭시 얼리버드 <span class="en">To Go</span> 서비스 체험 제품은 철저한 소독 후 제공됩니다.</li>
+							<li>본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. 전화번호 : 02-2088-3989(10:00~22:00) | e-mail : galaxytogo_studio@naver.com</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+
+	</div>
+</body>
+</html>

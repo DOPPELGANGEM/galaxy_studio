@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>갤럭시 배워보기</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- s : 본문 영역 -->
+		<style>
+			/*********************
+				sec_studio_nav
+			*********************/
+			.sec_studio_nav {position:relative; width:100%; max-width:1920px; margin:0 auto; border-top:2px solid #000; border-bottom:1px solid #cecece; background-color:#fff;}
+			.sec_studio_nav * {font-size:inherit;}
+			.sec_studio_nav .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+			.sec_studio_nav .m_show {display:none !important;}
+			.sec_studio_nav .m_hide {display:block !important;}
+			.sec_studio_nav .nav_list {display:flex; width:100%; height:100%; max-width:1440px; margin:0 auto; padding:0 2px;}
+			.sec_studio_nav .nav_list li { width:286px; height:80px; border-left:1px solid #d9d9d9;}
+			.sec_studio_nav .nav_list li:last-child {border-right:1px solid #d9d9d9;}
+			.sec_studio_nav .nav_list li a {position:relative; display:inline-flex; justify-content:center; align-items:center; width:100%; height:100%; background-color:#fff;}
+			.sec_studio_nav .nav_list li .nav_title {font-size:20px; font-weight:700;}
+			.sec_studio_nav .nav_list li.on .nav_title,
+			.sec_studio_nav .nav_list li a:hover .nav_title {z-index:2; position:relative; top:-3px; left:-2px; color:#fff;}
+			.sec_studio_nav .nav_list li.on a::after,
+			.sec_studio_nav .nav_list li a:hover::after {content:''; z-index:1; position:absolute; top:-5px; left:-3px; width:286px; height:80px; background:url('images/studio_nav_bg_v3.png') no-repeat 0 0 / 100%;}
+
+			@media screen and (min-width: 769px) and (max-width: 1440px) {
+				.sec_studio_nav .nav_list li { width:19.8611vw; height:5.5556vw; }
+				.sec_studio_nav .nav_list li .nav_title {font-size:1.3889vw;}
+				.sec_studio_nav .nav_list li.on .nav_title,
+				.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.2083vw; left:-0.1389vw;}
+				.sec_studio_nav .nav_list li.on a::after,
+				.sec_studio_nav .nav_list li a:hover::after {top:-0.3472vw; left:-0.2083vw; width:19.8611vw; height:5.5556vw; }
+			}
+
+			@media screen and (max-width: 768px) {
+				.sec_studio_nav .m_show {display:block !important;}
+				.sec_studio_nav .m_hide {display:none !important;}
+				.sec_studio_nav {overflow:hidden;}
+				.sec_studio_nav .nav_list {flex-wrap:wrap; padding:0;}
+				.sec_studio_nav .nav_list li { width: 33.3%; height:13.8889vw; border-left:0.2778vw solid #cdcdcd; text-align:center;}
+				.sec_studio_nav .nav_list li:nth-child(1),
+				.sec_studio_nav .nav_list li:nth-child(2),
+				.sec_studio_nav .nav_list li:nth-child(3) { /* width:33.0556vw; height:13.8889vw; */ width: 33.3%; height:13.8889vw;  }
+				.sec_studio_nav .nav_list li:nth-child(4),
+				.sec_studio_nav .nav_list li:nth-child(5) { /* width:49.8611vw; height:13.8889vw; */ width: 49.7%; height: 13.8889vw; }
+				.sec_studio_nav .nav_list li:last-child {border-right:0;}
+				.sec_studio_nav .nav_list li:nth-child(1),
+				.sec_studio_nav .nav_list li:nth-child(2),
+				.sec_studio_nav .nav_list li:nth-child(3) { border-bottom:0.2778vw solid #cdcdcd; }
+				.sec_studio_nav .nav_list li .nav_title { font-size:3.3333vw; line-height:1.2; }
+				.sec_studio_nav .nav_list li.on .nav_title,
+				.sec_studio_nav .nav_list li a:hover .nav_title { top:-0.4167vw; left:-0.2778vw; }
+				.sec_studio_nav .nav_list li.on a::after,
+				.sec_studio_nav .nav_list li a:hover::after { top:-0.8333vw; left:-0.6944vw; width:33.8889vw; height:14.7222vw; background-image:url('images/studio_nav_bg_mo_v3.png'); }
+				.sec_studio_nav .nav_list li:nth-child(4).on a::after,
+				.sec_studio_nav .nav_list li:nth-child(4) a:hover::after,
+				.sec_studio_nav .nav_list li:nth-child(5).on a::after,
+				.sec_studio_nav .nav_list li:nth-child(5) a:hover::after { top:-0.8333vw; left:-0.6944vw; width:50.2278vw; height:14.7222vw; background-image:url('images/studio_nav_bg_02_mo.png'); }
+			}
+		</style>		
+					
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main>
+			<section class="sec_studio_nav">
+				<ul class="nav_list">
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/campus" title="캠퍼스 스튜디오 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus">
+							<span class="nav_title">캠퍼스 스튜디오</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/challenge" title="제각각 챌린지 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_challenge">
+							<span class="nav_title">제각각 챌린지</span>
+						</a>
+					</li>
+					<li class="on">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/contentfesta" title="콘텐츠 페스타 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_contentfesta">
+							<span class="nav_title">콘텐츠 페스타</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/learning " title="배워보기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_learning">
+							<span class="nav_title">배워보기</span>
+						</a>
+					</li>
+					<li class="on">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/experience" title="온라인 체험존 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_experience">
+							<span class="nav_title">온라인 체험존</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //sec_studio_nav -->
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+		<script>
+		;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+
+			// script
+			
+		})(window.jQuery);
+		</script>
+		<!-- e : 본문 영역 -->
+	</div>
+</body>
+</html>

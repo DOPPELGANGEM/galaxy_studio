@@ -1,0 +1,1279 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>스튜디오 인 캠퍼스</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- s : 본문 영역 -->
+		<script type="text/javascript">
+			digitalData.page.pathIndicator.depth_2 = "microsite";
+			digitalData.page.pathIndicator.depth_3 = "campus";
+		</script>
+		
+	
+		<style>
+		/* common */
+		.galaxy_studio { overflow:hidden; }
+		.galaxy_studio .sec_inner { max-width:1440px; margin:0 auto; }
+		.galaxy_studio .m_show{ display: none !important; }
+		.galaxy_studio .m_hide{ display: block !important; }
+		.galaxy_studio .img_box{ width: 100%; height: 100%; }
+		.galaxy_studio .img_box > img{width: 100%; height: 100%;}
+		.galaxy_studio .en {font-family:"Samsung Sharp Sans",SamsungSharpSans;font-weight:bold;}
+		.galaxy_studio .kr {font-family:'SamsungOneKorean', Dotum, '돋움', sans-serif;font-weight:normal;}
+		.galaxy_studio > section {position:relative; width:100%; max-width:1920px; margin:0 auto;}
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_studio .sec_kv .txt_box {position:absolute; top:105px; left:240px;}
+		.galaxy_studio .sec_kv .txt_box h2 {font-size:58px; letter-spacing:0;}
+		.galaxy_studio .sec_kv .txt_box .sub_txt {padding-top:20px; font-size:22px; line-height:1.3;}
+
+		.galaxy_studio .sec_kv .menu_box {position:absolute; bottom:22px; left:240px; display:flex;}
+		.galaxy_studio .sec_kv .menu_box li + li {margin-left:10px;}
+		.galaxy_studio .sec_kv .menu_box .menu_search {background:#7e52ef url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_search.png') no-repeat 24px 10px; background-size:26px 38px;}
+		.galaxy_studio .sec_kv .menu_box .menu_product {background:#936fee url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_product.png') no-repeat 26px 10px; background-size:37px 37px;}
+		.galaxy_studio .sec_kv .menu_box li > a {position:relative; display:block; width:180px; height:58px;}
+		.galaxy_studio .sec_kv .menu_box li > a::before {content:''; position:absolute; top:0; right:-9px; border-right:9px solid transparent;}
+		.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:13px solid #5634ae;}
+		.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:13px solid #6344b1;}
+		.galaxy_studio .sec_kv .menu_box .menu_tit {color:#fff; font-size:18px; font-weight:700; line-height:58px;}
+		.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:62px;}
+		.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:78px;}
+
+		/* fix */
+		.galaxy_studio .sec_kv .txt_box {top:73px;}
+
+		/* sec_studio_nav */
+		.sec_studio_nav {position:relative; width:100%; max-width:1920px; margin:0 auto; border-top:2px solid #000; border-bottom:1px solid #cecece; background-color:#fff;}
+		.sec_studio_nav * {font-size:inherit;}
+		.sec_studio_nav .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+		.sec_studio_nav .m_show {display:none !important;}
+		.sec_studio_nav .m_hide {display:block !important;}
+		.sec_studio_nav .nav_list {display:flex; width:100%; height:100%; max-width:1440px; margin:0 auto; padding:0 2px;}
+		.sec_studio_nav .nav_list li {width:286px; height:80px; border-left:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li:last-child {border-right:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li a {position:relative; display:inline-flex; justify-content:center; align-items:center; width:100%; height:100%; background-color:#fff;}
+		.sec_studio_nav .nav_list li .nav_title {font-size:20px; font-weight:700;}
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title {z-index:2; position:relative; top:-3px; left:-2px; color:#fff;}
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {content:''; z-index:1; position:absolute; top:-5px; left:-3px; width:286px; height:80px; background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg_v3.png') no-repeat 0 0 / 100%;}
+
+		/* contents */
+		.field_01 { padding:120px 0 0; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/campus_bg_pc.png) no-repeat; background-size:cover; position:relative; }
+		.field_01 .txt_area { text-align:center; }
+		.field_01 .img_box_studio { width:905px; margin:0 auto 80px; }
+		.field_01 .video_wrap { position: relative; /* width: 1170px; height: 658px; */ width: 1178px; height: 666px; margin:0 auto 90px; border:4px solid #cfe2e8; }
+		.field_01 .video_play {position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%, -50%); width: 120px; height: 120px; background: url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_video_play_pc.png') no-repeat center / cover; border: none !important;}
+		.field_01 .video_wrap .video_item { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+		.field_01 .video_wrap .video_item img { margin: 0 auto; width:1170px; height: 658px; }
+		.field_01 .video_wrap .video_item_bottom { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+		.field_01 .video_wrap .video_item_bottom .video { width:1170px; height: 658px; }
+		.field_01 .video_wrap .video_item.video_img{ z-index: 1; }
+		.field_01 .video_wrap .video_item.on { z-index:-1; }
+
+		.field_01	.to_go_step_wrap .tit_txt { text-align: center; font-size:36px; font-weight:700; letter-spacing: -0.5px; }
+		.field_01 .to_go_step { display:flex; justify-content: center; }
+		.field_01 .to_go_step_top { padding:60px 0; }
+		.field_01 .to_go_list { width:386px; height:182px; margin:0 20px 0 0; }
+		.field_01 .to_go_list_tit { position:relative; margin:0 auto; width:209px; height:65px; top:-22px; }
+		/* .field_01 .to_go_list span { position:relative; display:block; width:100%; height:100%; padding-top:11px; font-size:24px; text-align: center; color:#fff; z-index:10; } */
+		.field_01 .to_go_list span.to_go_list_tit_span { position:relative; display:block; width:100%; height:100%; padding-top:11px; font-size:24px; text-align: center; color:#fff; z-index:10; }
+		.field_01 .to_go_list .num_txt { vertical-align: top; }
+		.field_01 .to_go_list .date_txt { font-size: 18px; }
+		.field_01 .to_go_list_tit:before { content:''; position:absolute; top:0; left:50%; width:113px; border-width:0 9px 20px; border-style: solid; border-color: transparent transparent #394ba1 #e7f2ff; box-sizing: border-box;}
+		.field_01 .to_go_list_1 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.field_01 .to_go_list_2 { background:#e8faff; border:2px solid #dff3f9; }
+		.field_01 .to_go_list_3 { background:#ebf7ff; border:2px solid #deedf7; }
+		.field_01 .to_go_list_4 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.field_01 .to_go_list_5 { background:#e8faff; border:2px solid #dff3f9; margin:0; }
+		.field_01 .to_go_list_1 span { background:#51b96f; }
+		.field_01 .to_go_list_2 span { background:#41b193; }
+		.field_01 .to_go_list_3 span { background:#31aeb6; }
+		.field_01 .to_go_list_4 span { background:#2b8cc9; }
+		.field_01 .to_go_list_5 span { background:#4a76c0; }
+		.field_01 .to_go_list_1 .to_go_list_tit:before { border-color:transparent transparent #307343 transparent; }
+		.field_01 .to_go_list_2 .to_go_list_tit:before { border-color:transparent transparent #2f846d transparent; }
+		.field_01 .to_go_list_3 .to_go_list_tit:before { border-color:transparent transparent #20777d transparent; }
+		.field_01 .to_go_list_4 .to_go_list_tit:before { border-color:transparent transparent #1e6490 transparent; }
+		.field_01 .to_go_list_5 .to_go_list_tit:before { border-color:transparent transparent #325590 transparent; }
+		.field_01 .college_list { font-size:18px; color:#000; font-weight: 700; text-align: left; line-height: 1.6; padding:0 0 0 50px; letter-spacing: -0.5px; }
+
+		/* 0920 박스 변경 */
+		.field_01 .to_go_list_1 .college_list { padding:12px 0 0 54px; letter-spacing: -1px; }
+		.field_01 .to_go_list_2 { width:386px; }
+		.field_01 .to_go_list_2 .college_list { padding:0 0 0 36px; }
+		.field_01 .to_go_list_2 .college_list_extra { background:transparent; display:inline-block; }
+		.field_01 .to_go_list_2 .color_txt_sky { color:#199d7a; font-size: 18px; margin: 0 12px 0 0; letter-spacing: -0.5px; }
+		.field_01 .to_go_list_2 .color_txt_sky_02 { vertical-align: top; }
+		.field_01 .to_go_list_2 .black_txt { font-size: 18px; letter-spacing: -1px; display:inline-block; vertical-align: middle;  }
+		.field_01 .to_go_list_3 { width:470px; }
+		.field_01 .to_go_list_3 .college_list { padding:0 0 0 32px; }
+		.field_01 .to_go_list_3 .college_list_extra { background:transparent; display:inline-block; }
+		.field_01 .to_go_list_3 .color_txt_sky { color:#0a939c; font-size: 18px; margin: 0 14px 0 0; letter-spacing: -0.5px; }
+		.field_01 .to_go_list_3 .color_txt_sky_03 { margin:0 10px 0 0; }
+		.field_01 .to_go_list_3 .college_list_extra_05 { display:block; }
+		.field_01 .to_go_list_3 .black_txt { font-size: 18px; letter-spacing: -1px; display:inline-block; vertical-align: middle;  }
+		.field_01 .to_go_list_4 { width:386px; }
+		.field_01 .to_go_list_4 .college_list { padding:0 0 0 26px; letter-spacing: -1px; }
+		.field_01 .to_go_list_4 .college_list_extra { background:transparent; display:inline-block; }
+		.field_01 .to_go_list_4 .color_txt_sky { color:#065f96; font-size: 18px; letter-spacing: -0.5px; }
+		.field_01 .to_go_list_4 .color_txt_sky_06 { vertical-align: top; margin: 0 12px 0 0;  }
+		.field_01 .to_go_list_4 .color_txt_sky_07 { margin:0 9px 0 0; }
+		.field_01 .to_go_list_4 .black_txt { font-size: 18px; letter-spacing: -1px; display:inline-block; vertical-align: middle;  }
+		.field_01 .to_go_list_5 { width:470px; }
+		.field_01 .to_go_list_5 .college_list { padding:0 0 0 44px; }
+		.field_01 .to_go_list_5 .college_list_extra { background:transparent; display:inline-block; }
+		.field_01 .to_go_list_5 .color_txt_sky { color:#255cb7; font-size: 18px; letter-spacing: -0.5px; }
+		.field_01 .to_go_list_5 .color_txt_sky_08 { vertical-align: top; margin: 0 12px 0 0;  }
+		.field_01 .to_go_list_5 .color_txt_sky_09 { margin:0 11px 0 0; }
+		.field_01 .to_go_list_5 .black_txt { font-size: 18px; letter-spacing: -1px; display:inline-block; vertical-align: middle;  }
+		
+		.field_01 .refer_txt_wrap { padding:40px 0 100px 385px; }
+		.field_01 .refet_txt { font-size:22px; color:#666; position:relative; }
+		.field_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 20px; position: absolute; top: -2px; lefT: -18px; }
+		.field_01 .refet_txt_02 { margin:10px 0; }
+		.field_01 .btn_arrow_wrap { display:none; }
+
+		/* 0901 contents_new   */
+		.field_02 { position:relative; }
+		.field_02 .tab_title { position:absolute; top:100px; left:0; width:100%; text-align: center;  }
+		.field_02 .tab_btn { display:inline-block; width:351px; height:90px; line-height: 90px; border-radius:45px; text-align: center; font-size:26px; color:#fff; letter-spacing: -0.25px; font-weight:700;  }
+		.field_02 .tab_btn { background:#c5c5c5; }
+		.field_02 .tab_btn_02 { margin-left:16px; }
+		.field_02 .tab_btn_01.on { background:#9563ff; }
+		.field_02 .tab_btn_02.on { background:#f6694b; }
+		.field_02 .tab_list { display:none }
+		.field_02 .tab_list.on { display:block; }
+		
+		.field_02_01 { background:#f3eeff; padding:270px 0 0; }
+		.field_02_01 .img_studio_02_01 { width:780px; margin:0 auto; }
+		.field_02_01 .refer_txt_wrap { padding:40px 0 0;  }
+		.field_02_01 .refer_txt { font-size:20px; color:#666; letter-spacing: -0.25px; text-align: center; }
+		.field_02_01 .step_wrap { display:flex; justify-content: center; padding:80px 0 0; }
+		.field_02_01 .step_list { background:#f4f4f4; width:350px; margin-right:20px; border:1px solid #ddd; }
+		.field_02_01 .step_title { color:#000; text-align: center; padding:20px 0; }
+		.field_02_01 .step_title span { font-size:24px; }
+		.field_02_01 .step_desc { font-size:22px; color:#000; letter-spacing: -0.25px; text-align: center; line-height:1.2; padding:40px 0; }
+		.field_02_01 .step_list:nth-child(2) .step_desc { padding:54px 0; }
+		.field_02_01 .challenge_wrap { text-align: center; padding:40px 0 0; }
+		.field_02_01 .challenge_apply_btn { display:inline-block; width:350px; height:60px; border-radius:30px; font-size:24px; background:#000; color:#fff; }
+		.field_02_01 .hashtag_wrap { background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/hash_bg_01_pc.png) no-repeat; margin: 80px auto 0; background-size:cover; width:1198px; display:flex; justify-content: space-around; align-items: center; padding: 35px 0; }
+		.field_02_01 .hash_tit { margin:0 0 14px; font-size:24px; color:#fff; }
+		.field_02_01 .hash_desc { line-height: 1.5; font-size:24px; color:#fff; }
+		.field_02_01 .hashtag_wrap .btn_copy { width:250px; height:100px; border-radius:10px; display:inline-block; text-align: center; padding-top:34px; color:#fff; border:2px solid #f0f7ff; font-size:24px; line-height:1.25; font-weight:700; }
+		.field_02_01 .period_wrap { padding:100px 0; width:1200px; margin:0 auto; }
+		.field_02_01 .period_tit { text-align: center; font-size:36px; font-weight:700; letter-spacing: -0.5px; }
+		.field_02_01 .period_desc { margin: 30px 0 50px 405px; }
+		.field_02_01 .period_desc_list { position:relative; font-size:24px; letter-spacing: -0.25px; }
+		.field_02_01 .period_desc_list:before { content:''; display:inline-block; width:4px; height:4px; background:#000; border-radius:100%; position:absolute; top:10px; left:-10px; }
+		.field_02_01 .period_desc_list_01 { padding:0 0 16px; }
+		.field_02_01 .period_desc_list span { font-size:20px; color:#666; }
+		.field_02_01 .gift { border:1px solid #ddd; position:relative; }
+		.field_02_01 .product_txt { text-align: center; background:#ededed; border-bottom:1px solid #ddd; padding:15px 0; }
+		.field_02_01 .color_txt { font-size:28px; font-weight:700;  color:#2b8cc9; } 
+		.field_02_01 .product_list_wrap { display:flex; justify-content: center; align-items: center; padding:40px 0 80px; background:#fff; }
+		.field_02_01 .refet_txt { font-size:20px; color:#666; position:absolute; bottom:30px; left:50%; transform: translateX(-50%); }
+		.field_02_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 20px; position: absolute; top: -2px; lefT: -16px; }
+		.field_02_01 .text_area { text-align: center;  }
+		.field_02_01 .text_area p { font-size:22px; color:#444; }
+		.field_02_01 .text_area strong { font-size:22px; padding:20px 0 10px; display:inline-block; }
+		.field_02_01 .product_list_item_02 { margin:0 0 0 100px; } 
+		.field_02_01 .product_list_item_02 .img_area img { margin:0 auto; }
+		.field_02_01 .product_list_item_01 .text_area { position:relative; top:14px; }
+
+		.field_02_02 { background:#fff0ed; padding:230px 0 0; }
+		.field_02_02 .img_studio_02_02 { width:780px; margin:0 auto; }
+		.field_02_02 .step_wrap { display:flex; justify-content: center; padding:40px 0 80px; }
+		.field_02_02 .step_list { background:#f4f4f4; width:350px; margin-right:20px; border:1px solid #ddd; }
+		.field_02_02 .step_list:nth-child(2) { margin-right:0; }
+		.field_02_02 .step_title { color:#000; text-align: center; padding:20px 0; }
+		.field_02_02 .step_title span { font-size:24px; }
+		.field_02_02 .step_desc { font-size:22px; color:#000; letter-spacing: -0.25px; text-align: center; line-height:1.2; padding:40px 0; }
+		.field_02_02 .step_desc strong { vertical-align: baseline; }
+		.field_02_02 .step_desc .black { color:#000; }
+		/* .field_02_02 .step_list:nth-child(1) .step_desc { line-height: 1; } */
+		.field_02_02 .step_list:nth-child(1) .strong_bet { display: block; font-size:0; position:relative; }
+		.field_02_02 .step_list:nth-child(1) .strong_bet:before { content:''; display:block; width:244px; height:27px; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_txt_logo_pc_v2.png) no-repeat; background-size: cover; position:absolute; top:0; left: 50%; transform: translateX(-50%); }
+		.field_02_02 .step_list:nth-child(1) .strong_bet .kr { display:none; }
+		.field_02_02 .hashtag_wrap { background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/hash_bg_02_pc.png) no-repeat; margin: 0 auto; background-size:cover; width:1198px; display:flex; justify-content: space-around; align-items: center; padding: 35px 0;  }
+		.field_02_02 .hash_tit { margin:0 0 14px; font-size:24px; color:#fff; }
+		.field_02_02 .hash_desc { line-height: 1.5; font-size:24px; color:#fff; }
+		.field_02_02 .hashtag_wrap .btn_copy { width:250px; height:100px; border-radius:10px; display:inline-block; text-align: center; padding-top:34px; color:#fff; border:2px solid #f0f7ff; font-size:24px; line-height:1.25; font-weight:700; }
+		.field_02_02 .period_wrap { padding:80px 0 100px; width:1200px; margin:0 auto; }
+		.field_02_02 .period_tit { text-align: center; font-size:36px; font-weight:700; letter-spacing: -0.5px; }
+		.field_02_02 .period_desc { margin: 30px 0 50px 340px; }
+		.field_02_02 .period_desc_list { position:relative; font-size:24px; letter-spacing: -0.25px; }
+		.field_02_02 .period_desc_list:before { content:''; display:inline-block; width:4px; height:4px; background:#000; border-radius:100%; position:absolute; top:10px; left:-10px; }
+		.field_02_02 .period_desc_list_01 { padding:0 0 16px; }
+		.field_02_02 .period_desc_list span { font-size:20px; color:#666; }
+		.field_02_02 .gift { border:1px solid #ddd; position:relative; }
+		.field_02_02 .product_txt { text-align: center; background:#ededed; border-bottom:1px solid #ddd; padding:15px 0; }
+		.field_02_02 .color_txt { font-size:28px; font-weight:700;  color:#2b8cc9; } 
+		.field_02_02 .product_list_wrap { display:flex; justify-content: space-around; align-items: center; padding:40px 10px 80px; background:#fff; }
+		.field_02_02 .refet_txt { font-size:20px; color:#666; position:absolute; bottom:30px; left:50%; transform: translateX(-50%); }
+		.field_02_02 .refet_txt:before { content: '※'; display: inline-block; font-size: 20px; position: absolute; top: -2px; lefT: -16px; }
+		.field_02_02 .text_area { text-align: center;  }
+		.field_02_02 .text_area p { font-size:22px; color:#444; }
+		.field_02_02 .text_area strong { font-size:22px; padding:20px 0 10px; display:inline-block; }
+		.field_02_02 .img_area img { margin:0 auto; }
+		.field_02_02 .product_list_item_04 .text_area { position:relative; top:8px; }
+
+		.sec_studio .event_alert { display: none; position: fixed; top: 0; left: 0; z-index: 1001; width: 100%; background: #5782bd; color: #fff; text-align: center; height: 30px; line-height: 30px; font-size: 16px; }
+
+
+		/* footer */
+		.sec_notice{max-width: 1920px; width: 100%; height: auto; margin: 0 auto; background-color: #000000;}
+		.sec_notice .sec_area{width:1440px;margin:0 auto;padding: 80px 0;}
+		.sec_notice .sec_area .notice_area{ margin:0; padding-left:30px; display:flex;}
+		.sec_notice .sec_area .notice_area_1 { padding-bottom:80px;border-bottom:1px solid rgba(221,221,221,0.4);}
+		.sec_notice .sec_area .notice_area_2 { padding-top:80px; }
+		.sec_notice .sec_area .notice_area .notice_title{font-size:16px; color: #fff; line-height:1.6; width:220px; }
+		.sec_notice .sec_area .notice_area .notice_list { flex:1; }
+		.sec_notice .sec_area .notice_area .notice_list li{ position: relative; padding-left: 10px; margin-bottom:2px; font-size: 16px; line-height:1.6;color:#a3a3a3;letter-spacing:0; }
+		.sec_notice .sec_area .notice_area .notice_list li::before{ position:absolute; content:''; width:4px; height:4px; left:0; top:10px; background-color: rgba(255, 255, 255, 0.6); border-radius: 30px;}
+		.sec_notice .notice_list li .space_txt { display:block; }
+		/* .sec_notice .sec_area .notice_area .notice_list strong.en { vertical-align: top; } */
+
+		.galaxy_studio .btn_anchor { z-index:10; position:fixed; top:750px; left: calc(50% + 655px); border-radius:100%; box-shadow:0 0 30px rgba(0,0,0,0.1); animation:motion 1.4s  infinite ease-in-out; }
+		.galaxy_studio .btn_anchor img { width:58px; height:58px }
+
+		@keyframes motion {
+			0% {transform:translateY(0);}
+			50% {transform:translateY(-16px);}
+			0% {transform:translateY(0);}
+		}
+
+
+		/* html{	scroll-behavior: smooth; } */
+
+		@media screen and (min-width: 769px) and (max-width: 1920px) {
+				/****************
+					sec_kv
+				****************/
+				.galaxy_studio .sec_kv .txt_box {top:5.4688vw; left:12.5000vw;}
+				.galaxy_studio .sec_kv .txt_box h2 {font-size:3.0208vw;}
+				.galaxy_studio .sec_kv .txt_box .sub_txt {padding-top:1.0417vw; font-size:1.1458vw;}
+
+				.galaxy_studio .sec_kv .menu_box {bottom:1.1458vw; left:12.5000vw;}
+				.galaxy_studio .sec_kv .menu_box li + li {margin-left:0.5208vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_search {background-position:1.2500vw 0.5208vw; background-size:1.3542vw 1.9792vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_product {background-position:1.3542vw 0.5208vw; background-size:1.9271vw 1.9271vw;}
+				.galaxy_studio .sec_kv .menu_box li > a {width:9.3750vw; height:3.0208vw;}
+				.galaxy_studio .sec_kv .menu_box li > a::before {top:0; right:-0.4688vw; border-right:0.4688vw solid transparent;}
+				.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:0.6771vw solid #5634ae;}
+				.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:0.6771vw solid #6344b1;}
+				.galaxy_studio .sec_kv .menu_box .menu_tit {font-size:0.9375vw; line-height:3.0208vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:3.2292vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:4.0625vw;}
+				
+				/* fix */
+				.galaxy_studio .sec_kv .txt_box {top:3.8021vw;}
+
+				/* contents */
+				.field_01:before { content:''; display:block; width:17.2917vw; height:10.0521vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/character_01_pc.png) no-repeat; background-size:cover; position:absolute; bottom:10.4167vw; left:6.7708vw; left:5.2708vw; }
+				.field_01:after { content:''; display:block; width:11.1979vw; height:16.0417vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/character_02_pc.png) no-repeat; background-size:cover; position:absolute; bottom:8.3333vw; right:12.5000vw; }
+			}	
+
+		@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+			/* sec_studio_nav */
+			.sec_studio_nav .nav_list li { width:19.8611vw; height:5.5556vw; }
+			.sec_studio_nav .nav_list li .nav_title {font-size:1.3889vw;}
+			.sec_studio_nav .nav_list li.on .nav_title,
+			.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.2083vw; left:-0.1389vw;}
+			.sec_studio_nav .nav_list li.on a::after,
+			.sec_studio_nav .nav_list li a:hover::after { top:-0.3472vw; left:-0.2083vw; width:19.8611vw; height:5.5556vw; }
+
+			/* contents */
+			.field_01 { padding:8.3333vw 0 0; }
+			.field_01 .img_box_studio { width:62.8472vw; margin:0 auto 5.5556vw; }
+			.field_01 .video_wrap { position: relative; /* width: 81.2500vw; height: 45.6944vw; */ width: 81.8056vw; height: 46.2500vw; margin:0 auto 6.2500vw; border:0.2778vw solid #cfe2e8; }
+			.field_01 .video_play {position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%, -50%); width: 8.3333vw; height: 8.3333vw; background: url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_video_play_pc.png') no-repeat center / cover; border: none !important;}
+			.field_01 .video_wrap .video_item { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+			.field_01 .video_wrap .video_item img { margin: 0 auto; width:81.2500vw; height: 45.6944vw; }
+			.field_01 .video_wrap .video_item_bottom { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+			.field_01 .video_wrap .video_item_bottom .video { width:81.2500vw; height: 45.6944vw; }
+
+
+			.field_01	.to_go_step_wrap .tit_txt { font-size:2.5000vw; font-weight:700; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_step_top { padding:4.1667vw 0; }
+			/* .field_01 .to_go_list { width:26.8056vw; height:10.8333vw; margin:0 1.3889vw 0 0; } */
+			.field_01 .to_go_list { width:26.8056vw; height:12.6389vw; margin:0 1.3889vw 0 0; }
+			.field_01 .to_go_list_tit { width:14.5139vw; height:4.5139vw; top:-1.5278vw; }
+			/* .field_01 .to_go_list span { width:100%; height:100%; padding-top:0.7639vw; font-size:1.6667vw; } */
+			.field_01 .to_go_list span.to_go_list_tit_span { width:100%; height:100%; padding-top:0.7639vw; font-size:1.6667vw; }
+			.field_01 .to_go_list .num_txt { font-size:1.6667vw; }
+			.field_01 .to_go_list .date_txt { font-size: 1.2500vw; }
+			.field_01 .to_go_list_tit:before { top:0; left:50%; width:7.8472vw; border-width:0 0.6250vw 1.3889vw;}
+			.field_01 .to_go_list_1 { border:0.1389vw solid #e1f7ef; }
+			.field_01 .to_go_list_2 { border:0.1389vw solid #dff3f9; }
+			.field_01 .to_go_list_3 { border:0.1389vw solid #deedf7; }
+			.field_01 .to_go_list_4 { border:0.1389vw solid #e1f7ef; }
+			.field_01 .to_go_list_5 { border:0.1389vw solid #dff3f9; }
+			.field_01 .to_go_list_1 .to_go_list_tit:before { border-color:transparent transparent #307343 transparent; }
+			.field_01 .to_go_list_2 .to_go_list_tit:before { border-color:transparent transparent #2f846d transparent; }
+			.field_01 .to_go_list_3 .to_go_list_tit:before { border-color:transparent transparent #20777d transparent; }
+			.field_01 .to_go_list_4 .to_go_list_tit:before { border-color:transparent transparent #1e6490 transparent; }
+			.field_01 .to_go_list_5 .to_go_list_tit:before { border-color:transparent transparent #325590 transparent; }
+			.field_01 .college_list { font-size:1.2500vw; padding:0 0 0 2.5000vw; letter-spacing: -0.0347vw; }
+
+			/* 0920 박스 변경 */
+			.field_01 .to_go_list_1 .college_list { padding:0.8333vw 0 0 3.7500vw; letter-spacing: -0.0694vw; }
+			.field_01 .to_go_list_2 { width:26.8056vw; }
+			.field_01 .to_go_list_2 .college_list { padding:0 0 0 2.5000vw; }
+			.field_01 .to_go_list_2 .college_list_extra { background:transparent; display:inline-block; }
+			.field_01 .to_go_list_2 .color_txt_sky { color:#199d7a; font-size: 1.2500vw; margin: 0 0.8333vw 0 0; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_list_2 .color_txt_sky_02 { vertical-align: top; }
+			.field_01 .to_go_list_2 .black_txt { font-size: 1.2500vw; letter-spacing: -0.0694vw; display:inline-block; vertical-align: middle;  }
+			.field_01 .to_go_list_3 { width:32.6389vw; }
+			.field_01 .to_go_list_3 .college_list { padding:0 0 0 2.2222vw; }
+			.field_01 .to_go_list_3 .college_list_extra { background:transparent; display:inline-block; }
+			.field_01 .to_go_list_3 .color_txt_sky { color:#0a939c; font-size: 1.2500vw; margin: 0 0.9722vw 0 0; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_list_3 .color_txt_sky_03 { margin:0 0.6944vw 0 0; }
+			.field_01 .to_go_list_3 .college_list_extra_05 { display:block; }
+			.field_01 .to_go_list_3 .black_txt { font-size: 1.2500vw; letter-spacing: -0.0694vw; display:inline-block; vertical-align: middle;  }
+			.field_01 .to_go_list_4 { width:26.8056vw; }
+			.field_01 .to_go_list_4 .college_list { padding:0 0 0 1.8056vw; letter-spacing: -0.0694vw; }
+			.field_01 .to_go_list_4 .college_list_extra { background:transparent; display:inline-block; }
+			.field_01 .to_go_list_4 .color_txt_sky { color:#065f96; font-size: 1.2500vw; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_list_4 .color_txt_sky_06 { vertical-align: top; margin: 0 0.8333vw 0 0;  }
+			.field_01 .to_go_list_4 .color_txt_sky_07 { margin:0 0.6250vw 0 0; }
+			.field_01 .to_go_list_4 .black_txt { font-size: 1.2500vw; letter-spacing: -0.0694vw; display:inline-block; vertical-align: middle;  }
+			.field_01 .to_go_list_5 { width:32.6389vw; }
+			.field_01 .to_go_list_5 .college_list { padding:0 0 0 3.0556vw; }
+			.field_01 .to_go_list_5 .college_list_extra { background:transparent; display:inline-block; }
+			.field_01 .to_go_list_5 .color_txt_sky { color:#255cb7; font-size: 1.2500vw; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_list_5 .color_txt_sky_08 { vertical-align: top; margin: 0 0.8333vw 0 0;  }
+			.field_01 .to_go_list_5 .color_txt_sky_09 { margin:0 0.7639vw 0 0; }
+			.field_01 .to_go_list_5 .black_txt { font-size: 1.2500vw; letter-spacing: -0.0694vw; display:inline-block; vertical-align: middle;  }
+			
+			.field_01 .refer_txt_wrap { padding:2.7778vw 0 6.9444vw 26.7361vw; }
+			.field_01 .refet_txt { font-size:1.5278vw; color:#666; position:relative; }
+			.field_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 1.3889vw; position: absolute; top: -0.1389vw; lefT: -1.2500vw; }
+			.field_01 .refet_txt_02 { margin:0.6944vw 0; }
+			.field_01 .btn_arrow_wrap { display:none; }
+
+			/* 0901 contents_new   */
+			.field_02_01 { padding:15.9722vw 0 0; }
+			.field_02 .tab_btn { display:inline-block; width:24.3750vw; height:6.2500vw; line-height: 6.2500vw; border-radius:3.1250vw; text-align: center; font-size:1.8056vw; color:#fff; letter-spacing: -0.0174vw;  font-weight:700;  }
+			.field_02 .tab_title { position:absolute; top:6.9444vw; left:0; width:100%; text-align: center;  }
+
+			.field_02_01 { padding:18.7500vw 0 0; }
+			.field_02_01 .img_studio_02_01 { width:54.1667vw; margin:0 auto;  }
+			.field_02_01 .refer_txt_wrap { padding:2.7778vw 0 0;  }
+			.field_02_01 .refer_txt { font-size:1.3889vw; color:#666; letter-spacing: -0.0174vw; text-align: center; }
+			.field_02_01 .step_wrap { padding:5.5556vw 0 0; }
+			.field_02_01 .step_list { width:24.3056vw; margin-right:1.3889vw; border:0.0694vw solid #ddd; }
+			.field_02_01 .step_title { padding:1.3889vw 0; }
+			.field_02_01 .step_title span { font-size:1.6667vw; }
+			.field_02_01 .step_desc { font-size:1.5278vw; letter-spacing: -0.0174vw; line-height:1.2; padding:2.7778vw 0; }
+			.field_02_01 .step_list:nth-child(2) .step_desc { padding:3.7500vw 0; }
+			.field_02_01 .challenge_wrap { text-align: center; padding:2.7778vw 0 0; }
+			.field_02_01 .challenge_apply_btn { width:24.3056vw; height:4.1667vw; border-radius:2.0833vw; font-size:1.6667vw; }
+			.field_02_01 .hashtag_wrap {  margin: 5.5556vw auto 0; width:83.1944vw;  padding: 2.4306vw 0; background-size: cover; }
+			.field_02_01 .hash_tit { margin:0 0 0.9722vw; font-size:1.6667vw; }
+			.field_02_01 .hash_desc { line-height: 1.5; font-size:1.6667vw; }
+			.field_02_01 .hashtag_wrap .btn_copy { width:17.3611vw; height:6.9444vw; border-radius:0.6944vw; display:inline-block; text-align: center; padding-top:2.3611vw; border:0.1389vw solid #f0f7ff; font-size:1.6667vw; line-height:1.25;  }
+			.field_02_01 .period_wrap { padding:6.9444vw 0; width:83.3333vw; margin:0 auto; }
+			.field_02_01 .period_tit { font-size:2.5000vw; font-weight:700; letter-spacing: -0.0347vw; }
+			.field_02_01 .period_desc { margin: 2.0833vw 0 3.4722vw 28.1250vw; }
+			.field_02_01 .period_desc_list { font-size:1.6667vw; letter-spacing: -0.0174vw; }
+			.field_02_01 .period_desc_list:before { width:0.2778vw; height:0.2778vw; top:0.6944vw; left:-0.6944vw; }
+			.field_02_01 .period_desc_list_01 { padding:0 0 1.1111vw; }
+			.field_02_01 .period_desc_list span { font-size:1.3889vw; }
+			.field_02_01 .gift { border:0.0694vw solid #ddd; position:relative;  }
+			.field_02_01 .product_txt { text-align: center; background:#ededed; border-bottom:0.0694vw solid #ddd; padding:1.0417vw 0; }
+			.field_02_01 .color_txt { font-size:1.9444vw; } 
+			.field_02_01 .product_list_wrap { display:flex; justify-content: center; align-items: center; padding:2.7778vw 0 5.5556vw;  }
+			.field_02_01 .refet_txt { font-size:1.3889vw; position:absolute; bottom:2.0833vw; left:50%; transform: translateX(-50%); }
+			.field_02_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 1.3889vw; position: absolute; top: -0.1389vw; lefT: -1.1111vw; }
+			.field_02_01 .text_area p { font-size:1.5278vw; }
+			.field_02_01 .text_area strong { font-size:1.5278vw; padding:1.3889vw 0 0.6944vw; display:inline-block; }
+			.field_02_01 .product_list_item_02 { margin:0 0 0 6.9444vw; } 
+			.field_02_01 .product_list_item_01 img { width:19.6528vw; } 
+			.field_02_01 .product_list_item_02 img { width:14.5139vw; } 
+			.field_02_01 .product_list_item_01 .text_area { top:0.9722vw; }
+
+			.field_02_02 { padding:15.9722vw 0 0; }
+			.field_02_02 .img_studio_02_02 { width:54.1667vw; margin:0 auto;  }
+			.field_02_02 .step_wrap { padding:2.7778vw 0 5.5556vw; }
+			.field_02_02 .step_list { width:24.3056vw; margin-right:1.3889vw; border:0.0694vw solid #ddd; }
+			.field_02_02 .step_title { padding:1.3889vw 0; }
+			.field_02_02 .step_title span { font-size:1.6667vw; }
+			.field_02_02 .step_desc { font-size:1.5278vw; letter-spacing: -0.0174vw; line-height:1.2; padding:2.7778vw 0; }
+			.field_02_02 .step_desc strong { font-size:1.5278vw; vertical-align: baseline; }
+			.field_02_02 .step_desc .step1_strong { font-size:1.5278vw; }
+			.field_02_02 .step_list:nth-child(1) .strong_bet:before { content:''; display:block; width:18.7500vw; height:1.8750vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_txt_logo_pc_v2.png) no-repeat; background-size: cover; position:absolute; top:0; left: 50%; transform: translateX(-50%); }
+			.field_02_02 .hashtag_wrap { width:83.1944vw;  padding: 2.4306vw 0; background-size: cover; }
+			.field_02_02 .hash_tit { margin:0 0 0.9722vw; font-size:1.6667vw; }
+			.field_02_02 .hash_desc { line-height: 1.5; font-size:1.6667vw; }
+			.field_02_02 .hashtag_wrap .btn_copy { width:17.3611vw; height:6.9444vw; border-radius:0.6944vw; padding-top:2.3611vw; border:0.1389vw solid #f0f7ff; font-size:1.6667vw; }
+			.field_02_02 .period_wrap { padding:5.5556vw 0 6.9444vw; width: 83.3333vw; margin:0 auto; }
+			.field_02_02 .period_tit { font-size:2.5000vw; letter-spacing: -0.0347vw; }
+			.field_02_02 .period_desc { margin: 2.0833vw 0 3.4722vw 23.6111vw; }
+			.field_02_02 .period_desc_list { font-size:1.6667vw; letter-spacing: -0.0174vw; }
+			.field_02_02 .period_desc_list:before { width:0.2778vw; height:0.2778vw; border-radius:100%; top:0.6944vw; left:-0.6944vw; }
+			.field_02_02 .period_desc_list_01 { padding:0 0 1.1111vw; }
+			.field_02_02 .period_desc_list span { font-size:1.3889vw; }
+			.field_02_02 .gift { border:0.0694vw solid #ddd; }
+			.field_02_02 .product_txt { border-bottom:0.0694vw solid #ddd; padding:1.0417vw 0; }
+			.field_02_02 .color_txt { font-size:1.9444vw; } 
+			.field_02_02 .product_list_wrap { padding:2.7778vw 0 5.5556vw; }
+			.field_02_02 .refet_txt { font-size:1.3889vw; bottom:2.0833vw; }
+			.field_02_02 .refet_txt:before { content: '※'; display: inline-block; font-size: 1.3889vw; position: absolute; top: -0.1389vw; lefT: -1.1111vw; }
+			.field_02_02 .text_area p { font-size:1.5278vw;  }
+			.field_02_02 .text_area strong { font-size:1.5278vw; padding:1.3889vw 0.6944vw 0.6944vw; } 
+			.field_02_02 .product_list_item_01 img { width:11.0417vw;} 
+			.field_02_02 .product_list_item_02 img { width:8.9583vw;} 
+			.field_02_02 .product_list_item_03 img { width:11.2500vw;} 
+			.field_02_02 .product_list_item_04 img { width:14.5139vw;}
+			.field_02_02 .product_list_item_04 .text_area { top:0.5556vw; }
+
+			/* footer */
+			.sec_notice{ max-width: 133.3333vw; width: 100%; height: auto; margin: 0 auto; background-color: #000000;}
+			.sec_notice .sec_area{ width:100.0000vw;margin:0 auto;padding: 5.5556vw 0;}
+			.sec_notice .sec_area .notice_area{ margin: 0 0.6944vw; padding-left:2.0833vw; display:flex;}
+			.sec_notice .sec_area .notice_area_1 { padding-bottom:5.5556vw;border-bottom:0.0694vw solid rgba(221,221,221,0.4);}
+			.sec_notice .sec_area .notice_area_2 { padding-top:5.5556vw; }
+			.sec_notice .sec_area .notice_area .notice_title{font-size:1.1111vw; color: #fff; line-height:1.6; width:15.2778vw;}
+			.sec_notice .sec_area .notice_area .notice_list { flex:1; }
+			.sec_notice .sec_area .notice_area .notice_list li{ position: relative; padding-left: 0.6944vw; margin-bottom:0.1389vw; font-size: 1.1111vw; line-height:1.6;color:#a3a3a3;letter-spacing:0; }
+			.sec_notice .sec_area .notice_area .notice_list li::before{ position:absolute; content:''; width:0.2778vw; height:0.2778vw; left:0; top:0.6944vw; background-color: rgba(255, 255, 255, 0.6); border-radius: 2.0833vw;}
+			.sec_notice .notice_list li .space_txt { display:block; font-size: 1.1111vw; }
+
+			.galaxy_studio .btn_anchor { z-index:10; position:fixed; top:52.0833vw; left: calc(50% + 45.4861vw); border-radius:100%; box-shadow:0 0 2.0833vw rgba(0,0,0,0.1); animation:motion 1.4s  infinite ease-in-out; }
+			.galaxy_studio .btn_anchor img { width:4.0278vw; height:4.0278vw }
+
+		}
+
+		@media screen and (max-width: 768px) {
+		
+		/* common */
+		.galaxy_studio .m_show { display: block !important; }
+		.galaxy_studio .m_hide { display: none !important; }
+
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_studio .sec_kv .txt_box {top:8.3333vw; left:0; width:100%; text-align:center;}
+		.galaxy_studio .sec_kv .txt_box h2 {font-size:9.4444vw;}
+
+		.galaxy_studio .sec_kv .menu_box {bottom:2.2222vw; left:2.2222vw;}
+		.galaxy_studio .sec_kv .menu_box li + li {margin-left:1.3889vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_search {background-position:3.3333vw 2.0833vw; background-size:3.6111vw 5.2778vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_product {background-position:4.3056vw 2.0833vw; background-size:5.1389vw 5.1389vw;}
+		.galaxy_studio .sec_kv .menu_box li > a {width:27.7778vw; height:9.4444vw;}
+		.galaxy_studio .sec_kv .menu_box li > a::before {top:auto; bottom:0; right:-1.111vw; border-right:1.2500vw solid transparent;}
+		.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:0; border-top:1.8056vw solid #5634ae;}
+		.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:0; border-top:1.8056vw solid #6344b1;}
+		.galaxy_studio .sec_kv .menu_box .menu_tit {font-size:3.0556vw; line-height:9.4444vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:8.6111vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:12.0833vw;}
+
+		/* sec_studio_nav */
+		.sec_studio_nav .m_show {display:block !important;}
+		.sec_studio_nav .m_hide {display:none !important;}
+		.sec_studio_nav {overflow:hidden;}
+		.sec_studio_nav .nav_list {flex-wrap:wrap; padding:0;}
+		.sec_studio_nav .nav_list li { width: 33.3%; height:13.8889vw; border-left:0.2778vw solid #cdcdcd; text-align:center;}
+		.sec_studio_nav .nav_list li:nth-child(1),
+		.sec_studio_nav .nav_list li:nth-child(2),
+		.sec_studio_nav .nav_list li:nth-child(3) { /* width:33.0556vw; height:13.8889vw; */ width: 33.3%; height:13.8889vw; }
+		.sec_studio_nav .nav_list li:nth-child(4),
+		.sec_studio_nav .nav_list li:nth-child(5) { /* width:49.8611vw; height:13.8889vw; */ width: 49.7%; height: 13.8889vw; }
+		.sec_studio_nav .nav_list li:last-child {border-right:0;}
+		.sec_studio_nav .nav_list li:nth-child(1),
+		.sec_studio_nav .nav_list li:nth-child(2),
+		.sec_studio_nav .nav_list li:nth-child(3) { border-bottom:0.2778vw solid #cdcdcd; }
+		.sec_studio_nav .nav_list li .nav_title { font-size:3.3333vw; line-height:1.2; }
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title { top:-0.4167vw; left:-0.2778vw; }
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {top:-0.8333vw; left:-0.6944vw; width:33.8889vw; height:14.7222vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg_mo_v3.png');}
+		.sec_studio_nav .nav_list li:nth-child(4).on a::after,
+		.sec_studio_nav .nav_list li:nth-child(4) a:hover::after,
+		.sec_studio_nav .nav_list li:nth-child(5).on a::after,
+		.sec_studio_nav .nav_list li:nth-child(5) a:hover::after { top:-0.8333vw; left:-0.6944vw; width:50.2278vw; height:14.7222vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg_02_mo.png'); }
+
+		/* contents */
+		.field_01 { padding:11.1111vw 4.4444vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/campus_bg_mo.png) no-repeat; background-size:cover; }
+		.field_01:before { display:none; }
+		.field_01:after { display:none; }
+		.field_01 .img_box_studio { width:92.9167vw; margin:0 auto 11.1111vw; }
+		.field_01 .video_wrap { position: relative; width:90.8333vw; height:51.6667vw; margin:0 auto 12.5000vw; border:0.5556vw solid #cfe2e8; }
+		.field_01 .video_play {position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%, -50%); width: 16.6667vw; height: 16.6667vw; background: url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_video_play_pc.png') no-repeat center / cover; border: none !important;}
+		.field_01 .video_wrap .video_item { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+		.field_01 .video_wrap .video_item img { margin: 0 auto; /* width:89.7222vw; height:50.5556vw; */ width:89.7222vw; height:50.5556vw; }
+		.field_01 .video_wrap .video_item_bottom { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width:100%; height:100%; }
+		.field_01 .video_wrap .video_item_bottom .video { /* width:89.7222vw; height:50.5556vw; */ width:89.7222vw; height:50.5556vw; }
+
+		
+		.field_01	.to_go_step_wrap .tit_txt { font-size:6.3889vw; letter-spacing: -0.0694vw; }
+		.field_01 .to_go_step { display:block; }
+		.field_01 .to_go_step_top { padding: 8.3333vw 0 0; }
+		.field_01 .to_go_step_bot { /* padding:8.3333vw 0 0; */ padding:0; }
+		.field_01 .to_go_list { width:86.6667vw; height:26.6667vw; margin:0 auto 8.3333vw; }
+		.field_01 .to_go_list_tit { margin:0; width:54.1667vw; height:8.6111vw; top:-3.0556vw; left:3.6111vw; }
+		.field_01 .to_go_list span.to_go_list_tit_span { padding-top:0; font-size:4.4444vw; display:flex; justify-content: center; align-items: center; }
+		.field_01 .to_go_list .num_txt { vertical-align: top; font-size:4.4444vw; }
+		.field_01 .to_go_list .date_txt { font-size: 3.6111vw; margin-left:1.6667vw; }
+		.field_01 .to_go_list_tit:before { width:28.3333vw; border-width:0 1.2500vw 2.7778vw; }
+		.field_01 .to_go_list_1 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_2 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_3 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_4 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_4 { margin:0 auto 8.3333vw; display:none !important; }
+		.field_01 .to_go_list_5 { background:#eafcf6; border:0.2778vw solid #e1f7ef; margin:0 auto; }
+		.field_01 .college_list { /* font-size:3.6111vw; */ font-size:3.3333vw; padding: 1.1111vw 0 0 3.6111vw; letter-spacing: -0.0694vw; }
+		.field_01 .to_go_step_bot { display:none; }
+		.field_01 .to_go_step_bot.on { display:block; }
+		.field_01 .to_go_step_top.on .to_go_list_1 { display:block !important; }
+		.field_01 .to_go_step_top.on .to_go_list_2 { display:block !important; }
+		.field_01 .to_go_step_top.on .to_go_list_3 { display:block !important; }
+		.field_01 .to_go_step_top.on .to_go_list_4 { display:block !important; }
+
+		/* 0920 박스 변경 */
+		.field_01 .to_go_list_1 .college_list { padding:1.1111vw 0 0 3.6111vw; }
+		.field_01 .to_go_list_2 .college_list { padding:1.1111vw 0 0 3.6111vw; }
+		.field_01 .to_go_list_2 .color_txt_sky { color:#199d7a; font-size:3.3333vw; margin: 0 1.9444vw 0 0; letter-spacing: -1px; }
+		.field_01 .to_go_list_2 .color_txt_sky_02 { vertical-align: middle; }
+		.field_01 .to_go_list_2 .black_txt { font-size:3.3333vw; letter-spacing: -1px; }
+		.field_01 .to_go_list_3 { width:86.6667vw; height:32.5000vw; }
+		.field_01 .to_go_list_3 .college_list { padding:1.1111vw 0 0 3.6111vw; }
+		.field_01 .to_go_list_3 .college_list_extra { background:transparent; display:inline-block; }
+		.field_01 .to_go_list_3 .color_txt_sky { color:#0a939c; font-size:3.3333vw; margin: 0 1.9444vw 0 0; letter-spacing: -1px; }
+		.field_01 .to_go_list_3 .color_txt_sky_03 { margin:0 1.3889vw 0 0; }
+		.field_01 .to_go_list_3 .college_list_extra_05 { display:block; }
+		.field_01 .to_go_list_3 .black_txt { font-size:3.3333vw; letter-spacing: -1px; display:inline-block; vertical-align: middle;  }
+		.field_01 .to_go_list_4 { width:86.6667vw; height:32.5000vw; }
+		.field_01 .to_go_list_4 .college_list { padding:1.1111vw 0 0 3.6111vw; }
+		.field_01 .to_go_list_4 .college_list_extra_07 { display:block; }
+		.field_01 .to_go_list_4 .color_txt_sky { color:#255cb7; font-size:3.3333vw; margin:0 2.2222vw 0 0; letter-spacing: -1px; }
+		.field_01 .to_go_list_4 .color_txt_sky_06 { vertical-align: top;  }
+		.field_01 .to_go_list_4 .color_txt_sky_07{ margin:0 1.8056vw 0 0; }
+		.field_01 .to_go_list_4 .black_txt { font-size:3.3333vw; letter-spacing: -1px; }
+		.field_01 .to_go_list_5 { width:86.6667vw; height:32.5000vw; }
+		.field_01 .to_go_list_5 .college_list { padding:1.1111vw 0 0 3.6111vw; }
+		.field_01 .to_go_list_5 .color_txt_sky { color:#255cb7; font-size:3.3333vw; margin:0 3.0556vw 0 0; letter-spacing: -1px; }
+		.field_01 .to_go_list_5 .color_txt_sky_08 { vertical-align: top;  }
+		.field_01 .to_go_list_5 .color_txt_sky_09 { margin:0 2.7778vw 0 0; }
+		.field_01 .to_go_list_5 .black_txt { font-size:3.3333vw; letter-spacing: -1px; }
+
+		.field_01 .refer_txt_wrap { padding:5.5556vw 0 0 5.2778vw; }
+		.field_01 .refet_txt { font-size:3.6111vw; color:#666; position:relative; }
+		.field_01 .refet_txt_01 { margin:0 0 1.3889vw; white-space: nowrap; }
+		.field_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 2.7778vw; position: absolute; top: 0; lefT: -2.5000vw; }
+		.field_01 .refet_txt_02 { margin:1.9444vw 0; }
+
+		.field_01 .space_mo_txt { display:block; font-size: 3.6111vw; margin: 1.9444vw 0 0; }
+		.field_01 .btn_arrow_wrap { display:none; }
+		.field_01 .btn_arrow_wrap { display:block; text-align: center; width:100%; position:relative; padding:5.5556vw 0 0;  }
+		.field_01 .btn_date_link { font-size:3.6111vw; letter-spacing: -0.0347vw; font-weight:700; }
+		.field_01 .btn_date_link_def:after { content:''; display:inline-block; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/btn_down_arrow_mo.png'); background-size:cover;  vertical-align: middle; width:2.2222vw; height:1.2500vw; margin:0 0 0.5556vw 1.1111vw; }
+		.field_01 .btn_date_link_aft:after { content:''; display:inline-block; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/btn_up_arrow_mo.png'); background-size:cover;  vertical-align: middle; width:2.2222vw; height:1.2500vw; margin:0 0 0.5556vw 1.1111vw; }
+		.field_01 .btn_date_link_aft { display:none; }
+
+		/* 0901 contents_new   */
+		.field_02 .tab_title { position:absolute; top:11.1111vw; left:0; width:100%; text-align: center;  }
+		.field_02 .tab_btn { width:44.4444vw; height:13.1944vw; line-height: 13.1944vw; border-radius:6.5278vw; font-size:3.333vw; letter-spacing: -0.0347vw;  }
+		.field_02 .tab_btn_02 { margin-left:1.1111vw; }
+
+		.field_02_01 { background:#f3eeff; padding:36.1111vw 0 0; }
+		.field_02_01 .sec_inner { padding:0 4.4444vw; }
+		.field_02_01 .img_studio_02_01 { width:90.5556vw; margin:0 auto;  }
+		.field_02_01 .refer_txt_wrap { padding:5.5556vw 0 0;  }
+		.field_02_01 .refer_txt { font-size:3.6111vw; color:#666; letter-spacing: -0.0347vw; text-align: center; line-height: 1.4; }
+		.field_02_01 .step_wrap { display:block; padding:11.1111vw 0 0; }
+		.field_02_01 .step_list { background:#f4f4f4; width:61.1111vw; margin:0 auto 4.1667vw; border:0.1389vw solid #ddd; }
+		.field_02_01 .step_list:nth-child(3) { margin:0 auto; }
+		.field_02_01 .step_title { color:#000; padding:2.7778vw 0; }
+		.field_02_01 .step_title span { font-size:4.1667vw; }
+		.field_02_01 .step_list .img_area img { width:61.1111vw; }
+		.field_02_01 .step_desc { font-size:3.6111vw;  letter-spacing: -0.0347vw; padding:5.5556vw 0; line-height: 1.3; }
+		.field_02_01 .step_list:nth-child(2) .step_desc { padding:8.3333vw 0; }
+		.field_02_01 .challenge_wrap { text-align: center; padding:5.5556vw 0 0; }
+		.field_02_01 .challenge_apply_btn { width:44.4444vw; height:8.7500vw; border-radius:4.1667vw; font-size:3.6111vw; }
+		.field_02_01 .hashtag_wrap { background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/hash_bg_01_mo.png) no-repeat; margin: 11.1111vw auto 0; background-size:cover; width:91.1111vw; display:block; padding: 8.3333vw 0; }
+		.field_02_01 .hash_tit { margin:0 0 3.3333vw; font-size:4.4444vw; text-align: center; }
+		.field_02_01 .hash_desc { font-size:4.1667vw; text-align: center; line-height: 1.3; }
+		.field_02_01 .btn_wrap { text-align: center; padding-top:5.5556vw; }
+		.field_02_01 .hashtag_wrap .btn_copy { width:61.1111vw; height:9.1667vw; border-radius:1.3889vw; padding-top:1.6667vw; border:0.2778vw solid #f0f7ff; font-size:4.1667vw; line-height:1.25; }
+		.field_02_01 .period_wrap { padding:13.8889vw 0; width:100%; margin:0 auto; }
+		.field_02_01 .period_tit { font-size:6.3889vw; }
+		.field_02_01 .period_desc { margin: 5.5556vw 0 8.3333vw 11.8056vw; }
+		.field_02_01 .period_desc_list { position:relative; font-size:3.8889vw; letter-spacing: -0.0347vw; }
+		.field_02_01 .period_desc_list:before { width:0.5556vw; height:0.5556vw; top:1.3889vw; left:-1.3889vw; }
+		.field_02_01 .period_desc_list_01 { padding:0 0 2.2222vw; }
+		.field_02_01 .period_desc_list span { font-size:3.6111vw; display:inline-block; margin:4.1667vw 0 0 0; }
+		.field_02_01 .gift { position:relative;  }
+		.field_02_01 .product_txt { text-align: center; background:#ededed; border-bottom:0.1389vw solid #ddd; padding:2.0833vw 0; }
+		.field_02_01 .color_txt { font-size:3.8889vw; } 
+		.field_02_01 .product_list_wrap { display:block; padding:8.3333vw 0 15.2778vw; }
+		.field_02_01 .refet_txt { font-size:3.6111vw; position:absolute; bottom:4.1667vw; left:50%; transform: translateX(-50%); }
+		.field_02_01 .refet_txt:before { content: '※'; display: inline-block; font-size: 2.7778vw; position: absolute; top: 0.2778vw; lefT: -2.2222vw; }
+		.field_02_01 .text_area p { font-size:3.8889vw; }
+		.field_02_01 .text_area strong { font-size:3.8889vw; padding:4.1667vw 0 2.2222vw; display:inline-block; }
+		.field_02_01 .product_list_item_02 { margin:0; } 
+		.field_02_01 .product_list_item_01 img { width:39.3056vw; margin:0 auto; } 
+		.field_02_01 .product_list_item_02 img { width:33.4722vw; margin:0 auto; } 
+		.field_02_01 .product_list_item_01 .img_area img { margin:0 auto; }
+		.field_02_01 .product_list_item_02 .img_area img { margin: 9.7222vw auto 0; }
+		.field_02_01 .product_list_item_01 .text_area { top:0; }
+
+		.field_02_02 { background:#fff0ed; padding:34.7222vw 0 0; }
+		.field_02_02 .sec_inner { padding:0 4.4444vw; }
+		.field_02_02 .img_studio_02_02 { width:77.7778vw; margin:0 auto; }
+		.field_02_02 .step_wrap { padding:11.1111vw 0; }
+		.field_02_02 .step_list { width:44.4444vw; margin-right:2.2222vw; }
+		.field_02_02 .step_title { padding:2.7778vw 0; }
+		.field_02_02 .step_title span { font-size:4.1667vw; }
+		.field_02_02 .step_desc { font-size:3.6111vw; letter-spacing: -0.0347vw; padding:5.5556vw 0; }
+		.field_02_02 .step_list:nth-child(1) .step_desc { padding:8.3333vw 0; }
+		.field_02_02 .step_list:nth-child(1) .strong_bet:before { content:''; display:block; width:40.4722vw; height:4.1667vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_txt_logo_mo_v2.png) no-repeat; background-size: cover; position:absolute; top:0; left: 50%; transform: translateX(-50%); }
+
+		.field_02_02 .step_desc strong { vertical-align: baseline; font-size:3.6111vw; }
+		.field_02_02 .step_desc .step1_strong { font-size:3.6111vw; }
+		.field_02_02 .hashtag_wrap { background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/hash_bg_02_mo.png) no-repeat; background-size:cover; width:91.1111vw; height:54.0278vw; display:block; padding: 8.3333vw 0; }
+		.field_02_02 .hash_tit { margin:0 0 3.3333vw; font-size:4.4444vw; text-align: center; }
+		.field_02_02 .hash_desc { font-size:4.1667vw; text-align: center; line-height: 1.3; }
+		.field_02_02 .btn_wrap { text-align: center; padding-top:5.5556vw; }
+		.field_02_02 .hashtag_wrap .btn_copy { width:61.1111vw; height:9.1667vw; border-radius:1.3889vw; display:inline-block; text-align: center; padding-top:1.6667vw; color:#fff; border:0.2778vw solid #f0f7ff; font-size:4.1667vw; line-height:1.25; }
+		.field_02_02 .period_wrap { padding:11.1111vw 0 13.8889vw; width:100%; margin:0 auto; }
+		.field_02_02 .period_tit { font-size:6.3889vw;  }
+		.field_02_02 .period_desc { margin: 5.5556vw 0 8.3333vw 1.1111vw; }
+		.field_02_02 .period_desc_list { position:relative; font-size:3.8889vw; letter-spacing: -0.0347vw; }
+		.field_02_02 .period_desc_list:before { width:0.5556vw; height:0.5556vw; top:1.3889vw; left:-1.3889vw; }
+		.field_02_02 .period_desc_list_01 { padding:0 0 2.2222vw; }
+		.field_02_02 .period_desc_list span { font-size:3.6111vw; display:inline-block; margin:4.1667vw 0 0 0; }
+		.field_02_02 .gift { position:relative;  }
+		.field_02_02 .product_txt { padding:4.1667vw 0; }
+		.field_02_02 .color_txt { font-size:4.7222vw; } 
+		.field_02_02 .product_list_wrap { display:flex; flex-wrap: wrap; justify-content: space-between;  padding:6.9444vw 5.5556vw 15.2778vw; }
+		.field_02_02 .refet_txt { font-size:3.6111vw; position:absolute; bottom:6.9444vw; left:50%; transform: translateX(-50%); }
+		.field_02_02 .refet_txt:before { content: '※'; display: inline-block; font-size: 2.7778vw; position: absolute; top: 0.2778vw; lefT: -2.2222vw; }
+		.field_02_02 .text_area p { font-size:3.8889vw; }
+		.field_02_02 .text_area strong { font-size:3.8889vw; padding: 1.9444vw 0; display:inline-block; }
+		.field_02_02 .product_list_item_01 { margin:0; } 
+		.field_02_02 .product_list_item_02 { margin:0; } 
+		.field_02_02 .product_list_item_03 { margin:8.3333vw 0 0; }
+		.field_02_02 .product_list_item_04 { margin:8.3333vw 0 0; }
+		.field_02_02 .product_list_item_01 img { width:22.0833vw; margin:0 auto; } 
+		.field_02_02 .product_list_item_02 img { width:17.9167vw; margin:0 auto; } 
+		.field_02_02 .product_list_item_03 img { width:22.5000vw; margin:0 auto; } 
+		.field_02_02 .product_list_item_04 img { width:32.0833vw; margin:0 auto; } 
+		.field_02_02 .product_list_item_04 .img_area img { margin:0 auto; }
+		.field_02_02 .product_list_item_04 .text_area { top:0; }
+		.field_02_02 .product_list_item_04 .text_area strong { line-height: 1.5; padding: 1.3889vw 0 0; }
+		.field_02_02 .product_list_item_04 .text_area strong span { font-weight: normal; vertical-align: top; font-size:3.8889vw;  }
+
+		/* footer */
+		.sec_notice{max-width:100%;width:100%;height:auto;margin:0 auto;background-color: #000000;}
+		.sec_notice .sec_area{width:100%;margin:0 auto;padding:11.1111vw 6.9444vw;}
+		.sec_notice .sec_area .notice_area{margin-left:0px;padding-left:0px;display:block;}
+		.sec_notice .sec_area .notice_area_1 {padding-bottom:11.1111vw;border-bottom:0.0694vw solid rgba(221,221,221,0.4);}
+		.sec_notice .sec_area .notice_area_2 {padding-top:11.1111vw;}
+		.sec_notice .sec_area .notice_area .notice_title{font-size:3.3333vw;color: #fff;line-height:1.6;width:100%;margin-bottom:4.1667vw;}
+		.sec_notice .sec_area .notice_area .notice_list li{position: relative; padding-left:2.0889vw; margin-bottom:0.7667vw; font-size: 3.0556vw; line-height:1.4;color:#a3a3a3;letter-spacing:0;}
+		.sec_notice .sec_area .notice_area .notice_title .en,
+		.sec_notice .sec_area .notice_area .notice_list li .en {font-size:3.0556vw !important;}
+		.sec_notice .sec_area .notice_area .notice_list li::before{position:absolute;content:'';width:0.8333vw;height:0.8333vw;left:0;top:1.6667vw;background-color: rgba(255, 255, 255, 0.6);border-radius: 4.1667vw;}
+		.sec_notice .notice_list li .space_txt { font-size: 3.0556vw; }
+
+		.galaxy_studio .btn_anchor { z-index:10; position:fixed; top: 136.111vw; left: auto; right: 4.4444vw; border-radius:100%; box-shadow:0 0 4.1667vw rgba(0,0,0,0.1); }
+		.galaxy_studio .btn_anchor img { width:10.5556vw; height:10.5556vw }
+
+		}
+		
+		</style>		
+		<tiles:putattribute name="tooltip"><div id="tooltipArea_Event3791"></div></tiles:putattribute>
+		<tiles:putattribute name="popup"><div id="popupArea_Event3791"></div></tiles:putattribute>
+		<input type="hidden" id="openPop" data-st-path="/sec/">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main class="galaxy_studio">
+			<section class="sec_kv">
+				<div class="img_box">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_kv.jpg" alt="" class="m_hide">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_kv_mo.jpg" alt="" class="m_show">
+				</div>
+
+				<div class="txt_box">
+					<h2>갤럭시 스튜디오  <br>in 캠퍼스</h2>
+					<div class="sub_txt m_hide">
+						캠퍼스마다 제각각 다른 모습으로 <br><span class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</span>를 즐겨보세요
+					</div>
+				</div>
+				<!-- //txt_box -->
+
+				<ul class="menu_box">
+					<li class="menu_search">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/search" title="스튜디오 찾기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_search">
+							<p class="menu_tit">스튜디오 찾기</p>
+						</a>
+					</li>
+					<li class="menu_product">
+						<a href="https://www.samsung.com/sec/smartphones/galaxy-z-flip4/" title="제품정보 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_product">
+							<p class="menu_tit">제품정보</p>
+						</a>
+					</li>
+				</ul>
+
+			</section>
+			<!-- //sec_kv -->
+
+			<section class="sec_studio_nav">
+				<ul class="nav_list">
+					<li class="on">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/campus" title="캠퍼스 스튜디오 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus">
+							<span class="nav_title">캠퍼스 스튜디오</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/challenge" title="제각각 챌린지 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_challenge">
+							<span class="nav_title">제각각 챌린지</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/contentfesta" title="콘텐츠 페스타 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_contentfesta">
+							<span class="nav_title">콘텐츠 페스타</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/learning " title="배워보기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_learning">
+							<span class="nav_title">배워보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/experience" title="온라인 체험존 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_experience">
+							<span class="nav_title">온라인 체험존</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			
+			<!-- //sec_studio_nav -->
+
+			<section class="sec_studio">
+				<a href="#studio_tab" class="btn_anchor" title="제각각스튜디오">
+					<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/btn_anchor_pc_v2.png" alt="">
+					<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/btn_anchor_mo_v2.png" alt="">
+				</a>
+				<div class="field_01">
+					<div class="sec_inner">
+						<div class="txt_area">
+							<div class="img_box_studio">
+								<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_txt_pc_v4.png" alt="">
+								<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_txt_mo_v4.png" alt="">
+							</div>
+						</div>
+						<div class="video_wrap">
+							<div class="video_item video_img">
+								<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/img_video_thumb_pc_v3.png" alt="동영상 썸네일">
+								<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/img_video_thumb_mo_v4.png" alt="동영상 썸네일">
+							</div>
+							<button class="video_play btn"><span class="blind" data-omni-type="microsite" data-omni="sec:microsite:bespoke:event:wearebepoke:view_bespoke_movie_youtube">동영상 재생하기</span></button>
+							<div class="video_item_bottom video_player">
+								<iframe width="1170px" height="658px" class="video" src="https://www.youtube.com/embed/pd4u4CJXSIg" frameborder=0 title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="to_go_step_wrap">
+							<p class="tit_txt">캠퍼스 운영 일정 안내</p>
+							<div class="to_go_step to_go_step_top">
+								<div class="to_go_list to_go_list_1 m_hide">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">1</strong>회차 <br><strong class="date_txt">2022.09.01(목) ~ 09.16(금)</strong></span></p>
+									<p class="college_list">경희대 / 국민대 / 동아대 / 성신여대 / 세종대 <br>숙명여대 / 한국외대 / 한양대 (ERICA)</p>
+								</div>
+								<div class="to_go_list to_go_list_2 m_hide">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">2</strong>회차 <br><strong class="date_txt">2022.09.15(목) ~ 09.23(금)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_01">09.15 ~ 09.23</strong><em class="black_txt">덕성여대 / 동덕여대</em></span>
+										<span class="college_list_extra m_hide"><strong class="color_txt_sky color_txt_sky_02">09.19 ~ 09.23</strong><em class="black_txt">강원대 / 우송대 / 원광대 / 백석대 <br>연세대 / 전북대</em></span>
+										<span class="college_list_extra m_show"><strong class="color_txt_sky color_txt_sky_02">09.19 ~ 09.23</strong><em class="black_txt">강원대 / 우송대 / 원광대 / 백석대 / 연세대 / 전북대</em></span>
+									</p>
+								</div>
+								<div class="to_go_list to_go_list_3 m_hide">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">3</strong>회차 <br><strong class="date_txt">2022.09.26(월) ~ 10.07(금)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_03">09.26 ~ 09.30</strong><em class="black_txt">충북대</em></span>
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_04">09.26 ~ 10.07</strong><em class="black_txt">경기대 / 공주대 / 대전대 / 서울여대 / 순천향대</em></span>
+										<span class="college_list_extra college_list_extra_05"><strong class="color_txt_sky color_txt_sky_05">09.28 ~ 10.07</strong><em class="black_txt">중앙대</em></span>
+									</p>
+								</div>
+								<div class="to_go_list to_go_list_4 m_show">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">4</strong>회차 <br><strong class="date_txt">2022.10.04(화) ~ 10.20(목)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_06">10.04 ~ 10.18</strong><em class="black_txt">가천대 / 남서울대 / 단국대 / 상명대 <br>신라대 / 창원대 / 한국공학대</em></span>
+										<span class="college_list_extra college_list_extra_07"><strong class="color_txt_sky color_txt_sky_07">10.06 ~ 10.20</strong><em class="black_txt">아주대</em></span>
+									</p>
+								</div>
+								<div class="to_go_list to_go_list_5 m_show">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">5</strong>회차 <br><strong class="date_txt">2022.10.17(월) ~ 11.04(금)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_08">10.17 ~ 10.28</strong><em class="black_txt">경상국립대 / 대구가톨릭대 / 서울과기대 <br>성균관대 / 수원대 / 인천대 / 충남대 / 호서대</em></span>
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_09">10.24 ~ 11.04</strong><em class="black_txt">영남대</em></span>
+									</p>
+								</div>
+							</div>
+							<div class="to_go_step to_go_step_bot">
+								<div class="to_go_list to_go_list_4 m_hide">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">4</strong>회차 <br><strong class="date_txt">2022.10.04(화) ~ 10.20(목)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_06">10.04 ~ 10.18</strong><em class="black_txt">가천대 / 남서울대 / 단국대 / 상명대 <br>신라대 / 창원대 / 한국공학대</em></span>
+										<span class="college_list_extra college_list_extra_07"><strong class="color_txt_sky color_txt_sky_07">10.06 ~ 10.20</strong><em class="black_txt">아주대</em></span>
+									</p>
+								</div>
+								<div class="to_go_list to_go_list_5 m_hide">
+									<p class="to_go_list_tit"><span class="to_go_list_tit_span"><strong class="num_txt">5</strong>회차 <br><strong class="date_txt">2022.10.17(월) ~ 11.04(금)</strong></span></p>
+									<p class="college_list">
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_08">10.17 ~ 10.28</strong><em class="black_txt">경상국립대 / 대구가톨릭대 / 서울과기대 <br>성균관대 / 수원대 / 인천대 / 충남대 / 호서대</em></span>
+										<span class="college_list_extra"><strong class="color_txt_sky color_txt_sky_09">10.24 ~ 11.04</strong><em class="black_txt">영남대</em></span>
+									</p>
+								</div>
+							</div>
+							<div class="refer_txt_wrap">
+								<p class="refet_txt refet_txt_01">일부 캠퍼스 운영 일정은 회차별 운영 일정과 상이할 수 있습니다</p>
+								<p class="refet_txt refet_txt_02 m_hide">캠퍼스 스튜디오는 평일 11시부터 18시까지 운영되며, 주말 및 공휴일은 휴무입니다</p>
+								<p class="refet_txt refet_txt_02 m_show">캠퍼스 스튜디오는 평일 11시부터 18시까지 운영되며, <span class="space_mo_txt">주말 및 공휴일은 휴무입니다</span</p>
+								<p class="refet_txt refet_txt_03">기상상황에 따라 운영 일정이 변동될 수 있습니다</p>
+							</div>
+							<div class="btn_arrow_wrap m_show">
+								<a href="javascript:;" class="btn_date_link btn_date_link_def">일정 자세히 보기</a>
+								<a href="javascript:;" class="btn_date_link btn_date_link_aft">일정 간단히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="field_02" id="studio_tab">
+					<div class="tab_title">
+						<a href="javascript:;" class="tab_btn tab_btn_01 on" data-depth1="v4">Z 플립 사진관 찍어볼각 챌린지</a>
+						<a href="javascript:;" class="tab_btn tab_btn_02" data-depth1="v4">도전! 오늘 폴더블 완료</a>
+					</div>
+					<div class="tab_content">
+						<div class="field_02_01 tab_list on">
+							<div class="sec_inner">
+								<div class="img_studio_02_01">
+									<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_logo_pc_v3.png" alt="">
+									<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_logo_mo_v3.png" alt="">
+								</div>
+								<div class="refer_txt_wrap">
+									<p class="refer_txt">※ Z 플립 사진관 찍어볼각 챌린지는 <br class="m_show">'갤럭시 스튜디오 in 캠퍼스' 에서만 참여 가능합니다​</p>
+								</div>
+								<ul class="step_wrap">
+									<li class="step_list">
+										<p class="step_title"><span class="en">STEP 1</span></p>
+										<div class="img_area">
+											<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_01_pc_v2.png" alt="">
+											<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_01_mo.png" alt="">
+										</div>
+										<p class="step_desc">폴더블의 다채로운 기능을 경험하고​ <br>To Do List 500P 획득해 <br>Z 플립 사진관 촬영 기회 Get!</p>
+									</li>
+									<li class="step_list">
+										<p class="step_title"><span class="en">STEP 2</span></p>
+										<div class="img_area">
+											<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_02_pc.png" alt="">
+											<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_02_mo_v2.png" alt="">
+										</div>
+										<p class="step_desc">Z 플립 사진관에서​ <br>총 4가지 앵글로 네컷 촬영해보기​​</p>
+									</li>
+									<li class="step_list">
+										<p class="step_title"><span class="en">STEP 3</span></p>
+										<div class="img_area">
+											<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_03_pc.png" alt="">
+											<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_step_03_pc.png" alt="">
+										</div>
+										<p class="step_desc">필수 해시태그와 함께 인증샷을 <br>SNS에 업로드하고​ <br>아래 버튼을 클릭해 게시글 URL 제출하기​​</p>
+									</li>
+								</ul>
+								<div class="challenge_wrap">
+									<button type="button" class="challenge_apply_btn" onclick="fnCallPop2(31735)" data-omni-type="microsite" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus_challenge_apply">챌린지 응모하기</button>
+								</div>
+								<div class="event_hashtag hashtag_wrap">
+									<div class="hash_txt_area">
+										<p class="hash_tit">[ 필수 해시태그 ]</p>
+										<p class="hash_desc event_tag">#갤럭시Z플립4 #Z플립사진관 <br class="m_show">#Z플립찍어볼각챌린지 <br class="m_hide">#갤럭시스튜디오in캠퍼스 <br class="m_show">#갤럭시스튜디오 #삼성전자이벤트</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<input type="text" class="event_tag_value_tiktok blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:;" class="btn_copy" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus_copy_hashtag1">해시태그 복사하기</a>
+									</div>
+								</div>
+								<div class="period_wrap">
+									<p class="period_tit">기간 및 혜택</p>
+									<ul class="period_desc">
+										<li class="period_desc_list period_desc_list_01">응모 기간 : 2022.9.1(목) ~ 11.6(일)</li>
+										<li class="period_desc_list period_desc_list_02">당첨자 발표 : 2022.11.15(화) <em class="kr">|</em> 삼성닷컴 발표​</li>
+									</ul>
+									<div class="gift">
+										<p class="product_txt"><span class="color_txt">경품</span></p>
+										<ul class="product_list_wrap">
+											<li class="product_list_item product_list_item_01">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_product_01_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_product_01_mo.png" alt="">
+												</div>
+												<div class="text_area">
+													<strong>올리브영 기프트카드 3만원권</strong>
+													<p>(120명 / 1인 1매)</p>
+												</div>
+											</li>
+											<li class="product_list_item product_list_item_02">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_product_02_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_product_02_mo.png" alt="">
+												</div>
+												<div class="text_area">
+													<strong>스타벅스 아메리카노 Tall 기프티콘</strong>
+													<p>(200명 / 1인 1매)</p>
+												</div>
+											</li>
+										</ul>
+										<p class="refet_txt">중복 제공 불가</p>
+									</div>
+								</div>
+							</div>
+							<section class="sec_notice sec_notice_01">
+								<div class="sec_area">
+									<div class="notice_area notice_area_1">
+										<p class="notice_title">갤럭시 스튜디오 in 캠퍼스 <br class="m_hide">유의사항</p>
+										<ul class="notice_list">
+											<li>상기 일정 및 내용은 당사 사정에 따라 예고 없이 중단 또는 변경될 수 있습니다.</li>
+											<li class="m_hide">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989 (10:00~22:00) / e-mail : galaxyz4_studio@naver.com</span></li>
+											<li class="m_show">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989 (10:00~22:00) <br>e-mail : galaxyz4_studio@naver.com</span></li>
+										</ul>
+									</div>
+									<div class="notice_area notice_area_2">
+										<p class="notice_title">Z 플립 사진관 찍어볼각​ <br class="m_hide">챌린지 이벤트​ <br class="m_hide">유의사항</p>
+										<ul class="notice_list">
+											<li>본 이벤트는 당사 사정에 따라 예고 없이 변경 또는 중단될 수 있으며, 발표일과 배송 일정은 당사 사정에 의해 지연될 수 있습니다​.</li>
+											<li>참여 게시물은 필수 해시태그가 모두 포함되어야 하며, 이벤트 기간 내 업로드 되어 당첨자 발표일까지 계정 및 게시물이 공개 설정된 콘텐츠에 한해 정상 응모로 간주됩니다​.</li>
+											<li>이벤트 참여 시 업로드된 사진 또는 영상은 기간 제한 없이 당사 마케팅 활동에 활용될 수 있습니다​.</li>
+											<li>비방 혹은 욕설 등 본 이벤트와 관련 없는 응모 내역은 당첨 대상에서 제외될 수 있습니다​.</li>
+											<li>타인의 보호되는 저작물, 초상권 일부 또는 전부를 해당 권리자 허락 없이 이용, 허락 범위를 넘어서는 행위에 대해서는 저작권, 초상권 침해가 되며 이에 대한 법적 책임은 이용자 본인에게 있습니다​.</li>
+											<li>타인 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용 등 비정상적인 방법으로 참여 시 당첨이 제한될 수 있습니다​.</li>
+											<li>이벤트 반복 참여는 가능하나 경품은 중복 지급되지 않습니다​.</li>
+											<li>만 14세 미만 응모자가 당첨될 경우, 경품 수령에 법정 대리인의 동의가 필요합니다. (별도 서류 제출 필요, 자세한 사항은 개별 안내)</li>
+											<li>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락 예정이며, 당첨자 발표 기간 내 연락이 닿지 않을 시 당첨이 자동으로 취소됩니다​.</li>
+											<li>잘못된 개인정보 입력으로 인해 당첨자에게 연락이 불가능하거나 경품이 반송, 분실될 경우 재발송되지 않으며 당사에서 책임지지 않습니다​.</li>
+											<li>올리브영 기프트카드 3만원권 및 스타벅스 기프티콘은 발행일로부터 60일까지 사용 가능, 일부 매장 사용 불가합니다. (유효기간 연장 및 환불 불가)</li>
+											<li>경품 배송을 위해 당사 경품 대행사에 배송 정보가 제공되며 행사 종료 후 파기됩니다​.</li>
+											<li class="m_hide">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) / e-mail : galaxyz4_studio@naver.com</span></li>
+											<li class="m_show">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) <br>e-mail : galaxyz4_studio@naver.com</span></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="field_02_02 tab_list">
+							<div class="sec_inner">
+								<div class="img_studio_02_02">
+									<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_logo_pc.png" alt="">
+									<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_logo_mo_v2.png" alt="">
+								</div>
+								<ul class="step_wrap">
+									<li class="step_list">
+										<p class="step_title"><span class="en">STEP 1</span></p>
+										<div class="img_area">
+											<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_step_01_pc_v2.png" alt="">
+											<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_step_01_mo_v2.png" alt="">
+										</div>
+										<p class="step_desc"><strong class="step1_strong">갤럭시</strong> <strong class="en black">To Go</strong> <strong class="step1_strong">서비스</strong>로<br><strong class="en black strong_bet">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</strong><br>경험하기</p>
+									</li>
+									<li class="step_list">
+										<p class="step_title"><span class="en">STEP 2</span></p>
+										<div class="img_area">
+											<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_step_02_pc_v2.png" alt="">
+											<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_02_step_02_mo_v2.png" alt="">
+										</div>
+										<p class="step_desc">오늘 하루 캠퍼스에서 뽐낸 <br>폴더블 사용기를​ <br class="m_show">필수 해시태그와 함께 <br>인스타그램에 올리면 완료​</p>
+									</li>
+								</ul>
+								<div class="event_hashtag hashtag_wrap">
+									<div class="hash_txt_area">
+										<p class="hash_tit">[ 필수 해시태그 ]</p>
+										<p class="hash_desc event_tag">#갤럭시Z폴드4 #갤럭시Z플립4 #오폴완 <br class="m_show">#오늘폴더블완료 <br class="m_hide">#갤럭시스튜디오in캠퍼스 <br class="m_show">#갤럭시스튜디오 #삼성전자이벤트</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<input type="text" class="event_tag_value_tiktok blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:;" class="btn_copy" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus_copy_hashtag2">해시태그 복사하기</a>
+									</div>
+								</div>
+								<div class="period_wrap">
+									<p class="period_tit">기간 및 혜택</p>
+									<ul class="period_desc">
+										<li class="period_desc_list period_desc_list_01">응모 기간 : 2022.9.1(목) ~ 11.6(일)</li>
+										<li class="period_desc_list period_desc_list_02">당첨자 발표 : 2022.11.23(수) <em class="kr">|</em> 인스타그램 피드 및 DM 고지​​</li>
+									</ul>
+									<div class="gift">
+										<p class="product_txt"><span class="color_txt">경품</span></p>
+										<ul class="product_list_wrap">
+											<li class="product_list_item product_list_item_01">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_01_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_01_mo.png" alt="">
+												</div>
+												<div class="text_area">
+													<strong class="en">Galaxy Z Fold4</strong>
+													<p>(1명 / 1인 1대 / 색상 랜덤)</p>
+												</div>
+											</li>
+											<li class="product_list_item product_list_item_02">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_02_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_02_mo.png" alt="">
+												</div>
+												<div class="text_area">
+													<strong class="en">Galaxy Z Flip4</strong>
+													<p>(1명 / 1인 1대 / 색상 랜덤)</p>
+												</div>
+											</li>
+											<li class="product_list_item product_list_item_03">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_03_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_03_mo.png" alt="">
+												</div>
+												<div class="text_area">
+													<strong class="en">Galaxy Buds2 Pro</strong>
+													<p>(8명 / 1인 1대 / 색상 랜덤)</p>
+												</div>
+											</li>
+											<li class="product_list_item product_list_item_04">
+												<div class="img_area">
+													<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_04_pc.png" alt="">
+													<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/tab_01_product_04_mo.png" alt="">
+												</div>
+												<div class="text_area m_hide">
+													<strong>스타벅스 아메리카노 Tall 기프티콘</strong>
+													<p>(15명 / 1인 1매)</p>
+												</div>
+												<div class="text_area m_show">
+													<strong>스타벅스 아메리카노 Tall <br>기프티콘 <span>(15명 / 1인 1매)</span></strong>
+												</div>
+											</li>
+										</ul>
+										<p class="refet_txt">중복 제공 불가</p>
+									</div>
+								</div>
+							</div>
+							<section class="sec_notice sec_notice_02">
+								<div class="sec_area">
+									<div class="notice_area notice_area_1">
+										<p class="notice_title">갤럭시 스튜디오 in 캠퍼스 <br class="m_hide">유의사항</p>
+										<ul class="notice_list">
+											<li>상기 일정 및 내용은 당사 사정에 따라 예고 없이 중단 또는 변경될 수 있습니다.</li>
+											<li class="m_hide">관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">​전화번호 : 02-2088-3989 (10:00~22:00) / e-mail : galaxyz4_studio@naver.com</span></li>
+											<li class="m_show">관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">​전화번호 : 02-2088-3989 (10:00~22:00) <br>e-mail : galaxyz4_studio@naver.com</span></li>
+										</ul>
+									</div>
+									<div class="notice_area notice_area_2">
+										<p class="notice_title">도전! 오늘 폴더블 완료 이벤트 <br class="m_hide">유의사항</p>
+										<ul class="notice_list">
+											<li>본 이벤트는 당사 사정에 따라 예고 없이 변경 또는 중단될 수 있으며, 발표일과 배송 일정은 당사 사정에 의해 지연될 수 있습니다​.</li>
+											<li>참여 게시물은 필수 해시태그가 모두 포함되어야 하며, 이벤트 기간 내 업로드 되어 당첨자 발표일까지 계정 및 게시물이 공개 설정된 콘텐츠에 한해 정상 응모로 간주됩니다​.</li>
+											<li>이벤트 참여 시 업로드된 사진 또는 영상은 기간 제한 없이 당사 마케팅 활동에 활용될 수 있습니다​.</li>
+											<li>비방 혹은 욕설 등 본 이벤트와 관련 없는 응모 내역은 당첨 대상에서 제외될 수 있습니다​.</li>
+											<li>타인의 보호되는 저작물, 초상권 일부 또는 전부를 해당 권리자 허락 없이 이용, 허락 범위를 넘어서는 행위에 대해서는 저작권, 초상권 침해가 되며 이에 대한 법적 책임은 이용자 본인에게 있습니다​.</li>
+											<li>타인 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용 등 비정상적인 방법으로 참여 시 당첨이 제한될 수 있습니다​.</li>
+											<li>이벤트 반복 참여는 가능하나 경품은 중복 지급되지 않습니다​.</li>
+											<li>5만원 초과 경품의 경우 제세공과금은 당첨자 본인 부담입니다​.</li>
+											<li>만 14세 미만 응모자가 당첨될 경우, 경품 수령에 법정 대리인의 동의가 필요합니다. (별도 서류 제출 필요, 자세한 사항은 개별 안내)</li>
+											<li>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락 예정이며, 당첨자 발표 기간 내 연락이 닿지 않을 시 당첨이 자동으로 취소됩니다​.</li>
+											<li>잘못된 개인정보 입력으로 인해 당첨자에게 연락이 불가능하거나 경품이 반송, 분실될 경우 재발송되지 않으며 당사에서 책임지지 않습니다​.</li>
+											<li>스타벅스 기프티콘은 발행일로부터 60일까지 사용 가능, 일부 매장 사용 불가합니다. (유효기간 연장 및 환불 불가)</li>
+											<li>경품 배송을 위해 당사 경품 대행사에 배송 정보가 제공되며 행사 종료 후 파기됩니다​.</li>
+											<li>도전! 오늘 폴더블 완료 이벤트 참여를 위해서는 갤럭시 <strong class="en">To Go</strong> 서비스를 통한 제품 대여가 필요합니다. 제품 대여는 갤럭시 스튜디오 in 캠퍼스에서만 가능하며 일부 이용자는 체험이 제한될 수 있습니다.</li>
+											<li>제품 대여 시 본인 확인을 위한 신분증을 지참하셔야 합니다. 신분증은 “주민등록증, 운전면허증, 여권, 외국인등록증, 전자 신분증” 만 적용 가능합니다.</li>
+											<li>갤럭시 <strong class="en">To Go</strong> 서비스 제품 컬러는 랜덤으로 제공되며, 한번에 1인당 기종별 1대만 대여 가능합니다.</li>
+											<li>갤럭시 <strong class="en">To Go</strong> 서비스 체험 제품 반납은 대여하신 매장에서만 가능하며, 도난으로 인한 분실 및 장기 미반납 시 제품 분실에 해당하는 변상 책임이 발생할 수 있습니다.</li>
+											<li>갤럭시 <strong class="en">To Go</strong> 서비스 체험 중 제품 파손 및 분실에 대한 책임은 고객님께 있으며, 제품 분실 시 운영사무국(02-2088-3989)으로 연락 주시기 바랍니다.</li>
+											<li>갤럭시 <strong class="en">To Go</strong> 서비스 체험 제품 반납 기한 경과 시 <strong class="en">To Go</strong> 서비스 예약 및 기능 이용에 제한이 있을 수 있습니다.</li>
+											<li>대여하신 기기로 상대방의 사전 동의 없는 촬영 혹은 촬영물 유포 시 민형사상 법적 책임은 본인에게 있습니다.</li>
+											<li>갤럭시 <strong class="en">To Go</strong> 서비스 체험 제품은 철저한 소독 후 제공됩니다.</li>										
+											<li class="m_hide">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다​. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) / e-mail : galaxyz4_studio@naver.com</span></li>
+											<li class="m_show">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다​. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) <br>e-mail : galaxyz4_studio@naver.com</span></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>	
+			</section>
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+<script>
+	;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+
+			// video
+			$('.video_play').click(function(){
+				var $this = $(this);
+				$this.hide();
+				$this.siblings('.video_item').addClass('on');
+				var _video = $this.next().children('.video');
+						_src = _video.attr("src");
+						_param_code = _src.indexOf("?") > -1 ? "&" : "?";
+						/* _video.attr("src",_src + _param_code + "autoplay=1&controls=0"); */
+						_video.attr("src",_src + _param_code + "autoplay=1&controls=0");
+						$this.siblings('.video_item_bottom').addClass('on');
+			});
+
+			/* $('.video_play').each(function() {
+				$(this).on('click', function() {
+					var $video = $(this).siblings('.video_youtube');
+					var videoId = $video.attr('id');
+					var youtubeId = $video.data('youtube-id');
+					vodPlayer.create(youtubeId, videoId, "youtube", true);
+					$(this).hide();
+					$(this).siblings('.video_thumb').fadeOut();
+					$(this).siblings('.video_item').addClass('on');
+				});
+			}); */
+
+			// 상단 자세히보기
+			$('.btn_date_link_def').click(function(e){
+				e.preventDefault();
+				var $this = $(this);
+				$this.siblings().addClass('on');
+				$this.removeClass('on');
+				$this.css("display","none")
+				$this.siblings('.btn_date_link_aft').css("display","block");
+				$this.parent().siblings('.field_01 .to_go_step_top').addClass('on');
+				$this.parent().siblings('.field_01 .to_go_step_bot').addClass('on');
+				var toggleOn = $parent().siblings('.field_01 .to_go_step_bot').addClass('on');
+			});
+
+			$('.btn_date_link_aft').click(function(e){
+				e.preventDefault();
+				var $this = $(this);
+				$this.siblings().addClass('on');
+				$this.removeClass('on');
+				$this.css("display","none")
+				$this.siblings('.btn_date_link_def').css("display","block");
+				$this.parent().siblings('.field_01 .to_go_step_top').removeClass('on');
+				$this.parent().siblings('.field_01 .to_go_step_bot').removeClass('on');
+				var toggleOff = $parent().siblings('.field_01 .to_go_step_bot').removeClass('on');
+			});
+
+			// tab_menu
+			$('.tab_title a').click(function (e) { 
+				e.preventDefault();
+				var $this = $(this);
+				var idx = $this.index();
+				$('.tab_title a').removeClass("on");
+				$this.addClass("on");
+				$('.tab_content .tab_list').removeClass("on");
+				$('.tab_content .tab_list:nth-child(' + (idx+1)+ ')').addClass("on");
+			});
+
+			// hash_tag
+			$('.event_hashtag').each(function() {
+				var $this = $(this),
+				$txt = $this.find('.event_tag').text().split("#").join("#");
+				$this.find('.event_tag_value').val($txt);
+				$this.find(".btn_copy").on("click", function(e) {
+					e.preventDefault();
+					alert('해시태그가 복사되었습니다.');
+					var copyText = $this.find('.event_tag_value')[0];
+					copyText.select();
+					copyText.setSelectionRange(0, 9999);
+					document.execCommand('copy');
+				});
+			});
+
+			// init
+			$(".tab_title a:eq(0)[data-depth1='v4']").trigger("click");
+
+			// 페이지 접속 시 앵커 이동
+			var url = window.location.href;
+			var chk = url.split('?')[1] || window.location.hash;
+			var target;
+
+			console.log(chk);
+
+			if (chk.indexOf('studio_tab_01') > -1) {
+				target = $('.field_02').offset().top;
+				$(".tab_title[data-depth1='v4']").trigger("click");
+				$(".tab_title a:eq(0)").trigger("click");	
+				console.log(target);
+			} else if (chk.indexOf('studio_tab_02') > -1) {
+				target = $('.field_02').offset().top;
+				$(".tab_title[data-depth1='v4']").trigger("click");
+				$(".tab_title a:eq(1)").trigger("click");	
+			}
+
+			if (chk.indexOf('studio_tab') > -1) {
+				setTimeout(function() {
+					target = $('#studio_tab').offset().top;						
+					$('html,body').stop().animate({scrollTop:target}, 500);
+				}, 1500);	
+			} 
+
+			if (target) {
+				setTimeout(function() {
+					$('html,body').stop().animate({scrollTop:target}, 500);
+				}, 1000);
+			}
+
+			// 하단 플로팅 버튼
+			$(".btn_anchor").on("click",function(e) {
+				e.preventDefault();
+				$('html,body').animate({scrollTop : $($(this).attr('href')).offset().top},500,'linear');
+			});
+
+			
+
+		});
+		</script>
+		<!-- e : 본문 영역 -->
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>갤럭시 제각각 챌린지</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- s : 본문 영역 -->
+		<script type="text/javascript">
+			digitalData.page.pathIndicator.depth_2 = "microsite";
+			digitalData.page.pathIndicator.depth_3 = "challenge";
+		</script>
+		
+		
+		<style>
+		/* common */
+		.galaxy_challenge { overflow:hidden ; }
+		.galaxy_challenge .sec_inner { max-width:1440px; margin:0 auto; }
+		.galaxy_challenge .m_show{ display: none !important; }
+		.galaxy_challenge .m_hide{ display: block !important; }
+		.galaxy_challenge .img_box{ width: 100%; height: 100%; }
+		.galaxy_challenge .img_box > img{width: 100%; height: 100%;}
+		.galaxy_challenge .en {font-family:"Samsung Sharp Sans",SamsungSharpSans;font-weight:bold;}
+		.galaxy_challenge .kr {font-family:'SamsungOneKorean', Dotum, '돋움', sans-serif;font-weight:normal;}
+		.galaxy_challenge > section {position:relative; width:100%; max-width:1920px; margin:0 auto;}
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_challenge .sec_kv .txt_box {position:absolute; top:105px; left:240px;}
+		.galaxy_challenge .sec_kv .txt_box h2 {font-size:58px; letter-spacing:0;}
+		.galaxy_challenge .sec_kv .txt_box .sub_txt {padding-top:20px; font-size:22px; line-height:1.3;}
+
+		.galaxy_challenge .sec_kv .menu_box {position:absolute; bottom:22px; left:240px; display:flex;}
+		.galaxy_challenge .sec_kv .menu_box li + li {margin-left:10px;}
+		.galaxy_challenge .sec_kv .menu_box .menu_search {background:#7e52ef url('images/ico_search.png') no-repeat 24px 10px; background-size:26px 38px;}
+		.galaxy_challenge .sec_kv .menu_box .menu_product {background:#936fee url('images/ico_product.png') no-repeat 26px 10px; background-size:37px 37px;}
+		.galaxy_challenge .sec_kv .menu_box li > a {position:relative; display:block; width:180px; height:58px;}
+		.galaxy_challenge .sec_kv .menu_box li > a::before {content:''; position:absolute; top:0; right:-9px; border-right:9px solid transparent;}
+		.galaxy_challenge .sec_kv .menu_box li.menu_search > a::before {border-bottom:13px solid #5634ae;}
+		.galaxy_challenge .sec_kv .menu_box li.menu_product > a::before {border-bottom:13px solid #6344b1;}
+		.galaxy_challenge .sec_kv .menu_box .menu_tit {color:#fff; font-size:18px; font-weight:700; line-height:58px;}
+		.galaxy_challenge .sec_kv .menu_box .menu_search .menu_tit {padding-left:62px;}
+		.galaxy_challenge .sec_kv .menu_box .menu_product .menu_tit {padding-left:78px;}
+
+		/* sec_studio_nav */
+		.sec_studio_nav {position:relative; width:100%; max-width:1920px; margin:0 auto; border-top:2px solid #000; border-bottom:1px solid #cecece; background-color:#fff;}
+		.sec_studio_nav * {font-size:inherit;}
+		.sec_studio_nav .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+		.sec_studio_nav .m_show {display:none !important;}
+		.sec_studio_nav .m_hide {display:block !important;}
+		.sec_studio_nav .nav_list {display:flex; width:100%; height:100%; max-width:1440px; margin:0 auto; padding:0 2px;}
+		.sec_studio_nav .nav_list li {width:204px; height:80px; border-left:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li:last-child {border-right:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li a {position:relative; display:inline-flex; justify-content:center; align-items:center; width:100%; height:100%; background-color:#fff;}
+		.sec_studio_nav .nav_list li .nav_title {font-size:20px; font-weight:700;}
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title {z-index:2; position:relative; top:-3px; left:-2px; color:#fff;}
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {content:''; z-index:1; position:absolute; top:-5px; left:-3px; width:207px; height:85px; background:url('images/studio_nav_bg.png') no-repeat 0 0 / 100%;}
+
+		/* contents */
+		.sec_challenge .txt_area { text-align:center; }
+		.sec_challenge .top_txt { font-size:32px; letter-spacing: -0.25px; font-weight:600; padding:120px 0 0; }
+		.sec_challenge .top_txt strong { vertical-align: top; }
+		.sec_challenge .bot_txt { font-size:56px; letter-spacing: -0.5px; padding:30px 0 80px; line-height:1.2; font-weight:600; }
+		.sec_challenge .bot_txt .txt_color { position:relative; top:-2.75px; font-size:0; display:inline-block; background:url(images/challenge_color_txt_pc.png) no-repeat; width:756px; height:49px;  }
+		.sec_challenge .tit_txt { font-size:36px; font-weight:600; text-align:center; }
+		.sec_challenge .pic_wrap { display:flex; justify-content: center; padding:40px 0 80px; }
+		.sec_challenge .pic_tit { font-size:22px; font-weight:700; text-align: center; padding:30px 0 20px; }
+		.sec_challenge .field_01 .pic_item_01 .pic_tit { color:#7189cf; }
+		.sec_challenge .field_01 .pic_item_02 .pic_tit { color:#519ddd; }
+		.sec_challenge .field_01 .pic_item_03 .pic_tit { color:#17b1bf; }
+		.sec_challenge .field_01 .pic_item_04 .pic_tit { color:#6945d1; }
+		.sec_challenge .field_01 .pic_item { margin:0 12px 0 0; }
+		.sec_challenge .field_01 .pic_item_01 .pic_box { border:1px solid #efe8d4; }
+		.sec_challenge .field_01 .pic_item_02 .pic_box { border:1px solid #e0eedf; }
+		.sec_challenge .field_01 .pic_item_03 .pic_box { border:1px solid #e0eaf6; }
+		.sec_challenge .field_01 .pic_item_04 .pic_box { border:1px solid #e7e1ff; }
+		.sec_challenge .field_01 .event_tag { display:none; }
+		.sec_challenge .field_01 .btn_area {  display: block; width: 230px; margin: 20px auto 0; }
+		.sec_challenge .field_01 .btn_area button { width:230px; height:45px; background:#000; color:#fff; font-size:20px; border-radius:22px; }
+		.sec_challenge .field_01 .details_btn { margin:0 0 8px; }
+		.sec_challenge .field_01 .hash_tiktok_btn { margin:8px 0 0; }
+		.sec_challenge .field_01 .event_alert { display: none; position: fixed; top: 0; left: 0; z-index: 1001; width: 100%; background: #5782bd; color: #fff; text-align: center; height: 30px; line-height: 30px; font-size: 16px; }
+		.sec_challenge .field_01 .to_go_step { display:flex; justify-content: center; }
+		.sec_challenge .field_01 .to_go_step_top { padding:60px 0; }
+		.sec_challenge .field_01 .to_go_list { width:386px; height:156px; margin:0 20px 0 0; }
+		.sec_challenge .field_01 .to_go_list_tit { position:relative; margin:0 auto; width:190px; height:50px; top:-20px; margin-bottom:15px; }
+		.sec_challenge .field_01 .to_go_list span { position:relative; display:block; width:100%; height:100%; padding-top:13px; font-size:24px; text-align: center; color:#fff; z-index:10; }
+		.sec_challenge .field_01 .to_go_list_tit:before { content:''; position:absolute; top:0; left:50%; width:104px; border-width:0 9px 20px; border-style: solid; border-color: transparent transparent #394ba1 #e7f2ff; box-sizing: border-box;}
+		.sec_challenge .field_01 .to_go_list_1 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.sec_challenge .field_01 .to_go_list_2 { background:#e8faff; border:2px solid #dff3f9; }
+		.sec_challenge .field_01 .to_go_list_3 { background:#ebf7ff; border:2px solid #deedf7; }
+		.sec_challenge .field_01 .to_go_list_4 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.sec_challenge .field_01 .to_go_list_5 { background:#e8faff; border:2px solid #dff3f9; }
+		.sec_challenge .field_01 .to_go_list_1 span { background:#51b96f; }
+		.sec_challenge .field_01 .to_go_list_2 span { background:#41b193; }
+		.sec_challenge .field_01 .to_go_list_3 span { background:#31aeb6; }
+		.sec_challenge .field_01 .to_go_list_4 span { background:#2b8cc9; }
+		.sec_challenge .field_01 .to_go_list_5 span { background:#4a76c0; }
+		.sec_challenge .field_01 .to_go_list_1 .to_go_list_tit:before { border-color:transparent transparent #307343 transparent; }
+		.sec_challenge .field_01 .to_go_list_2 .to_go_list_tit:before { border-color:transparent transparent #2f846d transparent; }
+		.sec_challenge .field_01 .to_go_list_3 .to_go_list_tit:before { border-color:transparent transparent #20777d transparent; }
+		.sec_challenge .field_01 .to_go_list_4 .to_go_list_tit:before { border-color:transparent transparent #1e6490 transparent; }
+		.sec_challenge .field_01 .to_go_list_5 .to_go_list_tit:before { border-color:transparent transparent #325590 transparent; }
+		.sec_challenge .field_01 .to_go_list dl { display:flex; padding:0 0 0 30px; font-weight:700; line-height: 1.6; }
+		.sec_challenge .field_01 .to_go_list dt { width:124px; font-size:18px; }
+		.sec_challenge .field_01 .to_go_list dd { font-size:18px; }
+		.sec_challenge .field_02 { max-width:1200px; margin:80px auto 0; }
+		.sec_challenge .field_02 .refer_txt { font-size:20px; color:#666; text-align: center; margin: 15px 0 0; }
+		.sec_challenge .field_02 .top_area { border:1px solid #ddd; margin:40px 0; }
+		.sec_challenge .field_02 .bot_area { border:1px solid #ddd; }
+		.sec_challenge .field_02 .product_txt { text-align: center; background:#ededed; border-bottom:1px solid #ddd; padding:15px 0; }
+		.sec_challenge .field_02 .product_txt .color_txt { font-size:28px; font-weight:700; position:relative; } 
+		.sec_challenge .field_02 .product_txt .color_txt:after { content:''; display:inline-block; width:5px; height:5px; background:#666; border-radius:100%; position:absolute; top:50%; right: -12px; transform:translateY(-50%); }
+		.sec_challenge .field_02 .product_txt .color_txt.color_txt_03:after { display:none; }
+		.sec_challenge .field_02 .product_txt .color_txt_01 { color:#7189cf; margin-right:23px;}
+		.sec_challenge .field_02 .product_txt .color_txt_02 { color:#519ddd; margin-right:23px;}
+		.sec_challenge .field_02 .product_txt .color_txt_03 { color:#6945d1; }
+		.sec_challenge .field_02 .bot_area .product_txt .color_txt { color:#17b1bf; }
+		.sec_challenge .field_02 .bot_area .color_txt:after { display:none; }
+		.sec_challenge .product_list_wrap { display:flex; justify-content: space-around; align-items: center; padding:40px 0; }
+		.sec_challenge .field_02 .text_area { text-align: center;  }
+		.sec_challenge .field_02 .text_area p { margin:14px 0 0; font-size:22px; }
+		.sec_challenge .field_02 .text_area strong { font-size:22px; }
+		.sec_challenge .field_02 .product_list_item_01 .text_area { padding:20px 0 0; }
+		.sec_challenge .field_02 .product_list_item_02 .text_area { position:relative; top:44px; }
+		.sec_challenge .field_02 .product_list_item_03 .text_area { padding:20px 0 0; }
+		.sec_challenge .field_02 .product_list_item_04 .text_area { padding:20px 0 0; }
+		.sec_challenge .field_02 .hashtag_wrap { background:url(images/hashtag_bg_pc.png) no-repeat; margin:80px 0 100px; display:flex; justify-content: space-around; align-items: center; padding: 32px 0; }
+		.sec_challenge .field_02 .hash_tit { margin:0 0 20px; font-size:24px; color:#fff; }
+		.sec_challenge .field_02 .hash_desc { line-height: 1.5; font-size:24px; color:#fff; }
+		.sec_challenge .field_02 .hashtag_wrap .btn_anchor { width:250px; height:100px; border-radius:10px; display:inline-block; text-align: center; padding-top:20px; color:#fff; border:2px solid #f0f7ff; font-size:24px; line-height:1.25; }
+
+		/* pop_up */
+		.cover {position: fixed; left:0.0000vw; top:0.0000vw; right:0.0000vw; bottom:0.0000vw; background:rgba(0,0,0,0.7); z-index:9999; display:none;}
+		.pop_up { width:1042px; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); display:none; z-index: 10000; }
+		.pop_up .btn_close { position:absolute; top: -60px; right: 0; }
+		.pop_up .pic_box { opacity: 0; height:0; }
+		.pop_btn_area { position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%); }
+		.pop_up_04 .pop_btn_area { bottom:70px; }
+		.hash_copy_btn { width:296px; height:49px; border-radius:24px; background:#000; color:#fff; font-size:24px; }
+
+		/* footer */
+		.sec_notice { max-width:1920px; width:100%; height:auto; margin:0 auto; background-color:#000; color:#fff; }
+		.sec_notice .sec_inner { width:1440px ;margin:0 auto; padding: 80px 0;}
+		.sec_notice .notice_area { margin-left:100px; display:flex; }
+		.sec_notice .notice_title { font-size:16px; color:#fff; line-height:1.6; margin-right:60px; font-weight:700; }
+		.sec_notice .notice_list li { position: relative; padding-left: 10px; margin-bottom: 12px; font-size: 16px; line-height:1;color:#a3a3a3;letter-spacing:0; }
+		.sec_notice .notice_list li:before { content:''; position:absolute; width:4px; height:4px; left:0; top:5px;background-color: rgba(255, 255, 255, 0.6); border-radius: 100%; }
+		.sec_notice .notice_list .space_txt { display:block; margin:12px 0 0; }
+
+		@media screen and (min-width: 769px) and (max-width: 1920px) {
+				/****************
+					sec_kv
+				****************/
+				.galaxy_challenge .sec_kv .txt_box {top:5.4688vw; left:12.5000vw;}
+				.galaxy_challenge .sec_kv .txt_box h2 {font-size:3.0208vw;}
+				.galaxy_challenge .sec_kv .txt_box .sub_txt {padding-top:1.0417vw; font-size:1.1458vw;}
+
+				.galaxy_challenge .sec_kv .menu_box {bottom:1.1458vw; left:12.5000vw;}
+				.galaxy_challenge .sec_kv .menu_box li + li {margin-left:0.5208vw;}
+				.galaxy_challenge .sec_kv .menu_box .menu_search {background-position:1.2500vw 0.5208vw; background-size:1.3542vw 1.9792vw;}
+				.galaxy_challenge .sec_kv .menu_box .menu_product {background-position:1.3542vw 0.5208vw; background-size:1.9271vw 1.9271vw;}
+				.galaxy_challenge .sec_kv .menu_box li > a {width:9.3750vw; height:3.0208vw;}
+				.galaxy_challenge .sec_kv .menu_box li > a::before {top:0; right:-0.4688vw; border-right:0.4688vw solid transparent;}
+				.galaxy_challenge .sec_kv .menu_box li.menu_search > a::before {border-bottom:0.6771vw solid #5634ae;}
+				.galaxy_challenge .sec_kv .menu_box li.menu_product > a::before {border-bottom:0.6771vw solid #6344b1;}
+				.galaxy_challenge .sec_kv .menu_box .menu_tit {font-size:0.9375vw; line-height:3.0208vw;}
+				.galaxy_challenge .sec_kv .menu_box .menu_search .menu_tit {padding-left:3.2292vw;}
+				.galaxy_challenge .sec_kv .menu_box .menu_product .menu_tit {padding-left:4.0625vw;}
+			}		
+
+
+		@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+			/* sec_studio_nav */
+			.sec_studio_nav .nav_list li {width:14.1667vw; height:5.5556vw;}
+			.sec_studio_nav .nav_list li .nav_title {font-size:1.3889vw;}
+			.sec_studio_nav .nav_list li.on .nav_title,
+			.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.2083vw; left:-0.1389vw;}
+			.sec_studio_nav .nav_list li.on a::after,
+			.sec_studio_nav .nav_list li a:hover::after {top:-0.3472vw; left:-0.2083vw; width:14.3750vw; height:5.9028vw;}
+
+			/* contents */
+			.sec_challenge .top_txt { font-size:2.2222vw; letter-spacing: -0.0174vw; padding:8.3333vw 0 0; }
+			.sec_challenge .top_txt strong { font-size:2.2222vw; }
+			.sec_challenge .bot_txt { font-size:3.8889vw; letter-spacing: -0.0347vw; padding:2.0833vw 0 5.5556vw; }
+			.sec_challenge .bot_txt .txt_color { position:relative; top:-0.1910vw; font-size:0; display:inline-block; background-size:cover; width:52.5000vw; height:3.4028vw;  }
+			.sec_challenge .tit_txt { font-size:2.5000vw; font-weight:600; text-align:center; }
+			.sec_challenge .pic_wrap { display:flex; justify-content: center; padding:2.7778vw 0 5.5556vw; }
+			.sec_challenge .pic_tit { font-size:1.5278vw; font-weight:700; text-align: center; padding:2.0833vw 0 1.3889vw; }
+			.sec_challenge .field_01 .pic_item_01 .pic_tit { color:#7189cf; }
+			.sec_challenge .field_01 .pic_item_02 .pic_tit { color:#519ddd; }
+			.sec_challenge .field_01 .pic_item_03 .pic_tit { color:#17b1bf; }
+			.sec_challenge .field_01 .pic_item_04 .pic_tit { color:#6945d1; }
+			.sec_challenge .field_01 .pic_item { margin:0 0.8333vw 0 0; }
+			.sec_challenge .field_01 .pic_item_01 .pic_box { border:0.0694vw solid #efe8d4; }
+			.sec_challenge .field_01 .pic_item_02 .pic_box { border:0.0694vw solid #e0eedf; }
+			.sec_challenge .field_01 .pic_item_03 .pic_box { border:0.0694vw solid #e0eaf6; }
+			.sec_challenge .field_01 .pic_item_04 .pic_box { border:0.0694vw solid #e7e1ff; }
+			.sec_challenge .field_01 .btn_area { margin: 1.3889vw auto 0; text-align: center; }
+			.sec_challenge .field_01 .btn_area button { width:15.9722vw; height:3.1250vw; font-size:1.3889vw; border-radius:1.5278vw; }
+			.sec_challenge .field_01 .details_btn { margin:0 0 0.5556vw; }
+			.sec_challenge .field_01 .hash_tiktok_btn { margin:0.5556vw 0 0; }
+			.sec_challenge .field_01 .to_go_step { display:flex; justify-content: center; }
+			.sec_challenge .field_01 .to_go_step_top { padding:4.1667vw 0; }
+			.sec_challenge .field_01 .to_go_list { width:26.8056vw; height:10.8333vw; margin:0 1.3889vw 0 0; }
+			.sec_challenge .field_01 .to_go_list_tit { position:relative; margin:0 auto; width:13.1944vw; height:3.4722vw; top:-1.3889vw; margin-bottom:1.0417vw; }
+			.sec_challenge .field_01 .to_go_list span { position:relative; display:block; width:100%; height:100%; padding-top:0.9028vw; font-size:1.6667vw; text-align: center; color:#fff; z-index:10; }
+			.sec_challenge .field_01 .to_go_list_tit:before { content:''; position:absolute; top:0; left:50%; width:7.2222vw; border-width:0 0.6250vw 1.3889vw; border-style: solid; border-color: transparent transparent #394ba1 #e7f2ff; box-sizing: border-box;}
+			.sec_challenge .field_01 .to_go_list_1 { border:0.1389vw solid #e1f7ef; }
+			.sec_challenge .field_01 .to_go_list_2 { border:0.1389vw solid #dff3f9; }
+			.sec_challenge .field_01 .to_go_list_3 { border:0.1389vw solid #deedf7; }
+			.sec_challenge .field_01 .to_go_list_4 { border:0.1389vw solid #e1f7ef; }
+			.sec_challenge .field_01 .to_go_list_5 { border:0.1389vw solid #dff3f9; }
+			.sec_challenge .field_01 .to_go_list dl { padding:0 0 0 2.0833vw; }
+			.sec_challenge .field_01 .to_go_list dt { width:8.6111vw; font-size:1.2500vw; }
+			.sec_challenge .field_01 .to_go_list dd { font-size:1.2500vw; }
+			.sec_challenge .field_02 { max-width:83.3333vw; margin:5.5556vw auto 0; }
+			.sec_challenge .field_02 .refer_txt { font-size:1.3889vw; margin: 1.0417vw 0 0; }
+			.sec_challenge .field_02 .top_area { border:0.0694vw solid #ddd; margin:2.7778vw 0; }
+			.sec_challenge .field_02 .bot_area { border:0.0694vw solid #ddd; }
+			.sec_challenge .field_02 .product_txt {border-bottom:0.0694vw solid #ddd; padding:1.0417vw 0; }
+			.sec_challenge .field_02 .product_txt .color_txt { font-size:1.9444vw; } 
+			.sec_challenge .field_02 .product_txt .color_txt:after { width:0.3472vw; height:0.3472vw; top:50%; right: -0.8333vw; }
+			.sec_challenge .field_02 .product_txt .color_txt_01 { color:#7189cf; margin-right:1.5972vw;}
+			.sec_challenge .field_02 .product_txt .color_txt_02 { color:#519ddd; margin-right:1.5972vw;}
+			.sec_challenge .product_list_wrap {  padding:2.7778vw 0; }
+			.sec_challenge .field_02 .text_area p { margin:0.9722vw 0 0; font-size:1.5278vw; }
+			.sec_challenge .field_02 .text_area strong { font-size:1.5278vw; }
+			.sec_challenge .field_02 .product_list_item_01 .text_area { padding:1.3889vw 0 0; }
+			.sec_challenge .field_02 .product_list_item_02 .text_area { top:3.0556vw; }
+			.sec_challenge .field_02 .product_list_item_03 .text_area { padding:1.3889vw 0 0; }
+			.sec_challenge .field_02 .product_list_item_04 .text_area { padding:1.3889vw 0 0; }
+			.sec_challenge .field_02 .hashtag_wrap { margin:5.5556vw 0 6.9444vw; padding: 2.2222vw 0; }
+			.sec_challenge .field_02 .hash_tit { margin:0 0 1.3889vw; font-size:1.6667vw; }
+			.sec_challenge .field_02 .hash_desc { line-height: 1.5; font-size:1.6667vw;  }
+			.sec_challenge .field_02 .hashtag_wrap .btn_anchor { width:17.3611vw; height:6.9444vw; border-radius:0.6944vw;  border:0.1389vw solid #f0f7ff; font-size:1.6667vw; }
+
+			/* pop_up */
+			.pop_up { width:72.3611vw;  }
+			.pop_up .btn_close {  top: -4.1667vw; right: 0; width: 2.7778vw; }
+			.pop_btn_area { bottom: 5.5556vw; left: 50%; transform: translateX(-50%); }
+			.pop_up_04 .pop_btn_area { bottom:4.8611vw; }
+			.hash_copy_btn { width:20.5556vw; height:3.4028vw; border-radius:1.6667vw; font-size:1.6667vw; }
+
+			/* footer */
+			.sec_notice { max-width:133.3333vw; width:100%; }
+			.sec_notice .sec_inner { width:100.0000vw; padding: 5.5556vw 0;}
+			.sec_notice .notice_area { margin-left:6.9444vw; }
+			.sec_notice .notice_title { font-size:1.1111vw; margin-right:4.1667vw; }
+			.sec_notice .notice_list li { padding-left: 0.6944vw; margin-bottom: 0.8333vw; font-size: 1.1111vw; }
+			.sec_notice .notice_list li:before { width:0.2778vw; height:0.2778vw; left:0; top:0.3472vw; }
+			.sec_notice .notice_list li .space_txt { font-size: 1.1111vw; }
+
+		}
+
+		@media screen and (max-width: 768px) {
+		
+		/* common */
+		.galaxy_challenge .m_show { display: block !important; }
+		.galaxy_challenge .m_hide { display: none !important; }
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_challenge .sec_kv .txt_box {top:8.3333vw; left:0; width:100%; text-align:center;}
+		.galaxy_challenge .sec_kv .txt_box h2 {font-size:9.4444vw;}
+
+		.galaxy_challenge .sec_kv .menu_box {bottom:2.2222vw; left:2.2222vw;}
+		.galaxy_challenge .sec_kv .menu_box li + li {margin-left:1.3889vw;}
+		.galaxy_challenge .sec_kv .menu_box .menu_search {background-position:3.3333vw 2.0833vw; background-size:3.6111vw 5.2778vw;}
+		.galaxy_challenge .sec_kv .menu_box .menu_product {background-position:4.3056vw 2.0833vw; background-size:5.1389vw 5.1389vw;}
+		.galaxy_challenge .sec_kv .menu_box li > a {width:27.7778vw; height:9.4444vw;}
+		.galaxy_challenge .sec_kv .menu_box li > a::before {top:auto; bottom:0; right:-1.111vw; border-right:1.2500vw solid transparent;}
+		.galaxy_challenge .sec_kv .menu_box li.menu_search > a::before {border-bottom:0; border-top:1.8056vw solid #5634ae;}
+		.galaxy_challenge .sec_kv .menu_box li.menu_product > a::before {border-bottom:0; border-top:1.8056vw solid #6344b1;}
+		.galaxy_challenge .sec_kv .menu_box .menu_tit {font-size:3.0556vw; line-height:9.4444vw;}
+		.galaxy_challenge .sec_kv .menu_box .menu_search .menu_tit {padding-left:8.6111vw;}
+		.galaxy_challenge .sec_kv .menu_box .menu_product .menu_tit {padding-left:12.0833vw;}
+
+		/* sec_studio_nav */
+		.sec_studio_nav .m_show {display:block !important;}
+		.sec_studio_nav .m_hide {display:none !important;}
+		.sec_studio_nav {overflow:hidden;}
+		.sec_studio_nav .nav_list {flex-wrap:wrap; padding:0;}
+		.sec_studio_nav .nav_list li {width:25%; height:13.8889vw; border-left:0.2778vw solid #cdcdcd; text-align:center;}
+		.sec_studio_nav .nav_list li:nth-child(4) ~ li {width:33.33%; border-top:0.2778vw solid #cdcdcd;}
+		.sec_studio_nav .nav_list li:first-child,
+		.sec_studio_nav .nav_list li:nth-child(5) {border-left:0;}
+		.sec_studio_nav .nav_list li:last-child {border-right:0;}
+		.sec_studio_nav .nav_list li .nav_title {font-size:3.3333vw; line-height:1.2;}
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.4167vw; left:-0.2778vw;}
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {top:-0.8333vw; left:-0.6944vw; width:25.6944vw; height:14.7222vw; background-image:url('images/studio_nav_bg_top_mo.png');}
+		.sec_studio_nav .nav_list :nth-child(4) ~ li.on a::after,
+		.sec_studio_nav .nav_list :nth-child(4) ~ li a:hover::after {left:0; width:33.194vw; height:14.7222vw; background-image:url('images/studio_nav_bg_btm_mo.png');}
+
+		/* contents */
+		.sec_challenge .top_txt { font-size:5.2778vw; letter-spacing: -0.0347vw; padding:11.1111vw 0 0; }
+		.sec_challenge .top_txt strong { font-size:5.2778vw; }
+		.sec_challenge .bot_txt { font-size:7.7778vw; letter-spacing: -0.0694vw; padding:4.1667vw 0 11.1111vw; }
+		.sec_challenge .bot_txt .txt_color { top:-0.3819vw; font-size:0; background:url(images/challenge_color_txt_mo.png) no-repeat; background-size:cover; width:58.7500vw; height:16.1111vw;  }
+		.sec_challenge .tit_txt { font-size:6.3889vw; }
+		.sec_challenge .pic_wrap { flex-wrap: wrap; width:100%; padding:11.1111vw 0; }
+		.sec_challenge .pic_tit { font-size:3.8889vw; padding:2.7778vw 0 3.4722vw; }
+		.sec_challenge .field_01 { padding:0 4.4444vw; }
+		.sec_challenge .field_01 .pic_item { width:44.4444vw; margin:0; } 
+		.sec_challenge .field_01 .pic_item_01 .pic_box { border:0.1389vw solid #efe8d4; }
+		.sec_challenge .field_01 .pic_item_02 .pic_box { border:0.1389vw solid #e0eedf; }
+		.sec_challenge .field_01 .pic_item_03 .pic_box { border:0.1389vw solid #e0eaf6; }
+		.sec_challenge .field_01 .pic_item_04 .pic_box { border:0.1389vw solid #e7e1ff; }
+		.sec_challenge .field_01 .pic_item_01 { margin:0 2.2222vw 0 0; }
+		.sec_challenge .field_01 .pic_item_03 { margin:8.3333vw 2.2222vw 0 0; }
+		.sec_challenge .field_01 .pic_item_04 { margin:8.3333vw 0 0 0; }
+		.sec_challenge .field_01 .btn_area { margin:3.6111vw 0 0; }
+		.sec_challenge .field_01 .details_btn { margin:0 0 1.1111vw; }
+		.sec_challenge .field_01 .btn_area button { width:44.4444vw; height:8.7500vw; font-size:3.6111vw; border-radius:4.3056vw; }
+		.sec_challenge .field_01 .to_go_step { display:block; }
+		.sec_challenge .field_01 .to_go_step_top { padding:8.3333vw 0 0; }
+		.sec_challenge .field_01 .to_go_list { width:80.0000vw; height:27.3611vw; margin:0 auto 6.9444vw; }
+		.sec_challenge .field_01 .to_go_list_tit {  margin:0; width:25.0000vw; height:8.6111vw; top:-2.7778vw; left:3.6111vw; margin-bottom:2.0833vw; }
+		.sec_challenge .field_01 .to_go_list span { padding-top:1.8056vw; font-size:4.4444vw;  }
+		.sec_challenge .field_01 .to_go_list_tit:before {  width:13.7500vw; border-width:0 1.2500vw 2.7778vw;  }
+		.sec_challenge .field_01 .to_go_list_1 { background:#eafcf6; border:0.2778vw solid #eafcf6; }
+		.sec_challenge .field_01 .to_go_list_2 { background:#eafcf6; border:0.2778vw solid #eafcf6; }
+		.sec_challenge .field_01 .to_go_list_3 { background:#eafcf6; border:0.2778vw solid #eafcf6; }
+		.sec_challenge .field_01 .to_go_list_4 { background:#eafcf6; border:0.2778vw solid #eafcf6; }
+		.sec_challenge .field_01 .to_go_list_5 { background:#eafcf6; border:0.2778vw solid #eafcf6; }
+		.sec_challenge .field_01 .to_go_list dl { display:flex; padding:0 0 0 4.1667vw;}
+		.sec_challenge .field_01 .to_go_list dt { width:27.7778vw; font-size:3.8889vw; }
+		.sec_challenge .field_01 .to_go_list dd { font-size:3.8889vw; }
+		.sec_challenge .field_02 { padding:0 4.4444vw; }
+		.sec_challenge .field_02 .refer_txt { font-size:3.6111vw; margin: 2.7778vw 0 0; }
+		.sec_challenge .field_02 .top_area { border:0.1389vw solid #ddd; margin:6.9444vw 0 8.3333vw; }
+		.sec_challenge .field_02 .bot_area { border:0.1389vw solid #ddd; }
+		.sec_challenge .field_02 .product_txt { padding:4.1667vw 0; }
+		.sec_challenge .field_02 .product_txt .color_txt { font-size:4.7222vw; } 
+		.sec_challenge .field_02 .product_txt .color_txt:after { width:0.6944vw; height:0.6944vw; right: -1.6667vw;}
+		.sec_challenge .field_02 .product_txt .color_txt_01 { margin-right:3.1944vw; }
+		.sec_challenge .field_02 .product_txt .color_txt_02 { margin-right:3.1944vw; }
+		.sec_challenge .product_list_wrap { justify-content: space-between; flex-wrap:wrap; padding:5.5556vw 11.1111vw; }
+		.sec_challenge .product_list_wrap .img_area img { margin:0 auto; }
+		.sec_challenge .product_list_wrap .product_list_item_01 img { width:19.5833vw; }
+		.sec_challenge .product_list_wrap .product_list_item_02 img { width:32.5000vw; }
+		.sec_challenge .product_list_wrap .product_list_item_03 img { width:19.5833vw; }
+		.sec_challenge .product_list_wrap .product_list_item_04 img { width:20.9722vw; }
+		.sec_challenge .field_02 .text_area p { margin:1.9444vw 0 0; font-size:3.8889vw; }
+		.sec_challenge .field_02 .text_area strong { font-size:3.8889vw; }
+		.sec_challenge .field_02 .product_list_item_01 .text_area { padding:4.1667vw 0 0; }
+		.sec_challenge .field_02 .product_list_item_02 .text_area { position:relative; top:6.1111vw; }
+		.sec_challenge .field_02 .product_list_item_03 { padding:8.3333vw 0 0; }
+		.sec_challenge .field_02 .product_list_item_03 .text_area { padding:4.1667vw 0 0; }
+		.sec_challenge .field_02 .product_list_item_04 { padding:8.3333vw 0 0; }
+		.sec_challenge .field_02 .product_list_item_04 .text_area { padding:4.1667vw 0 0; }
+		.sec_challenge .field_02 .hashtag_wrap { background: url(images/hashtag_bg_mo.png) no-repeat; background-size:cover; width:91.1111vw; height:54.0278vw; margin:11.1111vw 0 13.8889vw; display:block; padding: 4.4444vw 0; }
+		.sec_challenge .field_02 .hash_txt_area p { font-size:4.4444vw; text-align: center; }
+		.sec_challenge .field_02 .hash_tit { margin:0 0 2.7778vw; }
+		.sec_challenge .field_02 .hash_desc { font-size:4.1667vw; }
+		.sec_challenge .field_02 .hashtag_wrap .btn_wrap { text-align: center; margin:5.5556vw 0 0; }
+		.sec_challenge .field_02 .hashtag_wrap .btn_anchor { width:61.1111vw; height:9.1667vw; border-radius:1.3889vw; border:0.2778vw solid #f0f7ff; font-size:4.1667vw; padding-top:1.3889vw; }
+
+		/* pop_up */
+		.cover {position: fixed; left:0.0000vw; top:0.0000vw; right:0.0000vw; bottom:0.0000vw; background:rgba(0,0,0,0.7); z-index:9999; display:none;}
+		.pop_up { position:absolute; top:219.4444vw; left:11.1111vw; transform:translate(0); display:none; z-index: 10000; width: 77.7778vw; }
+		.pop_up .btn_close { position:absolute; top: -10.2778vw; left: 71.1111vw; width:6.6667vw; }
+		.pop_up img.pop_img { width: 77.7778vw; }
+		.pop_btn_area { bottom: 12.5000vw; left: 50%;  }
+		.pop_up_04 .pop_btn_area { bottom:12.5000vw; }
+		.hash_copy_btn { width:51.1111vw; height:8.7500vw; border-radius:4.1667vw; font-size:3.6111vw }
+		
+		/* footer */
+		.sec_notice { max-width:100%; width:100%;  }
+		.sec_notice .sec_inner { padding: 13.8889vw 0; width:100%; }
+		.sec_notice .notice_area { margin-left:6.9444vw; display:block;}
+		.sec_notice .notice_title { font-size:3.3333vw; padding:0 0 5.5556vw; }
+		.sec_notice .notice_list li { margin-bottom: 2.7778vw; font-size: 3.0556vw; letter-spacing: -0.0694vw; line-height: 1.4; }
+		.sec_notice .notice_list li:before { width:0.6944vw; height:0.6944vw; left:0; top:1.3889vw; }
+		.sec_notice .notice_list li .space_txt { font-size: 3.0556vw; margin:0; display: inline-block; }
+
+		}
+		
+		</style>		
+		<tiles:putattribute name="tooltip"><div id="tooltipArea_Event3791"></div></tiles:putattribute>
+		<tiles:putattribute name="popup"><div id="popupArea_Event3791"></div></tiles:putattribute>
+		<input type="hidden" id="openPop" data-st-path="/sec/">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main class="galaxy_challenge">
+			<section class="sec_kv">
+				<div class="img_box">
+					<img src="./images/challenge_kv.jpg" alt="" class="m_hide">
+					<img src="./images/challenge_kv_mo.jpg" alt="" class="m_show">
+				</div>
+				
+				<div class="txt_box">
+					<h2>제각각 챌린지</h2>
+					<div class="sub_txt m_hide">
+						<span class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</span>를 활용하여​ <br />나만의 각을 마음껏 자랑해보세요
+					</div>
+				</div>
+				<!-- //txt_box -->
+
+				<ul class="menu_box">
+					<li class="menu_search">
+						<a href="../09-search/" title="스튜디오 찾기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:goto_search">
+							<p class="menu_tit">스튜디오 찾기</p>
+						</a>
+					</li>
+					<li class="menu_product">
+						<a href="../01-main/" title="제품정보 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:learning:goto_product">
+							<p class="menu_tit">제품정보</p>
+						</a>
+					</li>
+				</ul>
+				<!-- //menu_box -->
+			</section>
+			<!-- //sec_kv -->
+
+			<section class="sec_studio_nav">
+				<ul class="nav_list">
+					<!-- 해당 페이지 li에 클래스 on 추가 -->
+					<li>
+						<a href="../02-togo/" title="얼리버드 TO Go 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">얼리버드 <br class="m_show"><span class="en">To Go</span></span>
+						</a>
+					</li>
+					<li>
+						<a href="../03-docent/" title="도슨트 투어 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">도슨트 <br class="m_show">투어</span>
+						</a>
+					</li>
+					<li>
+						<a href="../04-learning/" title="배워보기 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">배워보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="온라인 체험존 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">온라인 <br class="m_show">체험존</span>
+						</a>
+					</li>
+					<li class="on">
+						<a href="../06-challenge/" title="제각각 챌린지 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">제각각 <br class="m_show">챌린지</span>
+						</a>
+					</li>
+					<li>
+						<a href="../07-contentfesta/" title="콘텐츠 페스타 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">콘텐츠 <br class="m_show">페스타</span>
+						</a>
+					</li>
+					<li>
+						<a href="../08-campus/" title="캠퍼스 스튜디오 페이지로 이동" data-omni-type="microsite" data-omni="">
+							<span class="nav_title">캠퍼스 <br class="m_show">스튜디오</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //sec_studio_nav -->
+
+			<section class="sec_challenge">
+				<div class="sec_inner">
+					<div class="txt_area">
+						<p class="top_txt">지금 <strong class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</strong>를 활용한</p>
+						<p class="bot_txt"><span class="txt_color">챌린지로 나만의 각을 마음껏 펼쳐보고</span> <br>풍성한 선물도 받아보세요</p>
+					</div>
+					<div class="field_01">
+						<div class="field_01_top_area" id="apply">
+							<p class="tit_txt">응모 분야</p>
+							<ul class="pic_wrap">
+								<li class="pic_item pic_item_01 hash_txt_item">
+									<div class="pic_box">
+										<p class="pic_tit">화보</p>
+										<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_화보</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+										<div class="img_area">
+											<img class="m_hide" src="images/apply_01_pc.png" alt="">
+											<img class="m_show" src="images/apply_01_mo.png" alt="">
+										</div>
+									</div>
+									<div class="btn_area">
+										<button type="button" class="details_btn details_btn_01">자세히 보기</button>
+										<button type="button" class="hash_tag_btn event_tag_copy">해시태그 복사하기</button>
+									</div>
+								</li>
+								<li class="pic_item pic_item_02 hash_txt_item">
+									<div class="pic_box">
+										<p class="pic_tit">숏폼</p>
+										<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_숏폼</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+										<div class="img_area">
+											<img class="m_hide" src="images/apply_02_pc.png" alt="">
+											<img class="m_show" src="images/apply_02_mo.png" alt="">
+										</div>
+									</div>
+									<div class="btn_area">
+										<button type="button" class="details_btn details_btn_02">자세히 보기</button>
+										<button type="button" class="hash_tag_btn event_tag_copy">해시태그 복사하기</button>
+										<!-- <button type="button" class="hash_tiktok_btn">틱톡 해시태그 챌린지</button> -->
+									</div>
+								</li>
+								<li class="pic_item pic_item_03 hash_txt_item">
+									<div class="pic_box">
+										<p class="pic_tit">S펜</p>
+										<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_S펜</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+										<div class="img_area">
+											<img class="m_hide" src="images/apply_03_pc.png" alt="">
+											<img class="m_show" src="images/apply_03_mo.png" alt="">
+										</div>
+									</div>
+									<div class="btn_area">
+										<button type="button" class="details_btn details_btn_03">자세히 보기</button>
+										<button type="button" class="hash_tag_btn event_tag_copy">해시태그 복사하기</button>
+									</div>
+								</li>
+								<li class="pic_item pic_item_04 hash_txt_item">
+									<div class="pic_box">
+										<p class="pic_tit">폰꾸</p>
+										<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_폰꾸</p>
+										<input type="text" class="event_tag_value blind" readonly="">
+										<div class="event_alert">해시태그가 복사되었습니다.</div>
+										<div class="img_area">
+											<img class="m_hide" src="images/apply_04_pc.png" alt="">
+											<img class="m_show" src="images/apply_04_mo.png" alt="">
+										</div>
+									</div>
+									<div class="btn_area">
+										<button type="button" class="details_btn details_btn_04">자세히 보기</button>
+										<button type="button" class="hash_tag_btn event_tag_copy">해시태그 복사하기</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="field_01_bot_area">
+							<p class="tit_txt">회차별 참여 안내</p>
+							<div class="to_go_step to_go_step_top">
+								<div class="to_go_list to_go_list_1">
+									<p class="to_go_list_tit"><span>1회차</span></p>
+									<dl>
+										<dt>· 응모 기간</dt>
+										<dd>2022.8.11(목) ~ 8.21(일)</dd>
+									</dl>
+									<dl>
+										<dt>· 당첨자 발표</dt>
+										<dd>2022.9.5(월)</dd>
+									</dl>
+								</div>
+								<div class="to_go_list to_go_list_2">
+									<p class="to_go_list_tit"><span>2회차</span></p>
+									<dl>
+										<dt>· 응모 기간</dt>
+										<dd>2022.8.22(월) ~ 8.31(수)</dd>
+									</dl>
+									<dl>
+										<dt>· 당첨자 발표</dt>
+										<dd>2022.9.26(월)</dd>
+									</dl>
+								</div>
+								<div class="to_go_list to_go_list_3">
+									<p class="to_go_list_tit"><span>3회차</span></p>
+									<dl>
+										<dt>· 응모 기간</dt>
+										<dd>2022.9.1(목) ~ 9.18(일)</dd>
+									</dl>
+									<dl>
+										<dt>· 당첨자 발표</dt>
+										<dd>2022.10.14(금)</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="to_go_step to_go_step_bot">
+								<div class="to_go_list to_go_list_4">
+									<p class="to_go_list_tit"><span>4회차</span></p>
+									<dl>
+										<dt>· 응모 기간</dt>
+										<dd>2022.9.19(월) ~ 10.10(월)</dd>
+									</dl>
+									<dl>
+										<dt>· 당첨자 발표</dt>
+										<dd>2022.11.1(화)</dd>
+									</dl>
+								</div>
+								<div class="to_go_list to_go_list_5">
+									<p class="to_go_list_tit"><span>5회차</span></p>
+									<dl>
+										<dt>· 응모 기간</dt>
+										<dd>2022.10.11(화) ~ 10.31(월)</dd>
+									</dl>
+									<dl>
+										<dt>· 당첨자 발표</dt>
+										<dd>2022.11.22(화)</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="field_02">
+						<p class="tit_txt">분야별 경품</p>
+						<p class="refer_txt">※ 1개 분야 당, 차수 별 6명 선정​</p>
+						<div class="top_area">
+							<p class="product_txt"><span class="color_txt color_txt_01">화보</span><span class="color_txt color_txt_02">숏폼</span><span class="color_txt color_txt_03">폰꾸</span></p>
+							<ul class="product_list_wrap product_list_top_wrap">
+								<li class="product_list_item product_list_item_01">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_01_pc.png" alt="">
+										<img class="m_show" src="images/product_01_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Z Flip4</strong>
+										<p>(1명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_02">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_02_pc.png" alt="">
+										<img class="m_show" src="images/product_02_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Tab S8</strong>
+										<p>(1명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_03">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_03_pc.png" alt="">
+										<img class="m_show" src="images/product_03_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Watch5</strong>
+										<p>(2명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_04">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_04_pc.png" alt="">
+										<img class="m_show" src="images/product_04_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Buds2 Pro</strong>
+										<p>(2명 / 색상 랜덤)</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bot_area">
+							<p class="product_txt"><span class="color_txt">S펜</span></p>
+							<ul class="product_list_wrap product_list_bot_wrap">
+								<li class="product_list_item product_list_item_01">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_05_pc.png" alt="">
+										<img class="m_show" src="images/product_05_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Z Fold4</strong>
+										<p>(1명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_02">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_02_pc.png" alt="">
+										<img class="m_show" src="images/product_02_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Tab S8</strong>
+										<p>(1명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_03">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_03_pc.png" alt="">
+										<img class="m_show" src="images/product_03_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Watch5</strong>
+										<p>(2명 / 색상 랜덤)</p>
+									</div>
+								</li>
+								<li class="product_list_item product_list_item_04">
+									<div class="img_area">
+										<img class="m_hide" src="images/product_04_pc.png" alt="">
+										<img class="m_show" src="images/product_04_mo.png" alt="">
+									</div>
+									<div class="text_area">
+										<strong>Galaxy Buds2 Pro</strong>
+										<p>(2명 / 색상 랜덤)</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="event_hashtag hashtag_wrap">
+							<div class="hash_txt_area">
+								<p class="hash_tit">[ 필수 해시태그 ]</p>
+								<p class="hash_desc event_tag">#GalaxyZFold4 #GalaxyZFlip4 <br class="m_show">#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_분야</p>
+							</div>
+							<div class="btn_wrap scroll">
+								<a href="#apply" class="btn_anchor">응모 분야별 해시태그 <br class="m_hide">복사하러 가기</a>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</section>
+
+			<div class="pop_up pop_up_01">
+				<div class="hash_txt_item">
+					<a href="javascript:;" class="btn_close" title="레이어팝업 닫기">
+						<img class="m_hide" src="images/btn_close_pc.png" alt="닫기">
+						<img class="m_show" src="images/btn_close_mo.png" alt="닫기">
+					</a>
+					<img class="m_hide pop_img" src="images/pop_img_01_pc.png" alt="">
+					<img class="m_show pop_img" src="images/pop_img_01_mo.png" alt="">
+					<div class="pic_box">
+						<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_화보</p>
+						<input type="text" class="event_tag_value blind" readonly="">
+						<div class="event_alert">해시태그가 복사되었습니다.</div>
+					</div>
+					<div class="pop_btn_area">
+						<button type="button" class="hash_copy_btn event_tag_copy">해시태그 복사하기</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="pop_up pop_up_02">
+				<div class="hash_txt_item">
+					<a href="javascript:;" class="btn_close" title="레이어팝업 닫기">
+						<img class="m_hide" src="images/btn_close_pc.png" alt="닫기">
+						<img class="m_show" src="images/btn_close_mo.png" alt="닫기">
+					</a>
+					<img class="m_hide pop_img" src="images/pop_img_02_pc.png" alt="">
+					<img class="m_show pop_img" src="images/pop_img_02_mo.png" alt="">
+					<div class="pic_box">
+						<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_숏폼</p>
+						<input type="text" class="event_tag_value blind" readonly="">
+						<div class="event_alert">해시태그가 복사되었습니다.</div>
+					</div>
+					<div class="pop_btn_area">
+						<button type="button" class="hash_copy_btn event_tag_copy">해시태그 복사하기</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="pop_up pop_up_03">
+				<div class="hash_txt_item">
+					<a href="javascript:;" class="btn_close" title="레이어팝업 닫기">
+						<img class="m_hide" src="images/btn_close_pc.png" alt="닫기">
+						<img class="m_show" src="images/btn_close_mo.png" alt="닫기">
+					</a>
+					<img class="m_hide pop_img" src="images/pop_img_03_pc.png" alt="">
+					<img class="m_show pop_img" src="images/pop_img_03_mo.png" alt="">
+					<div class="pic_box">
+						<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_S펜</p>
+						<input type="text" class="event_tag_value blind" readonly="">
+						<div class="event_alert">해시태그가 복사되었습니다.</div>
+					</div>
+					<div class="pop_btn_area">
+						<button type="button" class="hash_copy_btn event_tag_copy">해시태그 복사하기</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="pop_up pop_up_04">
+				<div class="hash_txt_item">
+					<a href="javascript:;" class="btn_close" title="레이어팝업 닫기">
+						<img class="m_hide" src="images/btn_close_pc.png" alt="닫기">
+						<img class="m_show" src="images/btn_close_mo.png" alt="닫기">
+					</a>
+					<img class="m_hide pop_img" src="images/pop_img_04_pc.png" alt="">
+					<img class="m_show pop_img" src="images/pop_img_04_mo.png" alt="">
+					<div class="pic_box">
+						<p class="event_tag">#GalaxyZFold4 #GalaxyZFilp4 <br>#갤럭시스튜디오 #삼성전자이벤트 <br>#제각각챌린지_폰꾸</p>
+						<input type="text" class="event_tag_value blind" readonly="">
+						<div class="event_alert">해시태그가 복사되었습니다.</div>
+					</div>
+					<div class="pop_btn_area">
+						<button type="button" class="hash_copy_btn event_tag_copy">해시태그 복사하기</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="cover"></div>
+
+			<section class="sec_notice">
+				<div class="sec_inner">
+					<div class="notice_area">
+						<p class="notice_title">제각각 챌린지 <br class="m_hide">유의사항</p>
+						<ul class="notice_list">
+							<li>본 이벤트는 당사 사정에 따라 예고 없이 변경 또는 중단될 수 있으며, <br class="m_show">발표일과 배송 일정은 당사 사정에 의해 지연될 수 있습니다.</li>
+							<li>본 이벤트 해시태그가 기재된 게시물은 이벤트 참여 게시물로 간주됩니다.</li>
+							<li>제각각 챌린지 숏폼 분야의 경우 인스타그램 릴스와 틱톡 채널의 <br class="m_show">통합 이벤트입니다.</li>
+							<li>인스타그램 참여 게시물은 필수 해시태그가 모두 포함되어야 하며, <br class="m_show">이벤트 기간 내 업로드 되어 당첨자 발표일까지 계정 및 게시물이 공개 설정된 콘텐츠에 한해 정상 응모로 간주됩니다.</li>
+							<li>틱톡 참여 게시물은 #제각각챌린지 해시태그 사용한 게시물을 <br class="m_show">참여로 인정합니다. </li>
+							<li>틱톡 해시태그 챌린지 페이지가 오픈되는 8/16 이후 부터 이벤트 <br class="m_show">기간 내 업로드 되어 당첨자 발표일까지 계정 및 게시물이 공개 설정된 <br class="m_show">콘텐츠에 한해 정상 응모로 간주됩니다.</li>
+							<li>이벤트 참여 시 업로드된 사진 또는 영상은 기간 제한 없이 당사 마케팅 <br class="m_show">활동에 활용될 수 있습니다.</li>
+							<li>비방 혹은 욕설 등 본 이벤트와 관련 없는 응모 내역은 당첨자 대상에서 <br class="m_show">제외될 수 있습니다.</li>
+							<li>타인의 보호되는 저작물, 초상권 일부 또는 전부를 해당 권리자 <br class="m_show">허락 없이 이용, 허락 범위를 넘어서는 행위에 대해서는 저작권, <br class="m_show">초상권 침해가 되며 이에 대한 법적 책임은 이용자 본인에게 있습니다.</li>
+							<li>타인 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용 등 <br class="m_show">비정상적인 방법으로 참여 시 당첨이 제한될 수 있습니다.</li>
+							<li>이벤트 반복 참여는 가능하나 경품은 중복 지급되지 않습니다.</li>
+							<li>실제 이벤트 경품은 상기 이미지와 다를 수 있습니다.</li>
+							<li>5만원 초과 경품의 경우 제세공과금은 당첨자 본인 부담입니다.</li>
+							<li>만 14세 미만 응모자가 당첨될 경우, 경품 수령에 법정 대리인의 <br class="m_show">동의가 필요합니다(별도 서류 제출 필요, 자세한 사항은 개별 안내).</li>
+							<li>경품 증정 일자, 증정 방법 등은 당첨자분들께 개별 연락드릴 예정이며, <br class="m_show">당첨자 발표 기간 내 연락이 닿지 않을 시 당첨이 <br class="m_show">자동으로 취소됩니다.</li>
+							<li>잘못된 개인정보 입력으로 인해 당첨자에게 연락이 불가능하거나 <br class="m_show">경품이 반송, 분실될 경우 재발송되지 않으며 당사에서 책임지지 않습니다.</li>
+							<li>닷컴 페이지 내 숏폼 영상, 경품 등 이미지는 소비자 이해를 돕기 위해 연출된 이미지입니다.</li>
+							<li>경품배송을 위해 당사 경품 대행사에 배송 정보가 제공되며 <br class="m_show">행사 종료 후 파기됩니다.</li>
+							<li class="m_hide">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) <br class="m_show">| e-mail : galaxyz4_studio@naver.com</span></li>
+							<li class="m_show">본 이벤트 관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989(10:00~22:00) <br class="m_show">e-mail : galaxyz4_studio@naver.com</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+		<script>
+
+			// pop_up
+			$(".details_btn_01").on('click',function(){
+				$(this).toggleClass("open");
+				$('.cover').show();
+				$('.pop_up_01').show();
+			});
+
+			$(".details_btn_02").on('click',function(){
+				$(this).toggleClass("open");
+				$('.cover').show();
+				$('.pop_up_02').show();
+			});
+
+			$(".details_btn_03").on('click',function(){
+				$(this).toggleClass("open");
+				$('.cover').show();
+				$('.pop_up_03').show();
+			});
+
+			$(".details_btn_04").on('click',function(){
+				$(this).toggleClass("open");
+				$('.cover').show();
+				$('.pop_up_04').show();
+			});
+
+			// pop_up 닫기
+			$('.btn_close').on('click' ,function(e) {
+				e.preventDefault();
+				$('.cover').hide();
+				$('.pop_up').hide();
+			});
+
+			// hashtag
+			$('.hash_txt_item').each(function() {
+				var $this = $(this),
+				$txt = $this.find('.event_tag').text().split("#").join("#");
+
+				$this.find('.event_tag_value').val($txt);
+				$this.find(".event_tag_copy").on("click", function(e) {
+					e.preventDefault();
+					alert('해시태그가 복사되었습니다.');
+					var copyText = $this.find('.event_tag_value')[0];
+
+					copyText.select();
+					copyText.setSelectionRange(0, 9999);
+					document.execCommand('copy');
+				});
+			});
+			
+			$(".scroll a").on("click",function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+
+				var id = $(this).attr("href"),
+					sec = $(id),
+					top = sec.offset().top,
+					nav = $(".eventbox").height();
+				var scroll_top = top;
+
+				$('html, body').stop().animate({scrollTop: scroll_top}, 300, "swing");			
+			});	
+		
+			// 페이지 접속시 앵커 이동
+			var url = window.location.href;
+			var chk = url.split('?')[1];
+			var target;
+
+			if (chk.indexOf('challenge') > -1) {
+				target = $('.sec_challenge').offset().top;
+			}
+
+			if (target) {
+				setTimeout(function() {
+					$('html,body').stop().animate({scrollTop:target}, 500);
+				}, 1000);
+			}
+			
+		</script>
+
+	</div>
+</body>
+</html>

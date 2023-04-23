@@ -1,0 +1,564 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>스튜디오 인 캠퍼스</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/reset.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/style.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/component.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/app.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://www.samsung.com/sec/static/_css/swiper.min.css">
+<script src="https://www.samsung.com/sec/static/_script/jquery-3.3.1.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery-ui.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/slick-init.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/swiper.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/masonry.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.blockUI.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/base.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/layerPop.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/daum.postcode.v2.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/netfunnel_skin.js?20201019" charset="UTF-8"></script>
+<script src="https://www.samsung.com/sec/static/_script/common.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/custom.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/sticky.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.cookie.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/search.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/component.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/jquery.ui.touch-punch.min.js"></script>
+<script src="https://www.samsung.com/sec/static/_script/event/event.js?ver=1.4"></script>
+<script src="https://www.samsung.com/sec/static/_script/clipboard.min.js"></script>
+<!-- [P] CORS 이슈로 폰트가 안보여서, 로컬 확인을 위해 원폰트 넣어둠 (그래도 폰트 깨지면 보안해제크롬(스펙메이커용크롬)으로 화면 확인) -->
+<style>
+@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:SamsungOneKorean;src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);src:url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");font-weight:700;font-style:normal}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- s : 본문 영역 -->
+		<script type="text/javascript">
+			digitalData.page.pathIndicator.depth_2 = "microsite";
+			digitalData.page.pathIndicator.depth_3 = "campus";
+		</script>
+		
+	
+		<style>
+		/* common */
+		.galaxy_studio { overflow:hidden; }
+		.galaxy_studio .sec_inner { max-width:1440px; margin:0 auto; }
+		.galaxy_studio .m_show{ display: none !important; }
+		.galaxy_studio .m_hide{ display: block !important; }
+		.galaxy_studio .img_box{ width: 100%; height: 100%; }
+		.galaxy_studio .img_box > img{width: 100%; height: 100%;}
+		.galaxy_studio .en {font-family:"Samsung Sharp Sans",SamsungSharpSans;font-weight:bold;}
+		.galaxy_studio .kr {font-family:'SamsungOneKorean', Dotum, '돋움', sans-serif;font-weight:normal;}
+		.galaxy_studio > section {position:relative; width:100%; max-width:1920px; margin:0 auto;}
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_studio .sec_kv .txt_box {position:absolute; top:105px; left:240px;}
+		.galaxy_studio .sec_kv .txt_box h2 {font-size:58px; letter-spacing:0;}
+		.galaxy_studio .sec_kv .txt_box .sub_txt {padding-top:20px; font-size:22px; line-height:1.3;}
+
+		.galaxy_studio .sec_kv .menu_box {position:absolute; bottom:22px; left:240px; display:flex;}
+		.galaxy_studio .sec_kv .menu_box li + li {margin-left:10px;}
+		.galaxy_studio .sec_kv .menu_box .menu_search {background:#7e52ef url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_search.png') no-repeat 24px 10px; background-size:26px 38px;}
+		.galaxy_studio .sec_kv .menu_box .menu_product {background:#936fee url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/ico_product.png') no-repeat 26px 10px; background-size:37px 37px;}
+		.galaxy_studio .sec_kv .menu_box li > a {position:relative; display:block; width:180px; height:58px;}
+		.galaxy_studio .sec_kv .menu_box li > a::before {content:''; position:absolute; top:0; right:-9px; border-right:9px solid transparent;}
+		.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:13px solid #5634ae;}
+		.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:13px solid #6344b1;}
+		.galaxy_studio .sec_kv .menu_box .menu_tit {color:#fff; font-size:18px; font-weight:700; line-height:58px;}
+		.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:62px;}
+		.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:78px;}
+
+		/* fix */
+		.galaxy_studio .sec_kv .txt_box {top:73px;}
+
+
+		/* sec_studio_nav */
+		.sec_studio_nav {position:relative; width:100%; max-width:1920px; margin:0 auto; border-top:2px solid #000; border-bottom:1px solid #cecece; background-color:#fff;}
+		.sec_studio_nav * {font-size:inherit;}
+		.sec_studio_nav .en {font-family:"Samsung Sharp Sans", SamsungSharpSans; font-weight:700;}
+		.sec_studio_nav .m_show {display:none !important;}
+		.sec_studio_nav .m_hide {display:block !important;}
+		.sec_studio_nav .nav_list {display:flex; width:100%; height:100%; max-width:1440px; margin:0 auto; padding:0 2px;}
+		.sec_studio_nav .nav_list li {width:204px; height:80px; border-left:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li:last-child {border-right:1px solid #d9d9d9;}
+		.sec_studio_nav .nav_list li a {position:relative; display:inline-flex; justify-content:center; align-items:center; width:100%; height:100%; background-color:#fff;}
+		.sec_studio_nav .nav_list li .nav_title {font-size:20px; font-weight:700;}
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title {z-index:2; position:relative; top:-3px; left:-2px; color:#fff;}
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {content:''; z-index:1; position:absolute; top:-5px; left:-3px; width:207px; height:85px; background:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg.png') no-repeat 0 0 / 100%;}
+
+		/* 모집기간종료 */
+		.shadow_img_area { width:1198px; margin:60px auto 0; }
+
+		/* contents */
+		.field_01 { padding:120px 0 0; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/campus_bg_pc.png) no-repeat; background-size:cover; position:relative; }
+		.field_01 .txt_area { text-align:center; }
+		.field_01 .img_box_studio { width:799px; margin:0 auto 70px; }
+		.field_01	.to_go_step_wrap .tit_txt { text-align: center; font-size:36px; font-weight:700; letter-spacing: -0.5px; }
+		.field_01 .to_go_step { display:flex; justify-content: center; }
+		.field_01 .to_go_step_top { padding:60px 0; }
+		.field_01 .to_go_list { width:386px; height:156px; margin:0 20px 0 0; }
+		.field_01 .to_go_list_tit { position:relative; margin:0 auto; width:209px; height:65px; top:-22px; }
+		.field_01 .to_go_list span { position:relative; display:block; width:100%; height:100%; padding-top:11px; font-size:24px; text-align: center; color:#fff; z-index:10; }
+		.field_01 .to_go_list .num_txt { vertical-align: top; }
+		.field_01 .to_go_list .date_txt { font-size: 18px; }
+		.field_01 .to_go_list_tit:before { content:''; position:absolute; top:0; left:50%; width:113px; border-width:0 9px 20px; border-style: solid; border-color: transparent transparent #394ba1 #e7f2ff; box-sizing: border-box;}
+		.field_01 .to_go_list_1 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.field_01 .to_go_list_2 { background:#e8faff; border:2px solid #dff3f9; }
+		.field_01 .to_go_list_3 { background:#ebf7ff; border:2px solid #deedf7; }
+		.field_01 .to_go_list_4 { background:#eafcf6; border:2px solid #e1f7ef; }
+		.field_01 .to_go_list_5 { background:#e8faff; border:2px solid #dff3f9; margin:0; }
+		.field_01 .to_go_list_1 span { background:#51b96f; }
+		.field_01 .to_go_list_2 span { background:#41b193; }
+		.field_01 .to_go_list_3 span { background:#31aeb6; }
+		.field_01 .to_go_list_4 span { background:#2b8cc9; }
+		.field_01 .to_go_list_5 span { background:#4a76c0; }
+		.field_01 .to_go_list_1 .to_go_list_tit:before { border-color:transparent transparent #307343 transparent; }
+		.field_01 .to_go_list_2 .to_go_list_tit:before { border-color:transparent transparent #2f846d transparent; }
+		.field_01 .to_go_list_3 .to_go_list_tit:before { border-color:transparent transparent #20777d transparent; }
+		.field_01 .to_go_list_4 .to_go_list_tit:before { border-color:transparent transparent #1e6490 transparent; }
+		.field_01 .to_go_list_5 .to_go_list_tit:before { border-color:transparent transparent #325590 transparent; }
+		.field_01 .college_list { font-size:18px; color:#000; font-weight: 700; text-align: left; line-height: 1.6; padding:0 0 0 36px; letter-spacing: -0.5px; }
+		.field_01 .refet_txt { font-size:22px; color:#666; text-align: center; padding:40px 0 100px }
+		.field_02 { background:#f4f4f4; padding:0 0 80px; }
+		.field_02 .main_tit_area { text-align: center; padding:100px 0 0; }
+		.field_02 .main_tit_area .img_area img { margin:0 auto; }
+		.field_02 .main_desc { font-size:32px; letter-spacing: -0.25px; padding:40px 0 0; line-height: 1.3; }
+		.field_02 .main_desc strong { vertical-align: top; }
+		.field_02 .box_main_tit { font-size:36px; font-weight: 700; text-align: center; margin:0 0 40px; }
+		.field_02 .box_area { display:flex; justify-content: center; } 
+		.field_02 .box_area.box_top { margin:0 0 80px; }
+		.field_02 .box_item { width:364px; }
+		.field_02 .box_item:not(:last-child) { margin:0 53px 0 0; }
+		.field_02 .box_desc { font-size:22px; font-weight: 600; line-height:1.2; text-align: center; padding:20px 0 0; }
+		.field_02 .box_refet_txt { text-align: center; font-size:22px; color:#666; padding:8px 0 0; }
+		.field_02 .box_area.box_bot { margin:0 0 80px; }
+		.field_02 .recruit_box_wrap { width:1200px; margin:0 auto; }
+		.field_02 .rec_box_item { border:1px solid #ddd;}
+		.field_02 .rec_box_item:not(:last-child) { margin:0 0 40px; }
+		.field_02 .rec_main_tit { background:#ededed; text-align: center; font-size:22px; font-weight:700; border-bottom:1px solid #ddd; padding:18px 0; }
+		.field_02 .rec_desc { padding:40px 70px; }
+		.field_02 .rec_fs_22_txt { font-size:22px; font-weight:600; letter-spacing: -0.25px; }
+		.field_02 .rec_fs_19_txt { font-size:19px; font-weight:600; color:#555; letter-spacing: -0.25px; }
+		.field_02 .desc_details_01 { margin:0 0 25px; }
+		.field_02 .desc_details_01 p:not(:last-child) { margin:0 0 12px; }
+		.field_02 .college_list { background:#ededed; padding:20px 0 20px 15px; margin:10px 0 14px; }
+		.field_02 .college_list p:not(:last-child) { margin:0 0 24px; }
+		.field_02 .rec_box_item_02 .rec_desc p:not(:last-child) { margin:0 0 24px; }
+		.field_02 .move_txt { margin:12px 0 0 20px; }
+		.field_02 .rec_box_item_04 .rec_desc_move { position:relative; }
+		.field_02 .rec_box_item_04 .rec_desc_text_01 { margin:0 0 30px; }
+		.field_02 .rec_box_item_04 .btn_wrap_apply { position:absolute; bottom:10px; left:530px; }
+		.field_02 .rec_box_item_04 .btn_apply { width:198px; height:37px; line-height: 37px; background:#000; color:#fff; font-size:20px; letter-spacing: -0.25px; border-radius:18px; }
+		.field_02 .rec_box_item_04 .mail_txt { font-size: 22px; }
+		.field_02 .rec_box_item_05 .rec_desc_move:not(:last-child) { margin:0 0 30px; }
+
+		/* footer */
+		.sec_notice { max-width:1920px; width:100%; height:auto; margin:0 auto; background-color:#000; color:#fff; }
+		.sec_notice .sec_inner { width:1440px ;margin:0 auto; padding: 80px 0;}
+		.sec_notice .notice_area { margin-left:30px; display:flex; }
+		.sec_notice .notice_title { font-size:16px; color:#fff; line-height:1.6; margin-right:60px; font-weight:700; }
+		.sec_notice .notice_list li { position: relative; padding-left: 10px; margin-bottom: 12px; font-size: 16px; line-height:1;color:#a3a3a3;letter-spacing:0; }
+		.sec_notice .notice_list li:before { content:''; position:absolute; width:4px; height:4px; left:0; top:5px;background-color: rgba(255, 255, 255, 0.6); border-radius: 100%; }
+		.sec_notice .notice_list li .space_txt { margin:12px 0 0; display:block;}
+
+		@media screen and (min-width: 769px) and (max-width: 1920px) {
+				/****************
+					sec_kv
+				****************/
+				.galaxy_studio .sec_kv .txt_box {top:5.4688vw; left:12.5000vw;}
+				.galaxy_studio .sec_kv .txt_box h2 {font-size:3.0208vw;}
+				.galaxy_studio .sec_kv .txt_box .sub_txt {padding-top:1.0417vw; font-size:1.1458vw;}
+
+				.galaxy_studio .sec_kv .menu_box {bottom:1.1458vw; left:12.5000vw;}
+				.galaxy_studio .sec_kv .menu_box li + li {margin-left:0.5208vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_search {background-position:1.2500vw 0.5208vw; background-size:1.3542vw 1.9792vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_product {background-position:1.3542vw 0.5208vw; background-size:1.9271vw 1.9271vw;}
+				.galaxy_studio .sec_kv .menu_box li > a {width:9.3750vw; height:3.0208vw;}
+				.galaxy_studio .sec_kv .menu_box li > a::before {top:0; right:-0.4688vw; border-right:0.4688vw solid transparent;}
+				.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:0.6771vw solid #5634ae;}
+				.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:0.6771vw solid #6344b1;}
+				.galaxy_studio .sec_kv .menu_box .menu_tit {font-size:0.9375vw; line-height:3.0208vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:3.2292vw;}
+				.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:4.0625vw;}
+				
+				/* fix */
+				.galaxy_studio .sec_kv .txt_box {top:3.8021vw;}
+
+				/* contents */
+				.field_01:before { content:''; display:block; width:17.2917vw; height:10.0521vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/character_01_pc.png) no-repeat; background-size:cover; position:absolute; bottom:10.4167vw; left:6.7708vw; }
+				.field_01:after { content:''; display:block; width:11.1979vw; height:16.0417vw; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/character_02_pc.png) no-repeat; background-size:cover; position:absolute; bottom:8.3333vw; right:12.5000vw; }
+		
+			}	
+
+		@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+			/* sec_studio_nav */
+			.sec_studio_nav .nav_list li {width:14.1667vw; height:5.5556vw;}
+			.sec_studio_nav .nav_list li .nav_title {font-size:1.3889vw;}
+			.sec_studio_nav .nav_list li.on .nav_title,
+			.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.2083vw; left:-0.1389vw;}
+			.sec_studio_nav .nav_list li.on a::after,
+			.sec_studio_nav .nav_list li a:hover::after {top:-0.3472vw; left:-0.2083vw; width:14.3750vw; height:5.9028vw;}
+
+			/* 모집기간종료 */
+			.shadow_img_area { width:83.1944vw; margin:4.1667vw auto 0; }
+			
+			/* contents */
+			.field_01 { padding:8.3333vw 0 0; }
+			.field_01 .img_box_studio { width:55.4861vw; margin:0 auto 4.8611vw; }
+			.field_01	.to_go_step_wrap .tit_txt { font-size:2.5000vw; font-weight:700; letter-spacing: -0.0347vw; }
+			.field_01 .to_go_step_top { padding:4.1667vw 0; }
+			.field_01 .to_go_list { width:26.8056vw; height:10.8333vw; margin:0 1.3889vw 0 0; }
+			.field_01 .to_go_list_tit { width:14.5139vw; height:4.5139vw; top:-1.5278vw; }
+			.field_01 .to_go_list span { width:100%; height:100%; padding-top:0.7639vw; font-size:1.6667vw; }
+			.field_01 .to_go_list .num_txt { font-size:1.6667vw; }
+			.field_01 .to_go_list .date_txt { font-size: 1.2500vw; }
+			.field_01 .to_go_list_tit:before { top:0; left:50%; width:7.8472vw; border-width:0 0.6250vw 1.3889vw;}
+			.field_01 .to_go_list_1 { border:0.1389vw solid #e1f7ef; }
+			.field_01 .to_go_list_2 { border:0.1389vw solid #dff3f9; }
+			.field_01 .to_go_list_3 { border:0.1389vw solid #deedf7; }
+			.field_01 .to_go_list_4 { border:0.1389vw solid #e1f7ef; }
+			.field_01 .to_go_list_5 { border:0.1389vw solid #dff3f9; }
+			.field_01 .to_go_list_1 .to_go_list_tit:before { border-color:transparent transparent #307343 transparent; }
+			.field_01 .to_go_list_2 .to_go_list_tit:before { border-color:transparent transparent #2f846d transparent; }
+			.field_01 .to_go_list_3 .to_go_list_tit:before { border-color:transparent transparent #20777d transparent; }
+			.field_01 .to_go_list_4 .to_go_list_tit:before { border-color:transparent transparent #1e6490 transparent; }
+			.field_01 .to_go_list_5 .to_go_list_tit:before { border-color:transparent transparent #325590 transparent; }
+			.field_01 .college_list { font-size:1.2500vw; padding:0 0 0 2.5000vw; letter-spacing: -0.0347vw; }
+			.field_01 .refet_txt { font-size:1.5278vw; padding:2.7778vw 0 6.9444vw }
+			.field_02 { padding:0 0 5.5556vw; }
+			.field_02 .main_tit_area {  padding:6.9444vw 0 0; }
+			.field_02 .main_tit_area .img_area img { width: 60.1389vw; }
+			.field_02 .main_desc { font-size:2.2222vw; letter-spacing: -0.0174vw; padding:2.7778vw 0 0;}
+			.field_02 .main_desc strong { font-size:2.2222vw; }
+			.field_02 .box_main_tit { font-size:2.5000vw; margin:0 0 2.7778vw; }
+			.field_02 .box_area.box_top { margin:0 0 5.5556vw; }
+			.field_02 .box_item { width:25.2778vw; }
+			.field_02 .box_item:not(:last-child) { margin:0 3.6806vw 0 0; }
+			.field_02 .box_desc { font-size:1.5278vw; font-weight: 600; line-height:1.2;padding:1.3889vw 0 0; }
+			.field_02 .box_refet_txt {font-size:1.5278vw; padding:0.5556vw 0 0; }
+			.field_02 .box_area.box_bot { margin:0 0 5.5556vw; }
+			.field_02 .recruit_box_wrap { width:83.3333vw;  }
+			.field_02 .rec_box_item { border:0.0694vw solid #ddd;}
+			.field_02 .rec_box_item:not(:last-child) { margin:0 0 2.7778vw; }
+			.field_02 .rec_main_tit { font-size:1.5278vw; border-bottom:0.0694vw solid #ddd; padding:1.2500vw 0; }
+			.field_02 .rec_desc { padding:2.7778vw 4.8611vw; }
+			.field_02 .rec_fs_22_txt { font-size:1.5278vw; letter-spacing: -0.0174vw; }
+			.field_02 .rec_fs_19_txt { font-size:1.3194vw; letter-spacing: -0.0174vw; }
+			.field_02 .desc_details_01 { margin:0 0 1.7361vw; }
+			.field_02 .desc_details_01 p:not(:last-child) { margin:0 0 0.8333vw; }
+			.field_02 .college_list { padding:1.3889vw 0 1.3889vw 1.0417vw; margin:0.6944vw 0 0.9722vw; }
+			.field_02 .college_list p:not(:last-child) { margin:0 0 1.6667vw; }
+			.field_02 .rec_box_item_02 .rec_desc p:not(:last-child) { margin:0 0 1.6667vw; }
+			.field_02 .move_txt { margin:0.8333vw 0 0 1.3889vw; }
+			.field_02 .rec_box_item_04 .rec_desc_move_top_01 { margin:0 0 2.0833vw; }
+			.field_02 .rec_box_item_04 .mail_txt { font-size: 1.5278vw; }
+			.field_02 .rec_box_item_04 .rec_desc_text_01 { margin:0 0 2.0833vw; }
+			.field_02 .rec_box_item_04 .btn_wrap_apply { bottom:0.6944vw; left:36.8056vw; }
+			.field_02 .rec_box_item_04 .btn_apply { width:13.7500vw; height:2.5694vw; line-height: 2.5694vw; font-size:1.3889vw; letter-spacing: -0.0174vw; border-radius:1.2500vw; }
+			.field_02 .rec_box_item_05 .rec_desc_move:not(:last-child) { margin:0 0 2.0833vw; }
+
+			/* footer */
+			.sec_notice { max-width:133.3333vw; width:100%; }
+			.sec_notice .sec_inner { width:100.0000vw; padding: 5.5556vw 0;}
+			.sec_notice .notice_area { margin-left:6.9444vw; }
+			.sec_notice .notice_title { font-size:1.1111vw; margin-right:4.1667vw; }
+			.sec_notice .notice_list li { padding-left: 0.6944vw; margin-bottom: 0.8333vw; font-size: 1.1111vw; }
+			.sec_notice .notice_list li:before { width:0.2778vw; height:0.2778vw; left:0; top:0.3472vw; }
+			.sec_notice .notice_list li .space_txt { font-size: 1.1111vw; margin:0.8333vw 0 0; }
+
+		}
+
+		@media screen and (max-width: 768px) {
+		
+		/* common */
+		.galaxy_studio .m_show { display: block !important; }
+		.galaxy_studio .m_hide { display: none !important; }
+
+
+		/****************
+			sec_kv
+		****************/
+		.galaxy_studio .sec_kv .txt_box {top:8.3333vw; left:0; width:100%; text-align:center;}
+		.galaxy_studio .sec_kv .txt_box h2 {font-size:9.4444vw;}
+
+		.galaxy_studio .sec_kv .menu_box {bottom:2.2222vw; left:2.2222vw;}
+		.galaxy_studio .sec_kv .menu_box li + li {margin-left:1.3889vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_search {background-position:3.3333vw 2.0833vw; background-size:3.6111vw 5.2778vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_product {background-position:4.3056vw 2.0833vw; background-size:5.1389vw 5.1389vw;}
+		.galaxy_studio .sec_kv .menu_box li > a {width:27.7778vw; height:9.4444vw;}
+		.galaxy_studio .sec_kv .menu_box li > a::before {top:auto; bottom:0; right:-1.111vw; border-right:1.2500vw solid transparent;}
+		.galaxy_studio .sec_kv .menu_box li.menu_search > a::before {border-bottom:0; border-top:1.8056vw solid #5634ae;}
+		.galaxy_studio .sec_kv .menu_box li.menu_product > a::before {border-bottom:0; border-top:1.8056vw solid #6344b1;}
+		.galaxy_studio .sec_kv .menu_box .menu_tit {font-size:3.0556vw; line-height:9.4444vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_search .menu_tit {padding-left:8.6111vw;}
+		.galaxy_studio .sec_kv .menu_box .menu_product .menu_tit {padding-left:12.0833vw;}
+
+		/* sec_studio_nav */
+		.sec_studio_nav .m_show {display:block !important;}
+		.sec_studio_nav .m_hide {display:none !important;}
+		.sec_studio_nav {overflow:hidden;}
+		.sec_studio_nav .nav_list {flex-wrap:wrap; padding:0;}
+		.sec_studio_nav .nav_list li {width:25%; height:13.8889vw; border-left:0.2778vw solid #cdcdcd; text-align:center;}
+		.sec_studio_nav .nav_list li:nth-child(4) ~ li {width:33.33%; border-top:0.2778vw solid #cdcdcd;}
+		.sec_studio_nav .nav_list li:first-child,
+		.sec_studio_nav .nav_list li:nth-child(5) {border-left:0;}
+		.sec_studio_nav .nav_list li:last-child {border-right:0;}
+		.sec_studio_nav .nav_list li .nav_title {font-size:3.3333vw; line-height:1.2;}
+		.sec_studio_nav .nav_list li.on .nav_title,
+		.sec_studio_nav .nav_list li a:hover .nav_title {top:-0.4167vw; left:-0.2778vw;}
+		.sec_studio_nav .nav_list li.on a::after,
+		.sec_studio_nav .nav_list li a:hover::after {top:-0.8333vw; left:-0.6944vw; width:25.6944vw; height:14.7222vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg_top_mo.png');}
+		.sec_studio_nav .nav_list :nth-child(4) ~ li.on a::after,
+		.sec_studio_nav .nav_list :nth-child(4) ~ li a:hover::after {left:0; width:33.194vw; height:14.7222vw; background-image:url('//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_nav_bg_btm_mo.png');}
+
+		/* 모집기간종료 */
+		.shadow_img_area { width:91.1111vw; margin:6.9444vw auto 0; }
+
+		/* contents */
+		.field_01 { padding:11.1111vw 4.4444vw 0; background:url(//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/campus_bg_mo.png) no-repeat; background-size:cover; }
+		.field_01:before { display:none; }
+		.field_01:after { display:none; }
+		.field_01 .img_box_studio { width:71.6667vw; margin:0 auto 11.1111vw; }
+		.field_01	.to_go_step_wrap .tit_txt { font-size:6.3889vw; letter-spacing: -0.0694vw; }
+		.field_01 .to_go_step { display:block; }
+		.field_01 .to_go_step_top { padding: 8.3333vw 0 0; }
+		.field_01 .to_go_list { width:80.0000vw; height:27.3611vw; margin:0 auto 8.3333vw; }
+		.field_01 .to_go_list_tit { margin:0; width:54.1667vw; height:8.6111vw; top:-3.0556vw; left:3.6111vw; }
+		.field_01 .to_go_list span { padding-top:0; font-size:4.4444vw; display:flex; justify-content: center; align-items: center; }
+		.field_01 .to_go_list .num_txt { vertical-align: top; font-size:4.4444vw; }
+		.field_01 .to_go_list .date_txt { font-size: 3.6111vw; margin-left:1.6667vw; }
+		.field_01 .to_go_list_tit:before { width:28.3333vw; border-width:0 1.2500vw 2.7778vw; }
+		.field_01 .to_go_list_1 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_2 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_3 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_4 { background:#eafcf6; border:0.2778vw solid #e1f7ef; }
+		.field_01 .to_go_list_5 { background:#eafcf6; border:0.2778vw solid #e1f7ef; margin:0 auto; }
+		.field_01 .college_list { font-size:3.6111vw; padding:0 0 0 5.5556vw; letter-spacing: -0.0694vw; }
+		.field_01 .refet_txt { font-size:3.8889vw;letter-spacing: -0.1389vw; padding:5.5556vw 0 9.7222vw; }
+		.field_02 { padding:0 4.4444vw 9.7222vw; }
+		.field_02 .main_tit_area { padding:11.1111vw 0 0; }
+		.field_02 .main_desc { font-size:5.2778vw; letter-spacing: -0.0347vw; padding:5.5556vw 0 0; line-height: 1.3; }
+		.field_02 .main_desc strong { vertical-align: top; font-size:5.2778vw; }
+		.field_02 .box_main_tit { font-size:5.0000vw; font-weight: 700; text-align: center; margin:0 0 6.9444vw; }
+		.field_02 .box_area { display:flex; justify-content: center; flex-wrap: wrap; } 
+		.field_02 .box_area.box_top { margin:0 0 11.1111vw; }
+		.field_02 .box_item { width: 44.4444%; }
+		.field_02 .box_item:not(:last-child) { margin:0; }
+		.field_02 .box_item:first-child { margin:0 2.2222vw 0 0; }
+		.field_02 .box_item_03 { margin:5.5556vw 0 0; }
+		.field_02 .box_desc { font-size:3.6111vw; }
+		.field_02 .box_refet_txt {  font-size:3.8889vw; padding:1.1111vw 0 0; }
+		.field_02 .box_area.box_bot { margin:0 0 11.1111vw; }
+		.field_02 .recruit_box_wrap { width:100%; margin:0 auto; }
+		.field_02 .rec_box_item { border:0.1389vw solid #ddd;}
+		.field_02 .rec_box_item:not(:last-child) { margin:0 0 8.3333vw; }
+		.field_02 .rec_main_tit { font-size:3.8889vw; border-bottom:0.1389vw solid #ddd; padding:2.2222vw 0; }
+		.field_02 .rec_desc { padding:6.9444vw 4.1667vw; }
+		.field_02 .rec_fs_22_txt { font-size:3.3333vw; letter-spacing: -0.0347vw; line-height: 1.6; }
+		.field_02 .rec_fs_22_txt .mail_txt { font-size:3.3333vw; }
+		.field_02 .rec_fs_19_txt { font-size:3.0556vw; letter-spacing: -0.0347vw; }
+		.field_02 .desc_details_01 { margin:0; }
+		.field_02 .desc_details_01 .det_span { font-size:3.0556vw; display:block; margin:1.6667vw 0 0; }
+		.field_02 .desc_details_01 p:not(:last-child) { margin:0 0 2.7778vw; }
+		.field_02 .desc_details_02 .rec_refet_txt { letter-spacing: -0.0972vw; }
+		.field_02 .college_list { padding:2.7778vw 0 2.7778vw 2.0833vw; margin:1.3889vw 0 1.9444vw; }
+		.field_02 .college_list p:not(:last-child) { margin:0 0 3.3333vw; }
+		.field_02 .rec_box_item_02 .rec_desc p:not(:last-child) { margin:0 0 3.3333vw; }
+		.field_02 .rec_box_item_04 .rec_desc_text_01_mo { margin:0 0 2.7778vw; }
+		.field_02 .rec_box_item_04 .rec_desc_text_02_mo { margin:0 0 11.1111vw; }
+		.field_02 .move_txt { margin:1.6667vw 0 0 0; }
+		.field_02 .rec_box_item_04 .btn_wrap_apply { position:absolute; bottom: -11.1111vw; left: 25.0000vw; }
+		.field_02 .rec_box_item_04 .btn_apply { width:33.3333vw; height:8.7500vw; line-height: 8.7500vw; background:#000; color:#fff; font-size:3.3333vw; letter-spacing: -0.0347vw; border-radius:4.1667vw; }
+		.field_02 .rec_box_item_05 .rec_desc_move:not(:last-child) { margin:0 0 4.1667vw; }
+
+		/* footer */
+		.sec_notice { max-width:100%; width:100%; }
+		.sec_notice .sec_inner { padding: 13.8889vw 0; width:100%; }
+		.sec_notice .notice_area { margin-left:6.9444vw; display:block;}
+		.sec_notice .notice_title { font-size:3.3333vw; padding:0 0 5.5556vw; }
+		.sec_notice .notice_list li { margin-bottom: 2.7778vw; font-size: 3.0556vw; letter-spacing: -0.0694vw; line-height: 1.4; }
+		.sec_notice .notice_list li:before { width:0.6944vw; height:0.6944vw; left:0; top:1.3889vw; }
+		.sec_notice .notice_list li .space_txt { font-size: 3.0556vw; margin:0; display: inline-block; }
+	
+		}
+		
+		</style>		
+		<tiles:putattribute name="tooltip"><div id="tooltipArea_Event3791"></div></tiles:putattribute>
+		<tiles:putattribute name="popup"><div id="popupArea_Event3791"></div></tiles:putattribute>
+		<input type="hidden" id="openPop" data-st-path="/sec/">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- s : 페이지 컨텐츠 영역 -->
+		<main class="galaxy_studio">
+			<section class="sec_kv">
+				<div class="img_box">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_kv.jpg" alt="" class="m_hide">
+					<img src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_kv_mo.jpg" alt="" class="m_show">
+				</div>
+
+				<div class="txt_box">
+					<h2>갤럭시 스튜디오  <br>in 캠퍼스</h2>
+					<div class="sub_txt m_hide">
+						캠퍼스마다 제각각 다른 모습으로 <br><span class="en">Galaxy Z Fold4 <em class="kr">|</em> Z Flip4</span>를 즐겨보세요
+					</div>
+				</div>
+				<!-- //txt_box -->
+
+				<ul class="menu_box">
+					<li class="menu_search">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/search" title="스튜디오 찾기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_search">
+							<p class="menu_tit">스튜디오 찾기</p>
+						</a>
+					</li>
+					<li class="menu_product">
+						<a href="https://www.samsung.com/sec/smartphones/galaxy-z-flip4/" title="제품정보 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_product">
+							<p class="menu_tit">제품정보</p>
+						</a>
+					</li>
+				</ul>
+
+			</section>
+			<!-- //sec_kv -->
+
+			<section class="sec_studio_nav">
+				<ul class="nav_list">
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/togo" title="얼리버드 TO Go 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_togo">
+							<span class="nav_title">얼리버드 <br class="m_show"><span class="en">To Go</span></span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/docent" title="도슨트 투어 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_docent">
+							<span class="nav_title">도슨트 <br class="m_show">투어</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/learning " title="배워보기 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_learning">
+							<span class="nav_title">배워보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/experience" title="온라인 체험존 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_experience">
+							<span class="nav_title">온라인 <br class="m_show">체험존</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/challenge" title="제각각 챌린지 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_challenge">
+							<span class="nav_title">제각각 <br class="m_show">챌린지</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/contentfesta" title="콘텐츠 페스타 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_contentfesta">
+							<span class="nav_title">콘텐츠 <br class="m_show">페스타</span>
+						</a>
+					</li>
+					<li class="on">
+						<a href="https://www.samsung.com/sec/event/galaxy-z4/galaxystudio/campus" title="캠퍼스 스튜디오 페이지로 이동" data-omni-type="microsite" data-omni="sec:microsite:galaxy-z4:galaxystudio:challenge:goto_campus">
+							<span class="nav_title">캠퍼스 <br class="m_show">스튜디오</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			
+			<!-- //sec_studio_nav -->
+
+			<section class="sec_studio">
+				<div class="field_01">
+					<div class="sec_inner">
+						<div class="txt_area">
+							<div class="img_box_studio">
+								<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_txt_pc_v3.png" alt="">
+								<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_txt_mo_v3.png" alt="">
+							</div>
+						</div>
+						<div class="to_go_step_wrap">
+							<p class="tit_txt">캠퍼스 운영 일정 안내</p>
+							<div class="to_go_step to_go_step_top">
+								<div class="to_go_list to_go_list_1">
+									<p class="to_go_list_tit"><span><strong class="num_txt">1</strong>회차 <br><strong class="date_txt">2022.09.01(목) ~ 09.16(금)</strong></span></p>
+									<p class="college_list">경희대 / 국민대 / 동아대 / 성신여대 / 세종대 <br>숙명여대 / 한국외대 / 한양대 (ERICA)</p>
+								</div>
+								<div class="to_go_list to_go_list_2">
+									<p class="to_go_list_tit"><span><strong class="num_txt">2</strong>회차 <br><strong class="date_txt">2022.09.13(화) ~ 09.23(금)</strong></span></p>
+									<p class="college_list">강원대 / 덕성여대 / 동덕여대 / 백석대 / 연세대 <br>우송대 / 원광대 / 전북대</p>
+								</div>
+								<div class="to_go_list to_go_list_3">
+									<p class="to_go_list_tit"><span><strong class="num_txt">3</strong>회차 <br><strong class="date_txt">2022.09.26(월) ~ 10.07(금)</strong></span></p>
+									<p class="college_list m_hide">경기대 / 공주대 / 대전대 / 서울여대 <br>순천향대 / 영남대 / 중앙대 / 충북대</p>
+									<p class="college_list m_show">경기대 / 공주대 / 대전대 / 서울여대 / 순천향대 <br>영남대 / 중앙대 / 충북대</p>
+								</div>
+							</div>
+							<div class="to_go_step to_go_step_bot">
+								<div class="to_go_list to_go_list_4">
+									<p class="to_go_list_tit"><span><strong class="num_txt">4</strong>회차 <br><strong class="date_txt">2022.10.04(화) ~ 10.18(화)</strong></span></p>
+									<p class="college_list">가천대 / 남서울대 / 단국대 / 상명대 / 신라대 <br>아주대 / 창원대 / 한국공학대</p>
+								</div>
+								<div class="to_go_list to_go_list_5">
+									<p class="to_go_list_tit"><span><strong class="num_txt">5</strong>회차 <br><strong class="date_txt">2022.10.17(월) ~ 10.28(금)</strong></span></p>
+									<p class="college_list">경상국립대 / 대구가톨릭대 / 서울과기대 <br>성균관대 / 수원대 / 인천대 / 충남대 / 호서대</p>
+								</div>
+							</div>
+							<p class="refet_txt">*일부 캠퍼스 운영 일정은 회차별 운영 일정과 상이할 수 있습니다</p>
+						</div>
+					</div>
+				</div>	
+				<div class="field_02">
+					<div class="sec_inner">
+						<div class="main_tit_area">
+							<div class="img_area">
+								<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_logo_pc.png" alt="">
+								<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/studio_logo_mo.png" alt="">
+							</div>
+							<p class="main_desc">우리만의 시각과 취향으로 제각각 다른 <br class="m_show"><strong class="en">Galaxy Studio in Campus</strong>를 <br class="m_hide">만들어보는 <br class="m_show">캠퍼스 큐레이터 모집에 참여해 보세요</p>
+						</div>
+						<div class="shadow_img_area">
+							<img class="m_hide" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/dim_img_pc_v4.png" alt="">
+							<img class="m_show" src="//images.samsung.com/kdp/event/sec/2022_galaxystudio/_gssa/campus/dim_img_mo_v4.png" alt="">
+						</div>
+					</div>
+				</div>	
+			</section>
+
+			<section class="sec_notice">
+				<div class="sec_inner">
+					<div class="notice_area">
+						<p class="notice_title">갤럭시 스튜디오 in 캠퍼스 <br class="m_hide">유의사항</p>
+						<ul class="notice_list">
+							<li>상기 일정 및 내용은 당사 사정에 따라 예고 없이 중단 또는 변경될 수 있습니다.</li>
+							<li class="m_hide">관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989 (10:00~22:00) / e-mail : galaxyz4_studio@naver.com</li>
+							<li class="m_show">관련 문의사항은 운영사무국으로 연락 부탁드립니다. <br><span class="space_txt">전화번호 : 02-2088-3989 (10:00~22:00) <br>e-mail : galaxyz4_studio@naver.com</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- e : 페이지 컨텐츠 영역 -->
+
+		<script>
+			$(function(){
+				$('.btn_apply').click(function(){
+					location.replace('mailto:galaxycamcurator@gmail.com')
+				});
+			});
+		</script>
+		<!-- e : 본문 영역 -->
+
+	</div>
+</body>
+</html>
